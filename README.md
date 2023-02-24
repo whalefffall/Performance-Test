@@ -2,26 +2,18 @@
 We are going to do a full and detailed performance test of Intel-SGX, AMD-SEV and HyGon-CSV.
 This is going to be a long journey. Steady On !!!
 
-2023-2-20 Diary
-Today we compile the binary
+牛健宇老师对TEE性能测量小组的进度十分不满，他要求谢绍康同志去查看TEE小组的工作进度。
 
-2023-2-21 Diary
-Today we compile the binary
+不多时，谢绍康同志带着一幅名为“李宇轩在谈恋爱”的速写回到了实验室。速写上有两名同志在操作电脑。
 
-2023-2-22 Diary
-Today we compile the binary
+“他们是谁？”牛老师问道。
 
-2023-2-23 Diary
-Today we compile the binary
+“这是冯泉弼和冯柏钧。”谢绍康同志回答到。
 
-2023-2-24 Diary
-Feng quanbi a Feng quanbi, You can not keep on like this
+“他们在干什么？”
 
-2023-2-25 Diary
-Today we compile the binary
+“他们在编译二进制文件。”
 
-2023-2-26 Diary
-Today we compile the binary
+“李宇轩呢？”
 
-2023-2-27 Diary
-Today we compile the binary
+“李宇轩在谈恋爱。”

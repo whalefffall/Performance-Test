@@ -1,0 +1,91 @@
+(datm_comp_init)  atm_in   = datm_atm_in
+(datm_comp_init)  decomp   = 1d
+(datm_comp_init)  iradsw   =        1
+(datm_comp_init)  factorFn = ./COREv2.correction_factors.T62.121007.nc
+(datm_comp_init)  restfilm = undefined
+(datm_comp_init)  restfils = undefined
+(datm_comp_init)  presaero =  F
+(shr_strdata_readnml) reading input namelist file: datm_atm_in
+(shr_stream_init) Reading file nyf.giss.T62.stream.txt
+(shr_file_freeUnit) unit   97 was not in use
+(shr_stream_init) Reading file nyf.gxgxs.T62.stream.txt
+(shr_file_freeUnit) unit   97 was not in use
+(shr_stream_init) Reading file nyf.ncep.T62.stream.txt
+(shr_file_freeUnit) unit   97 was not in use
+(datm_comp_init)  atm mode = CORE2
+(shr_strdata_init)  calling shr_dmodel_mapSet for fill
+(shr_strdata_init)  calling shr_dmodel_mapSet for remap
+(shr_strdata_init)  calling shr_dmodel_mapSet for fill
+(shr_strdata_init)  calling shr_dmodel_mapSet for remap
+(shr_strdata_init)  calling shr_dmodel_mapSet for fill
+(shr_strdata_init)  calling shr_dmodel_mapSet for remap
+(shr_strdata_print) ----------------------------------------------------------
+(shr_strdata_print) name        = ATM data
+(shr_strdata_print) dataMode    = CORE2
+(shr_strdata_print) domainFile  = ./domain.lnd.fv4x5_gx3v7.091218.nc
+(shr_strdata_print) nxg         =     72
+(shr_strdata_print) nyg         =     46
+(shr_strdata_print) io_type     =      6
+(shr_strdata_print) num_iotasks =      1
+(shr_strdata_print) io_root     =      0
+(shr_strdata_print) io_stride   =      4
+(shr_strdata_print) num_agg     =      0
+(shr_strdata_print) eccen       =  1.670772E-02
+(shr_strdata_print) mvelpp      =  4.934468E+00
+(shr_strdata_print) lambm0      = -3.250364E-02
+(shr_strdata_print) obliqr      =  4.091238E-01
+(shr_strdata_print) nstreams    =      3
+(shr_strdata_print)   streams ( 1) = nyf.giss.T62.stream.txt 1 1 1
+(shr_strdata_print)   taxMode ( 1) = cycle
+(shr_strdata_print)   dtlimit ( 1) =  1.500000E+00
+(shr_strdata_print)   strnxg  ( 1) =    192
+(shr_strdata_print)   strnyg  ( 1) =     94
+(shr_strdata_print)   dofill  ( 1) =  T
+(shr_strdata_print)   fillalgo( 1) = nn
+(shr_strdata_print)   fillmask( 1) = nomask
+(shr_strdata_print)   fillread( 1) = NOT_SET
+(shr_strdata_print)   fillwrit( 1) = NOT_SET
+(shr_strdata_print)   domaps  ( 1) =  T
+(shr_strdata_print)   mapalgo ( 1) = bilinear
+(shr_strdata_print)   mapmask ( 1) = nomask
+(shr_strdata_print)   mapread ( 1) = NOT_SET
+(shr_strdata_print)   mapwrit ( 1) = NOT_SET
+(shr_strdata_print)   tintalgo( 1) = linear
+(shr_strdata_print)  
+(shr_strdata_print)   streams ( 2) = nyf.gxgxs.T62.stream.txt 1 1 1
+(shr_strdata_print)   taxMode ( 2) = cycle
+(shr_strdata_print)   dtlimit ( 2) =  1.500000E+00
+(shr_strdata_print)   strnxg  ( 2) =    192
+(shr_strdata_print)   strnyg  ( 2) =     94
+(shr_strdata_print)   dofill  ( 2) =  T
+(shr_strdata_print)   fillalgo( 2) = nn
+(shr_strdata_print)   fillmask( 2) = nomask
+(shr_strdata_print)   fillread( 2) = NOT_SET
+(shr_strdata_print)   fillwrit( 2) = NOT_SET
+(shr_strdata_print)   domaps  ( 2) =  T
+(shr_strdata_print)   mapalgo ( 2) = bilinear
+(shr_strdata_print)   mapmask ( 2) = nomask
+(shr_strdata_print)   mapread ( 2) = NOT_SET
+(shr_strdata_print)   mapwrit ( 2) = NOT_SET
+(shr_strdata_print)   tintalgo( 2) = linear
+(shr_strdata_print)  
+(shr_strdata_print)   streams ( 3) = nyf.ncep.T62.stream.txt 1 1 1
+(shr_strdata_print)   taxMode ( 3) = cycle
+(shr_strdata_print)   dtlimit ( 3) =  1.500000E+00
+(shr_strdata_print)   strnxg  ( 3) =    192
+(shr_strdata_print)   strnyg  ( 3) =     94
+(shr_strdata_print)   dofill  ( 3) =  T
+(shr_strdata_print)   fillalgo( 3) = nn
+(shr_strdata_print)   fillmask( 3) = nomask
+(shr_strdata_print)   fillread( 3) = NOT_SET
+(shr_strdata_print)   fillwrit( 3) = NOT_SET
+(shr_strdata_print)   domaps  ( 3) =  T
+(shr_strdata_print)   mapalgo ( 3) = bilinear
+(shr_strdata_print)   mapmask ( 3) = nomask
+(shr_strdata_print)   mapread ( 3) = NOT_SET
+(shr_strdata_print)   mapwrit ( 3) = NOT_SET
+(shr_strdata_print)   tintalgo( 3) = linear
+(shr_strdata_print)  
+(shr_strdata_print) nvectors    =      1
+(shr_strdata_print)   vectors ( 1) = u:v
+(shr_strdata_print) ----------------------------------------------------------

@@ -1,0 +1,6 @@
+gcc-smaller.c: In function 'fibheap_delete_node':
+gcc-smaller.c:19958:49: warning: overflow in implicit constant conversion
+gcc-smaller.c: In function 'htab_mod_1':
+gcc-smaller.c:25469:7: warning: right shift count >= width of type
+
+cpugcc_r: out of memory allocating 4064 bytes

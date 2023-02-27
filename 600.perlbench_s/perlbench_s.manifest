@@ -1,0 +1,66 @@
+[loader]
+entrypoint = "file:/usr/lib/x86_64-linux-gnu/gramine/libsysdb.so"
+log_level = "error"
+insecure__use_cmdline_argv = true
+
+[libos]
+entrypoint = "/perlbench_s"
+
+[sys]
+enable_sigterm_injection = true
+
+[fs]
+[[fs.mounts]]
+path = "/lib"
+uri = "file:/usr/lib/x86_64-linux-gnu/gramine/runtime/glibc"
+
+[[fs.mounts]]
+path = "/lib/x86_64-linux-gnu"
+uri = "file:/lib/x86_64-linux-gnu"
+
+[[fs.mounts]]
+path = "/usr//lib/x86_64-linux-gnu"
+uri = "file:/usr//lib/x86_64-linux-gnu"
+
+[[fs.mounts]]
+path = "/etc"
+uri = "file:/etc"
+
+[[fs.mounts]]
+path = "/perlbench_s"
+uri = "file:perlbench_s"
+
+[sgx]
+debug = true
+enclave_size = "1024M"
+thread_num = 8
+file_check_policy = "allow_all_but_log"
+nonpie_binary = true
+allowed_files = [ "file:/etc/nsswitch.conf", "file:/etc/ethers", "file:/etc/hosts", "file:/etc/group", "file:/etc/passwd", "file:/etc/gai.conf",]
+isvprodid = 0
+isvsvn = 0
+remote_attestation = false
+require_avx = false
+require_avx512 = false
+require_mpx = false
+require_pkru = false
+require_amx = false
+support_exinfo = false
+enable_stats = false
+[[sgx.trusted_files]]
+uri = "file:/usr/lib/x86_64-linux-gnu/gramine/libsysdb.so"
+
+[[sgx.trusted_files]]
+uri = "file:perlbench_s"
+
+[[sgx.trusted_files]]
+uri = "file:/usr/lib/x86_64-linux-gnu/gramine/runtime/glibc/"
+
+[[sgx.trusted_files]]
+uri = "file:/lib/x86_64-linux-gnu/"
+
+[[sgx.trusted_files]]
+uri = "file:/usr//lib/x86_64-linux-gnu/"
+
+[loader.env]
+LD_LIBRARY_PATH = "/lib:/lib/x86_64-linux-gnu:/usr//lib/x86_64-linux-gnu"

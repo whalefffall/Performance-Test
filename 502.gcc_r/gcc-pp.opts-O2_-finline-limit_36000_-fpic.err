@@ -1,0 +1,101 @@
+gcc-pp.c: In function 'fibheap_delete_node':
+gcc-pp.c:19958:49: warning: overflow in implicit constant conversion
+gcc-pp.c: In function 'htab_mod_1':
+gcc-pp.c:25469:7: warning: right shift count >= width of type
+gcc-pp.c: At top level:
+gcc-pp.c:463503:13: warning: 'compute_transp' used but never defined
+gcc-pp.c:463518:12: warning: 'one_cprop_pass' used but never defined
+gcc-pp.c:463534:12: warning: 'one_pre_gcse_pass' used but never defined
+gcc-pp.c:463542:12: warning: 'one_code_hoisting_pass' used but never defined
+gcc-pp.c:463551:25: warning: 'find_rtx_in_ldst' used but never defined
+gcc-pp.c:463579:13: warning: 'store_motion' used but never defined
+gcc-pp.c:463582:13: warning: 'free_modify_mem_tables' used but never defined
+gcc-pp.c:463588:22: warning: 'is_too_expensive' used but never defined
+gcc-pp.c: In function 'fibheap_delete_node':
+gcc-pp.c:19958:49: warning: overflow in implicit constant conversion
+gcc-pp.c: In function 'htab_mod_1':
+gcc-pp.c:25469:7: warning: right shift count >= width of type
+gcc-pp.c: At top level:
+gcc-pp.c:463503:13: warning: 'compute_transp' used but never defined
+gcc-pp.c:463518:12: warning: 'one_cprop_pass' used but never defined
+gcc-pp.c:463534:12: warning: 'one_pre_gcse_pass' used but never defined
+gcc-pp.c:463542:12: warning: 'one_code_hoisting_pass' used but never defined
+gcc-pp.c:463551:25: warning: 'find_rtx_in_ldst' used but never defined
+gcc-pp.c:463579:13: warning: 'store_motion' used but never defined
+gcc-pp.c:463582:13: warning: 'free_modify_mem_tables' used but never defined
+gcc-pp.c:463588:22: warning: 'is_too_expensive' used but never defined
+gcc-pp.c: In function 'fibheap_delete_node':
+gcc-pp.c:19958:49: warning: overflow in implicit constant conversion
+gcc-pp.c: In function 'htab_mod_1':
+gcc-pp.c:25469:7: warning: right shift count >= width of type
+gcc-pp.c: At top level:
+gcc-pp.c:463503:13: warning: 'compute_transp' used but never defined
+gcc-pp.c:463518:12: warning: 'one_cprop_pass' used but never defined
+gcc-pp.c:463534:12: warning: 'one_pre_gcse_pass' used but never defined
+gcc-pp.c:463542:12: warning: 'one_code_hoisting_pass' used but never defined
+gcc-pp.c:463551:25: warning: 'find_rtx_in_ldst' used but never defined
+gcc-pp.c:463579:13: warning: 'store_motion' used but never defined
+gcc-pp.c:463582:13: warning: 'free_modify_mem_tables' used but never defined
+gcc-pp.c:463588:22: warning: 'is_too_expensive' used but never defined
+gcc-pp.c: In function 'fibheap_delete_node':
+gcc-pp.c:19958:49: warning: overflow in implicit constant conversion
+gcc-pp.c: In function 'htab_mod_1':
+gcc-pp.c:25469:7: warning: right shift count >= width of type
+gcc-pp.c: At top level:
+gcc-pp.c:463503:13: warning: 'compute_transp' used but never defined
+gcc-pp.c:463518:12: warning: 'one_cprop_pass' used but never defined
+gcc-pp.c:463534:12: warning: 'one_pre_gcse_pass' used but never defined
+gcc-pp.c:463542:12: warning: 'one_code_hoisting_pass' used but never defined
+gcc-pp.c:463551:25: warning: 'find_rtx_in_ldst' used but never defined
+gcc-pp.c:463579:13: warning: 'store_motion' used but never defined
+gcc-pp.c:463582:13: warning: 'free_modify_mem_tables' used but never defined
+gcc-pp.c:463588:22: warning: 'is_too_expensive' used but never defined
+gcc-pp.c: In function 'fibheap_delete_node':
+gcc-pp.c:19958:49: warning: overflow in implicit constant conversion
+gcc-pp.c: In function 'htab_mod_1':
+gcc-pp.c:25469:7: warning: right shift count >= width of type
+gcc-pp.c: At top level:
+gcc-pp.c:463503:13: warning: 'compute_transp' used but never defined
+gcc-pp.c:463518:12: warning: 'one_cprop_pass' used but never defined
+gcc-pp.c:463534:12: warning: 'one_pre_gcse_pass' used but never defined
+gcc-pp.c:463542:12: warning: 'one_code_hoisting_pass' used but never defined
+gcc-pp.c:463551:25: warning: 'find_rtx_in_ldst' used but never defined
+gcc-pp.c:463579:13: warning: 'store_motion' used but never defined
+gcc-pp.c:463582:13: warning: 'free_modify_mem_tables' used but never defined
+gcc-pp.c:463588:22: warning: 'is_too_expensive' used but never defined
+Gramine is starting. Parsing TOML manifest file, this may take some time...
+-----------------------------------------------------------------------------------------------------------------------
+Gramine detected the following insecure configurations:
+
+  - sgx.debug = true                           (this is a debug enclave)
+  - loader.insecure__use_cmdline_argv = true   (forwarding command-line args from untrusted host to the app)
+  - sgx.file_check_policy = allow_all_but_log  (all files are passed through from untrusted host without verification)
+  - sgx.allowed_files = [ ... ]                (some files are passed through from untrusted host without verification)
+
+Gramine will continue application execution, but this configuration must not be used in production!
+-----------------------------------------------------------------------------------------------------------------------
+
+Gramine is starting. Parsing TOML manifest file, this may take some time...
+-----------------------------------------------------------------------------------------------------------------------
+Gramine detected the following insecure configurations:
+
+  - sgx.debug = true                           (this is a debug enclave)
+  - loader.insecure__use_cmdline_argv = true   (forwarding command-line args from untrusted host to the app)
+  - sgx.file_check_policy = allow_all_but_log  (all files are passed through from untrusted host without verification)
+  - sgx.allowed_files = [ ... ]                (some files are passed through from untrusted host without verification)
+
+Gramine will continue application execution, but this configuration must not be used in production!
+-----------------------------------------------------------------------------------------------------------------------
+
+Gramine is starting. Parsing TOML manifest file, this may take some time...
+-----------------------------------------------------------------------------------------------------------------------
+Gramine detected the following insecure configurations:
+
+  - sgx.debug = true                           (this is a debug enclave)
+  - loader.insecure__use_cmdline_argv = true   (forwarding command-line args from untrusted host to the app)
+  - sgx.file_check_policy = allow_all_but_log  (all files are passed through from untrusted host without verification)
+  - sgx.allowed_files = [ ... ]                (some files are passed through from untrusted host without verification)
+
+Gramine will continue application execution, but this configuration must not be used in production!
+-----------------------------------------------------------------------------------------------------------------------
+

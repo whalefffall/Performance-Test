@@ -1,0 +1,40 @@
+specinvoke r4356
+ Invoked as: /mnt/spec/bin/specinvoke -d /mnt/spec/benchspec/CPU/510.parest_r/run/run_base_test_mytest-m64.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+timer ticks over every 1000 ns
+ Environment in effect for these runs:
+ # 1: PWD=/mnt/spec
+ # 2: HOME=/root
+ # 3: OLDPWD=/mnt/spec/benchspec
+ # 4: TERM=xterm
+ # 5: SPECPERLLIB=/mnt/spec/bin/lib:/mnt/spec/bin
+ # 6: HOSTNAME=1e148dec6ef9
+ # 7: PATH=/mnt/spec/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ # 8: LC_LANG=C
+ # 9: LIBC_FATAL_STDERR_=1
+ #10: SPECDB_PWD=/mnt/spec
+ #11: _=/mnt/spec/bin/runcpu
+ #12: LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+ #13: SHLVL=1
+ #14: LC_ALL=C
+ #15: LD_LIBRARY_PATH=/usr/lib64/:/usr/lib/:/lib64
+ #16: SPEC=/mnt/spec
+ #17: LESSCLOSE=/usr/bin/lesspipe %s %s
+ #18: LESSOPEN=| /usr/bin/lesspipe %s
+ #19: OMP_NUM_THREADS=1
+ #20: OMP_THREAD_LIMIT=1
+running commands in compare.cmd 1 times
+runs started at		1676702727, 397809000, Sat Feb 18 06:45:27 2023
+run 1 started at	1676702727, 397817000, Sat Feb 18 06:45:27 2023
+child started: 0,	1676702727, 397823000, pid=55089, '/mnt/spec/bin/specperl /mnt/spec/bin/harness/specdiff -m -l 10 --abstol 0.001 --floatcompare /mnt/spec/benchspec/CPU/510.parest_r/data/test/output/001-m0.vtk 001-m0.vtk > 001-m0.vtk.cmp'
+child finished: 0,	1676702727, 550974000, sec=0, nsec=153151000, pid=55089, rc=0
+child started: 0,	1676702727, 550987000, pid=55091, '/mnt/spec/bin/specperl /mnt/spec/bin/harness/specdiff -m -l 10 --abstol 0.001 --floatcompare /mnt/spec/benchspec/CPU/510.parest_r/data/test/output/log log > log.cmp'
+child finished: 0,	1676702727, 696108000, sec=0, nsec=145121000, pid=55091, rc=0
+child started: 0,	1676702727, 696122000, pid=55093, '/mnt/spec/bin/specperl /mnt/spec/bin/harness/specdiff -m -l 10 --abstol 0.001 --floatcompare /mnt/spec/benchspec/CPU/510.parest_r/data/test/output/me.prm me.prm > me.prm.cmp'
+child finished: 0,	1676702727, 845593000, sec=0, nsec=149471000, pid=55093, rc=0
+child started: 0,	1676702727, 845604000, pid=55095, '/mnt/spec/bin/specperl /mnt/spec/bin/harness/specdiff -m -l 10 --abstol 0.004 --floatcompare /mnt/spec/benchspec/CPU/510.parest_r/data/test/output/statistics statistics > statistics.cmp'
+child finished: 0,	1676702727, 991734000, sec=0, nsec=146130000, pid=55095, rc=0
+run 1 finished at:	1676702727, 991746000, Sat Feb 18 06:45:27 2023
+run 1 elapsed time:	         0, 593929000, 0.593929000
+runs finished at	1676702727, 991765000, Sat Feb 18 06:45:27 2023
+runs elapsed time:	         0, 593956000, 0.593956000
+specinvoke exit: rc=0

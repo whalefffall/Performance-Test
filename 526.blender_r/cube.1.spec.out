@@ -1,0 +1,156 @@
+Color management: using fallback mode for management
+read blend: cube.blend
+Fra:1 Mem:4.11M (0.00M, Peak 5.71M) | Preparing Scene data
+Fra:1 Mem:4.11M (0.00M, Peak 5.71M) | Creating Shadowbuffers
+Fra:1 Mem:4.11M (0.00M, Peak 5.71M) | Raytree.. preparing
+Fra:1 Mem:4.12M (0.00M, Peak 5.71M) | Raytree.. building
+Fra:1 Mem:4.13M (0.00M, Peak 5.71M) | Raytree finished
+Fra:1 Mem:4.13M (0.00M, Peak 5.71M) | Creating Environment maps
+Fra:1 Mem:4.13M (0.00M, Peak 5.71M) | Caching Point Densities
+Fra:1 Mem:4.13M (0.00M, Peak 5.71M) Sce: Scene Ve:8 Fa:6 La:1
+Fra:1 Mem:4.13M (0.00M, Peak 5.71M) | Loading voxel datasets
+Fra:1 Mem:4.13M (0.00M, Peak 5.71M) Sce: Scene Ve:8 Fa:6 La:1
+Fra:1 Mem:4.13M (0.00M, Peak 5.71M) Sce: Scene Ve:8 Fa:6 La:1
+Fra:1 Mem:4.13M (0.00M, Peak 5.71M) | Volume preprocessing
+Fra:1 Mem:4.13M (0.00M, Peak 5.71M) Sce: Scene Ve:8 Fa:6 La:1
+Fra:1 Mem:4.13M (0.00M, Peak 5.71M) Sce: Scene Ve:8 Fa:6 La:1
+Fra:1 Mem:25.31M (0.00M, Peak 25.60M) | Scene, Part 1-135
+Fra:1 Mem:25.22M (0.00M, Peak 25.60M) | Scene, Part 2-135
+Fra:1 Mem:25.13M (0.00M, Peak 25.60M) | Scene, Part 3-135
+Fra:1 Mem:25.04M (0.00M, Peak 25.60M) | Scene, Part 4-135
+Fra:1 Mem:24.95M (0.00M, Peak 25.60M) | Scene, Part 5-135
+Fra:1 Mem:24.87M (0.00M, Peak 25.60M) | Scene, Part 6-135
+Fra:1 Mem:24.78M (0.00M, Peak 25.60M) | Scene, Part 7-135
+Fra:1 Mem:24.69M (0.00M, Peak 25.60M) | Scene, Part 8-135
+Fra:1 Mem:24.60M (0.00M, Peak 25.60M) | Scene, Part 9-135
+Fra:1 Mem:24.51M (0.00M, Peak 25.60M) | Scene, Part 10-135
+Fra:1 Mem:24.42M (0.00M, Peak 25.60M) | Scene, Part 11-135
+Fra:1 Mem:24.33M (0.00M, Peak 25.60M) | Scene, Part 12-135
+Fra:1 Mem:24.25M (0.00M, Peak 25.60M) | Scene, Part 13-135
+Fra:1 Mem:24.16M (0.00M, Peak 25.60M) | Scene, Part 14-135
+Fra:1 Mem:24.07M (0.00M, Peak 25.60M) | Scene, Part 15-135
+Fra:1 Mem:23.98M (0.00M, Peak 25.60M) | Scene, Part 16-135
+Fra:1 Mem:23.89M (0.00M, Peak 25.60M) | Scene, Part 17-135
+Fra:1 Mem:23.80M (0.00M, Peak 25.60M) | Scene, Part 18-135
+Fra:1 Mem:23.71M (0.00M, Peak 25.60M) | Scene, Part 19-135
+Fra:1 Mem:23.63M (0.00M, Peak 25.60M) | Scene, Part 20-135
+Fra:1 Mem:23.54M (0.00M, Peak 25.60M) | Scene, Part 21-135
+Fra:1 Mem:23.45M (0.00M, Peak 25.60M) | Scene, Part 22-135
+Fra:1 Mem:23.36M (0.00M, Peak 25.60M) | Scene, Part 23-135
+Fra:1 Mem:23.27M (0.00M, Peak 25.60M) | Scene, Part 24-135
+Fra:1 Mem:23.18M (0.00M, Peak 25.60M) | Scene, Part 25-135
+Fra:1 Mem:23.09M (0.00M, Peak 25.60M) | Scene, Part 26-135
+Fra:1 Mem:23.00M (0.00M, Peak 25.60M) | Scene, Part 27-135
+Fra:1 Mem:22.92M (0.00M, Peak 25.60M) | Scene, Part 28-135
+Fra:1 Mem:22.83M (0.00M, Peak 25.60M) | Scene, Part 29-135
+Fra:1 Mem:22.74M (0.00M, Peak 25.60M) | Scene, Part 30-135
+Fra:1 Mem:22.65M (0.00M, Peak 25.60M) | Scene, Part 31-135
+Fra:1 Mem:22.56M (0.00M, Peak 25.60M) | Scene, Part 32-135
+Fra:1 Mem:22.47M (0.00M, Peak 25.60M) | Scene, Part 33-135
+Fra:1 Mem:22.38M (0.00M, Peak 25.60M) | Scene, Part 34-135
+Fra:1 Mem:22.30M (0.00M, Peak 25.60M) | Scene, Part 35-135
+Fra:1 Mem:22.21M (0.00M, Peak 25.60M) | Scene, Part 36-135
+Fra:1 Mem:22.12M (0.00M, Peak 25.60M) | Scene, Part 37-135
+Fra:1 Mem:22.03M (0.00M, Peak 25.60M) | Scene, Part 38-135
+Fra:1 Mem:21.94M (0.00M, Peak 25.60M) | Scene, Part 39-135
+Fra:1 Mem:21.85M (0.00M, Peak 25.60M) | Scene, Part 40-135
+Fra:1 Mem:21.76M (0.00M, Peak 25.60M) | Scene, Part 41-135
+Fra:1 Mem:21.67M (0.00M, Peak 25.60M) | Scene, Part 42-135
+Fra:1 Mem:21.59M (0.00M, Peak 25.60M) | Scene, Part 43-135
+Fra:1 Mem:21.50M (0.00M, Peak 25.60M) | Scene, Part 44-135
+Fra:1 Mem:21.41M (0.00M, Peak 25.60M) | Scene, Part 45-135
+Fra:1 Mem:21.32M (0.00M, Peak 25.60M) | Scene, Part 46-135
+Fra:1 Mem:21.23M (0.00M, Peak 25.60M) | Scene, Part 47-135
+Fra:1 Mem:21.14M (0.00M, Peak 25.60M) | Scene, Part 48-135
+Fra:1 Mem:21.05M (0.00M, Peak 25.60M) | Scene, Part 49-135
+Fra:1 Mem:20.97M (0.00M, Peak 25.60M) | Scene, Part 50-135
+Fra:1 Mem:20.88M (0.00M, Peak 25.60M) | Scene, Part 51-135
+Fra:1 Mem:20.83M (0.00M, Peak 25.60M) | Scene, Part 52-135
+Fra:1 Mem:20.75M (0.00M, Peak 25.60M) | Scene, Part 53-135
+Fra:1 Mem:20.66M (0.00M, Peak 25.60M) | Scene, Part 54-135
+Fra:1 Mem:20.57M (0.00M, Peak 25.60M) | Scene, Part 55-135
+Fra:1 Mem:20.48M (0.00M, Peak 25.60M) | Scene, Part 56-135
+Fra:1 Mem:20.44M (0.00M, Peak 25.60M) | Scene, Part 57-135
+Fra:1 Mem:20.40M (0.00M, Peak 25.60M) | Scene, Part 58-135
+Fra:1 Mem:20.31M (0.00M, Peak 25.60M) | Scene, Part 59-135
+Fra:1 Mem:20.22M (0.00M, Peak 25.60M) | Scene, Part 60-135
+Fra:1 Mem:20.13M (0.00M, Peak 25.60M) | Scene, Part 61-135
+Fra:1 Mem:20.04M (0.00M, Peak 25.60M) | Scene, Part 62-135
+Fra:1 Mem:19.95M (0.00M, Peak 25.60M) | Scene, Part 63-135
+Fra:1 Mem:19.86M (0.00M, Peak 25.60M) | Scene, Part 64-135
+Fra:1 Mem:19.78M (0.00M, Peak 25.60M) | Scene, Part 65-135
+Fra:1 Mem:19.69M (0.00M, Peak 25.60M) | Scene, Part 66-135
+Fra:1 Mem:19.65M (0.00M, Peak 25.60M) | Scene, Part 67-135
+Fra:1 Mem:19.60M (0.00M, Peak 25.60M) | Scene, Part 68-135
+Fra:1 Mem:19.51M (0.00M, Peak 25.60M) | Scene, Part 69-135
+Fra:1 Mem:19.43M (0.00M, Peak 25.60M) | Scene, Part 70-135
+Fra:1 Mem:19.34M (0.00M, Peak 25.60M) | Scene, Part 71-135
+Fra:1 Mem:19.25M (0.00M, Peak 25.60M) | Scene, Part 72-135
+Fra:1 Mem:19.16M (0.00M, Peak 25.60M) | Scene, Part 73-135
+Fra:1 Mem:19.07M (0.00M, Peak 25.60M) | Scene, Part 74-135
+Fra:1 Mem:18.98M (0.00M, Peak 25.60M) | Scene, Part 75-135
+Fra:1 Mem:18.89M (0.00M, Peak 25.60M) | Scene, Part 76-135
+Fra:1 Mem:18.85M (0.00M, Peak 25.60M) | Scene, Part 77-135
+Fra:1 Mem:18.81M (0.00M, Peak 25.60M) | Scene, Part 78-135
+Fra:1 Mem:18.72M (0.00M, Peak 25.60M) | Scene, Part 79-135
+Fra:1 Mem:18.63M (0.00M, Peak 25.60M) | Scene, Part 80-135
+Fra:1 Mem:18.54M (0.00M, Peak 25.60M) | Scene, Part 81-135
+Fra:1 Mem:18.46M (0.00M, Peak 25.60M) | Scene, Part 82-135
+Fra:1 Mem:18.37M (0.00M, Peak 25.60M) | Scene, Part 83-135
+Fra:1 Mem:18.28M (0.00M, Peak 25.60M) | Scene, Part 84-135
+Fra:1 Mem:18.19M (0.00M, Peak 25.60M) | Scene, Part 85-135
+Fra:1 Mem:18.10M (0.00M, Peak 25.60M) | Scene, Part 86-135
+Fra:1 Mem:18.01M (0.00M, Peak 25.60M) | Scene, Part 87-135
+Fra:1 Mem:17.92M (0.00M, Peak 25.60M) | Scene, Part 88-135
+Fra:1 Mem:17.83M (0.00M, Peak 25.60M) | Scene, Part 89-135
+Fra:1 Mem:17.75M (0.00M, Peak 25.60M) | Scene, Part 90-135
+Fra:1 Mem:17.70M (0.00M, Peak 25.60M) | Scene, Part 91-135
+Fra:1 Mem:17.66M (0.00M, Peak 25.60M) | Scene, Part 92-135
+Fra:1 Mem:17.57M (0.00M, Peak 25.60M) | Scene, Part 93-135
+Fra:1 Mem:17.48M (0.00M, Peak 25.60M) | Scene, Part 94-135
+Fra:1 Mem:17.40M (0.00M, Peak 25.60M) | Scene, Part 95-135
+Fra:1 Mem:17.31M (0.00M, Peak 25.60M) | Scene, Part 96-135
+Fra:1 Mem:17.22M (0.00M, Peak 25.60M) | Scene, Part 97-135
+Fra:1 Mem:17.13M (0.00M, Peak 25.60M) | Scene, Part 98-135
+Fra:1 Mem:17.04M (0.00M, Peak 25.60M) | Scene, Part 99-135
+Fra:1 Mem:16.95M (0.00M, Peak 25.60M) | Scene, Part 100-135
+Fra:1 Mem:16.86M (0.00M, Peak 25.60M) | Scene, Part 101-135
+Fra:1 Mem:16.78M (0.00M, Peak 25.60M) | Scene, Part 102-135
+Fra:1 Mem:16.69M (0.00M, Peak 25.60M) | Scene, Part 103-135
+Fra:1 Mem:16.60M (0.00M, Peak 25.60M) | Scene, Part 104-135
+Fra:1 Mem:16.51M (0.00M, Peak 25.60M) | Scene, Part 105-135
+Fra:1 Mem:16.42M (0.00M, Peak 25.60M) | Scene, Part 106-135
+Fra:1 Mem:16.38M (0.00M, Peak 25.60M) | Scene, Part 107-135
+Fra:1 Mem:16.34M (0.00M, Peak 25.60M) | Scene, Part 108-135
+Fra:1 Mem:16.25M (0.00M, Peak 25.60M) | Scene, Part 109-135
+Fra:1 Mem:16.16M (0.00M, Peak 25.60M) | Scene, Part 110-135
+Fra:1 Mem:16.07M (0.00M, Peak 25.60M) | Scene, Part 111-135
+Fra:1 Mem:15.98M (0.00M, Peak 25.60M) | Scene, Part 112-135
+Fra:1 Mem:15.89M (0.00M, Peak 25.60M) | Scene, Part 113-135
+Fra:1 Mem:15.81M (0.00M, Peak 25.60M) | Scene, Part 114-135
+Fra:1 Mem:15.72M (0.00M, Peak 25.60M) | Scene, Part 115-135
+Fra:1 Mem:15.63M (0.00M, Peak 25.60M) | Scene, Part 116-135
+Fra:1 Mem:15.54M (0.00M, Peak 25.60M) | Scene, Part 117-135
+Fra:1 Mem:15.45M (0.00M, Peak 25.60M) | Scene, Part 118-135
+Fra:1 Mem:15.36M (0.00M, Peak 25.60M) | Scene, Part 119-135
+Fra:1 Mem:15.27M (0.00M, Peak 25.60M) | Scene, Part 120-135
+Fra:1 Mem:15.18M (0.00M, Peak 25.60M) | Scene, Part 121-135
+Fra:1 Mem:15.10M (0.00M, Peak 25.60M) | Scene, Part 122-135
+Fra:1 Mem:15.01M (0.00M, Peak 25.60M) | Scene, Part 123-135
+Fra:1 Mem:14.92M (0.00M, Peak 25.60M) | Scene, Part 124-135
+Fra:1 Mem:14.88M (0.00M, Peak 25.60M) | Scene, Part 125-135
+Fra:1 Mem:14.83M (0.00M, Peak 25.60M) | Scene, Part 126-135
+Fra:1 Mem:14.75M (0.00M, Peak 25.60M) | Scene, Part 127-135
+Fra:1 Mem:14.66M (0.00M, Peak 25.60M) | Scene, Part 128-135
+Fra:1 Mem:14.57M (0.00M, Peak 25.60M) | Scene, Part 129-135
+Fra:1 Mem:14.48M (0.00M, Peak 25.60M) | Scene, Part 130-135
+Fra:1 Mem:14.39M (0.00M, Peak 25.60M) | Scene, Part 131-135
+Fra:1 Mem:14.30M (0.00M, Peak 25.60M) | Scene, Part 132-135
+Fra:1 Mem:14.21M (0.00M, Peak 25.60M) | Scene, Part 133-135
+Fra:1 Mem:14.13M (0.00M, Peak 25.60M) | Scene, Part 134-135
+Fra:1 Mem:14.08M (0.00M, Peak 25.60M) | Scene, Part 135-135
+Fra:1 Mem:13.85M (0.00M, Peak 25.60M) Sce: Scene Ve:8 Fa:6 La:1
+Saved: cube_0001.tga Time: 00:00.00 (Saving: 00:00.00)
+
+
+Blender quit

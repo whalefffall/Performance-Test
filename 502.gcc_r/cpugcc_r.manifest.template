@@ -1,0 +1,54 @@
+
+loader.entrypoint = "file:{{ gramine.libos }}"
+
+# You need to change here
+libos.entrypoint = "/cpugcc_r"
+
+loader.log_level = "{{ log_level }}"
+
+loader.insecure__use_cmdline_argv = true
+
+loader.env.LD_LIBRARY_PATH = "/lib:{{ arch_libdir }}:/usr/{{ arch_libdir }}"
+
+sys.enable_sigterm_injection = true
+
+fs.mounts = [
+  { path = "/lib", uri = "file:{{ gramine.runtimedir() }}" },
+  { path = "{{ arch_libdir }}", uri = "file:{{ arch_libdir }}" },
+  { path = "/usr/{{ arch_libdir }}", uri = "file:/usr/{{ arch_libdir }}" },
+  { path = "/etc", uri = "file:/etc" },
+  
+  # You need to change here
+  { path = "/cpugcc_r", uri = "file:cpugcc_r" },
+]
+
+sgx.debug = true
+
+sgx.enclave_size = "1024M"
+
+sgx.thread_num = 8
+
+sgx.file_check_policy = "allow_all_but_log"
+
+sgx.nonpie_binary = true
+
+sgx.trusted_files = [
+  "file:{{ gramine.libos }}",
+  # You need to change here
+  "file:cpugcc_r",
+  
+  "file:{{ gramine.runtimedir() }}/",
+  "file:{{ arch_libdir }}/",
+  "file:/usr/{{ arch_libdir }}/",
+]
+
+sgx.allowed_files = [
+  "file:/etc/nsswitch.conf",
+  "file:/etc/ethers",
+  "file:/etc/hosts",
+  "file:/etc/group",
+  "file:/etc/passwd",
+
+  "file:/etc/gai.conf",
+]
+

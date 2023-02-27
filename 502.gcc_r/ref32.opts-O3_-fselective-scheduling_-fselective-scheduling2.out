@@ -1,0 +1,1 @@
+ref32.c:6213:17: warning: conflicting types for built-in function 'imaxabs'

@@ -1,0 +1,16 @@
+main 0 [0]: 
+
+----------------- Job 0 on dummy_host -----------------
+main 0 [0]: Exception on running main loop: --------------------------------------------------------
+An error occurred in line <377> of file <source/base/utilities.cc> in function
+    
+The violated condition was: 
+    cpuinfo
+The name and call sequence of the exception was:
+    ExcIO()
+Additional Information: 
+(none)
+--------------------------------------------------------
+
+Aborting!
+----------------------------------------------------

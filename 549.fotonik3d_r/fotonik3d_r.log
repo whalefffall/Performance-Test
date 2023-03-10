@@ -1,0 +1,68 @@
+ MPI_COMM_SIZE: COMM =            0
+ MPI_COMM_RANK: COMM =            0
+ ================================================================
+ Using 64-bit precision
+ -----------------------------------------------------
+ Master reads the input file yee.dat:
+
+ (px,py,pz) == dims(1:3) =            1           1           1
+ nx_global, ny_global, nz_global =          120         470         120
+ dx, dy, dz =    4.9999999999999998E-008   4.9999999999999998E-008   4.9999999999999998E-008
+ nts =            3
+ out =            0
+ k0 =    0.0000000000000000        1.0000000000000000        0.0000000000000000     
+ Epol =    1.0000000000000000        0.0000000000000000        1.0000000000000000     
+ X0 =    0.0000000000000000        1.0000000000000000        0.0000000000000000     
+ pl =    10.000000000000000     
+ pulse =           -2
+ number_of_runs =            1
+ ds =            1
+ stride =          100
+ comtype =            8
+ CFL =   0.86602540380000004     
+ PEC =            0
+ OBC =            4
+ number_of_PML_cells =            4
+ OBJ =            1
+ POWER =            1
+ Number of Probes =             0
+
+ -----------------------------------------------------
+ *******PLANE SOURCE************************
+ index (y,global):          10
+ index (y,local):          10
+ Plane_Source_block_index =            0
+ Filename:TEwaveguide.m
+ Source_order_of_comp: trains_of_z_values
+ *******************************************
+ Global temporary arrays for iep[xyz] allocated on master
+ size (Mbytes) of each of the three arrays is           25
+ *******MATERIAL****************************
+ Master has completed Mat_init.
+ Fields allocated in UPML_mod, Mbytes used =                    57
+
+ number_of_PML_cells =            4
+ Using polynomial profile for sigma, with degree           4
+ *******POWER*******************************
+ Input file    :   incident_W3PC.def
+ Stride:                   2000
+ Skip:                     5000
+ Filenamebase:     incident_W3PC
+ No. frequencies:           301
+ First frequency:     100000000000000.00     
+ Last frequency:      300000000000000.00     
+ DFT window start:   2147483647
+ Y-index (global):           50
+ ===========================================
+ incident_W3PC.def will belong to nodes in y-block:            0
+ ===========================================
+ Total number of power coords =         2688
+ Arrays allocated in power_mod, Mbytes used =                    49 my_id =           0
+ Leaving initialization routine init.f90
+ Electromagnetic fields allocated, Mbytes =                   365
+ -----------------------------------------------------
+ (Master) Entering main loop
+ UPML used as OBC!
+ Ending main loop
+=====================================================
+=====================================================

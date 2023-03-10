@@ -1,0 +1,624 @@
+(seq_mct_drv) USE_ESMF_LIB is NOT set, using esmf_wrf_timemgr
+(seq_mct_drv) MCT_INTERFACE is set
+(seq_mct_drv) : ------------------------------------------------------------
+(seq_mct_drv) :      NCAR CPL7 Community Climate System Model (CCSM)  
+(seq_mct_drv) : ------------------------------------------------------------
+(seq_mct_drv) :      (Online documentation is available on the CCSM         
+(seq_mct_drv) :       Models page: http://www.ccsm.ucar.edu/models/         
+(seq_mct_drv) :       License information is available as a link from above 
+(seq_mct_drv) : ------------------------------------------------------------
+(seq_mct_drv) :                 DATE 02/22/23 TIME 20:39:49
+(seq_mct_drv) : ------------------------------------------------------------
+  
+  
+(seq_io_init) cpl_io_stride, iotasks or root out of bounds - resetting to defaults   4  0  0
+(seq_io_init) pio init parameters: 
+(seq_io_init)    cpl_io_stride   =      1
+(seq_io_init)    cpl_io_root     =      0
+(seq_io_init)    cpl_io_typename = netcdf                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+(seq_io_init)    cpl_io_numtasks =      1
+8 MB memory   alloc in MB is            -0.00
+8 MB memory dealloc in MB is             0.00
+Memory block size conversion in bytes is             0.00
+ seq_drydep_read: drydep_method: xactive_lnd
+(seq_drydep_read) No dry deposition fields will be transfered
+(seq_infodata_Init) 
+ read seq_infodata_inparm namelist from: drv_in
+(shr_orb_params) Calculate characteristics of the orbit:
+(shr_orb_params) SVN $Id: shr_orb_mod.F90 6752 2007-10-04 21:02:15Z jwolfe $
+(shr_orb_params) SVN <unknown URL>
+(shr_orb_params) Calculate orbit for year:      1990
+(shr_orb_params) ------ Computed Orbital Parameters ------
+(shr_orb_params) Eccentricity      =   1.670772E-02
+(shr_orb_params) Obliquity (deg)   =   2.344107E+01
+(shr_orb_params) Obliquity (rad)   =   4.091238E-01
+(shr_orb_params) Long of perh(deg) =   1.027242E+02
+(shr_orb_params) Long of perh(rad) =   4.934468E+00
+(shr_orb_params) Long at v.e.(rad) =  -3.250364E-02
+(shr_orb_params) -----------------------------------------
+  
+Status of infodata after seq_infodata_init
+(seq_infodata_print) Start type               = startup
+(seq_infodata_print) Case name                = casespec
+(seq_infodata_print) Case description         = UNSET
+(seq_infodata_print) Model version            = cesm1_0_2
+(seq_infodata_print) Username                 = specuser
+(seq_infodata_print) Hostname                 = specmachine
+(seq_infodata_print) Timing Dir               = ./
+(seq_infodata_print) Timing Checkpoint Dir    = ./
+(seq_infodata_print) Restart case name        = 
+(seq_infodata_print) atm_ideal_phys           =   F
+(seq_infodata_print) atm adiabatic mode       =   F
+(seq_infodata_print) aqua_planet mode         =   F
+(seq_infodata_print) aqua_planet analytic sst =          1
+(seq_infodata_print) brnch_retain_casename    =   F
+(seq_infodata_print) read_restart flag        =   F
+(seq_infodata_print) Restart pointer file     = rpointer.drv
+(seq_infodata_print) Restart file (full path) = str_undefined
+(seq_infodata_print) single_column            =   F
+(seq_infodata_print) scmlat                   =   -999.00000000000    
+(seq_infodata_print) scmlon                   =   -999.00000000000    
+(seq_infodata_print) Log output end name      = .log
+(seq_infodata_print) Output path dir          = ./
+(seq_infodata_print) perpetual                =   F
+(seq_infodata_print) perpetual_ymd            =       -999
+(seq_infodata_print) orb_eccen                =   0.16707719799281E-01
+(seq_infodata_print) orb_obliqr               =   0.40912382465788    
+(seq_infodata_print) orb_lambm0               =  -0.32503635878519E-01
+(seq_infodata_print) orb_mvelpp               =    4.9344679089867    
+(seq_infodata_print) flux_epbal               = ocn
+(seq_infodata_print) flux_albav               =   T
+(seq_infodata_print) samegrid_ao              =   F
+(seq_infodata_print) samegrid_ro              =   F
+(seq_infodata_print) samegrid_al              =   T
+(seq_infodata_print) shr_map_dopole           =   T
+(seq_infodata_print) npfix                    =   T
+(seq_infodata_print) aoflux_grid              = ocn
+(seq_infodata_print) ocean_tight_coupling     =   F
+(seq_infodata_print) cpl_cdf64                =   T
+(seq_infodata_print) do_budgets               =   T
+(seq_infodata_print) do_histinit              =   F
+(seq_infodata_print) budget_inst              =    0
+(seq_infodata_print) budget_daily             =    0
+(seq_infodata_print) budget_month             =    1
+(seq_infodata_print) budget_ann               =    1
+(seq_infodata_print) budget_ltann             =    1
+(seq_infodata_print) budget_ltend             =    0
+(seq_infodata_print) histaux_a2x              =   F
+(seq_infodata_print) histaux_a2x3hr           =   F
+(seq_infodata_print) histaux_a2x3hrp          =   F
+(seq_infodata_print) histaux_a2x24hr          =   F
+(seq_infodata_print) histaux_l2x              =   F
+(seq_infodata_print) histaux_r2x              =   F
+(seq_infodata_print) drv_threading            =   F
+(seq_infodata_print) eps_frac                 =   0.10000000000000E-01
+(seq_infodata_print) eps_amask                =   0.10000000000000E-12
+(seq_infodata_print) eps_agrid                =   0.10000000000000E-11
+(seq_infodata_print) eps_aarea                =   0.90000000000000E-06
+(seq_infodata_print) eps_omask                =   0.10000000000000E-05
+(seq_infodata_print) eps_ogrid                =   0.10000000000000E-01
+(seq_infodata_print) eps_oarea                =   0.10000000000000    
+(seq_infodata_print) info_debug               =    1
+(seq_infodata_print) bfbflag                  =   F
+(seq_infodata_print) dead_comps               =   F
+(seq_infodata_print) atm_present              =   T
+(seq_infodata_print) atm_prognostic           =   F
+(seq_infodata_print) lnd_present              =   T
+(seq_infodata_print) lnd_prognostic           =   F
+(seq_infodata_print) rof_present              =   T
+(seq_infodata_print) ocn_present              =   T
+(seq_infodata_print) ocn_prognostic           =   F
+(seq_infodata_print) ocnrof_prognostic        =   F
+(seq_infodata_print) ice_present              =   T
+(seq_infodata_print) ice_prognostic           =   F
+(seq_infodata_print) glc_present              =   T
+(seq_infodata_print) glc_prognostic           =   F
+(seq_infodata_print) sno_present              =   F
+(seq_infodata_print) sno_prognostic           =   F
+(seq_infodata_print) atm_nx                   =          0
+(seq_infodata_print) atm_ny                   =          0
+(seq_infodata_print) lnd_nx                   =          0
+(seq_infodata_print) lnd_ny                   =          0
+(seq_infodata_print) rof_nx                   =          0
+(seq_infodata_print) rof_ny                   =          0
+(seq_infodata_print) ice_nx                   =          0
+(seq_infodata_print) ice_ny                   =          0
+(seq_infodata_print) ocn_nx                   =          0
+(seq_infodata_print) ocn_ny                   =          0
+(seq_infodata_print) glc_nx                   =          0
+(seq_infodata_print) glc_ny                   =          0
+(seq_infodata_print) sno_nx                   =          0
+(seq_infodata_print) sno_ny                   =          0
+(seq_infodata_print) nextsw_cday              =   -1.0000000000000    
+(seq_infodata_print) precip_fact              =    1.0000000000000    
+(seq_infodata_print) atm_aero                 =   F
+(seq_infodata_print) atm_phase                =    1
+(seq_infodata_print) lnd_phase                =    1
+(seq_infodata_print) ocn_phase                =    1
+(seq_infodata_print) ice_phase                =    1
+(seq_infodata_print) glc_phase                =    1
+(seq_infodata_print) glcrun_alarm             =   F
+(seq_infodata_print) glc_g2supdate            =   F
+  
+(seq_timemgr_clockInit) Read in seq_timemgr_inparm namelist from: drv_in
+ 
+(seq_timemgr_clockInit) Clock Init Settings:
+(seq_timemgr_clockInit) calendar       = NO_LEAP
+(seq_timemgr_clockInit) stop_option    = ndays
+(seq_timemgr_clockInit) stop_n         =          1
+(seq_timemgr_clockInit) stop_ymd       =   99990101
+(seq_timemgr_clockInit) stop_tod       =          0
+(seq_timemgr_clockInit) restart_option = ndays
+(seq_timemgr_clockInit) restart_n      =          1
+(seq_timemgr_clockInit) restart_ymd    =       -999
+(seq_timemgr_clockInit) end_restart    =   F
+(seq_timemgr_clockInit) history_option = never
+(seq_timemgr_clockInit) history_n      =       -999
+(seq_timemgr_clockInit) history_ymd    =       -999
+(seq_timemgr_clockInit) histavg_option = never
+(seq_timemgr_clockInit) histavg_n      =       -999
+(seq_timemgr_clockInit) histavg_ymd    =       -999
+(seq_timemgr_clockInit) tprof_option   = never
+(seq_timemgr_clockInit) tprof_n        =       -999
+(seq_timemgr_clockInit) tprof_ymd      =       -999
+(seq_timemgr_clockInit) start_ymd      =      10101
+(seq_timemgr_clockInit) start_tod      =          0
+(seq_timemgr_clockInit) ref_ymd        =      10101
+(seq_timemgr_clockInit) ref_tod        =          0
+(seq_timemgr_clockInit) atm_cpl_dt     =      21600
+(seq_timemgr_clockInit) lnd_cpl_dt     =      21600
+(seq_timemgr_clockInit) ice_cpl_dt     =      21600
+(seq_timemgr_clockInit) ocn_cpl_dt     =      86400
+(seq_timemgr_clockInit) glc_cpl_dt     =      86400
+(seq_timemgr_clockInit) atm_cpl_offset =          0
+(seq_timemgr_clockInit) lnd_cpl_offset =          0
+(seq_timemgr_clockInit) ice_cpl_offset =          0
+(seq_timemgr_clockInit) ocn_cpl_offset =          0
+(seq_timemgr_clockInit) glc_cpl_offset =          0
+ 
+(seq_timemgr_clockPrint) calendar      = NO_LEAP
+(seq_timemgr_clockPrint) end_restart   =   F
+
+(seq_timemgr_clockPrint) Clock = drv            1
+(seq_timemgr_clockPrint)   Start Time  = 00010101   00000
+(seq_timemgr_clockPrint)   Curr Time   = 00010101   00000
+(seq_timemgr_clockPrint)   Ref Time    = 00010101   00000
+(seq_timemgr_clockPrint)   Stop Time   = 00010102   00000
+(seq_timemgr_clockPrint)   Step number =        0
+(seq_timemgr_clockPrint)   Dtime       =    21600
+(seq_timemgr_clockPrint)   Alarm =  1  seq_timemgr_alarm_run
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010101   21600
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       21600
+(seq_timemgr_clockPrint)   Alarm =  2  seq_timemgr_alarm_stop
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010102   00000
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       86400
+(seq_timemgr_clockPrint)   Alarm =  3  seq_timemgr_alarm_datestop
+(seq_timemgr_clockPrint)     Prev Time   = 00000101   00000
+(seq_timemgr_clockPrint)     Next Time   = 99990101   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  4  seq_timemgr_alarm_restart
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010102   00000
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       86400
+(seq_timemgr_clockPrint)   Alarm =  5  seq_timemgr_alarm_history
+(seq_timemgr_clockPrint)     Prev Time   = 00001201   00000
+(seq_timemgr_clockPrint)     Next Time   = 99991201   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  6  seq_timemgr_alarm_histavg
+(seq_timemgr_clockPrint)     Prev Time   = 00001201   00000
+(seq_timemgr_clockPrint)     Next Time   = 99991201   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  7  seq_timemgr_alarm_tprof
+(seq_timemgr_clockPrint)     Prev Time   = 00001201   00000
+(seq_timemgr_clockPrint)     Next Time   = 99991201   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  8  seq_timemgr_alarm_atmrun
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010101   21600
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       21600
+(seq_timemgr_clockPrint)   Alarm =  9  seq_timemgr_alarm_lndrun
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010101   21600
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       21600
+(seq_timemgr_clockPrint)   Alarm = 10  seq_timemgr_alarm_icerun
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010101   21600
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       21600
+(seq_timemgr_clockPrint)   Alarm = 11  seq_timemgr_alarm_glcrun
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010102   00000
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       86400
+(seq_timemgr_clockPrint)   Alarm = 12  seq_timemgr_alarm_ocnrun
+(seq_timemgr_clockPrint)     Prev Time   = 00001231   21600
+(seq_timemgr_clockPrint)     Next Time   = 00010101   21600
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       86400
+(seq_timemgr_clockPrint)   Alarm = 13  seq_timemgr_alarm_ocnnext
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010102   00000
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       86400
+ 
+(seq_timemgr_clockPrint) Clock = atm            2
+(seq_timemgr_clockPrint)   Start Time  = 00010101   00000
+(seq_timemgr_clockPrint)   Curr Time   = 00010101   00000
+(seq_timemgr_clockPrint)   Ref Time    = 00010101   00000
+(seq_timemgr_clockPrint)   Stop Time   = 00010102   00000
+(seq_timemgr_clockPrint)   Step number =        0
+(seq_timemgr_clockPrint)   Dtime       =    21600
+(seq_timemgr_clockPrint)   Alarm =  1  seq_timemgr_alarm_run
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010101   21600
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       21600
+(seq_timemgr_clockPrint)   Alarm =  2  seq_timemgr_alarm_stop
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010102   00000
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       86400
+(seq_timemgr_clockPrint)   Alarm =  3  seq_timemgr_alarm_datestop
+(seq_timemgr_clockPrint)     Prev Time   = 00000101   00000
+(seq_timemgr_clockPrint)     Next Time   = 99990101   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  4  seq_timemgr_alarm_restart
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010102   00000
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       86400
+(seq_timemgr_clockPrint)   Alarm =  5  seq_timemgr_alarm_history
+(seq_timemgr_clockPrint)     Prev Time   = 00001201   00000
+(seq_timemgr_clockPrint)     Next Time   = 99991201   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  6  seq_timemgr_alarm_histavg
+(seq_timemgr_clockPrint)     Prev Time   = 00001201   00000
+(seq_timemgr_clockPrint)     Next Time   = 99991201   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  7  seq_timemgr_alarm_tprof
+(seq_timemgr_clockPrint)     Prev Time   = 00001201   00000
+(seq_timemgr_clockPrint)     Next Time   = 99991201   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+ 
+(seq_timemgr_clockPrint) Clock = lnd            3
+(seq_timemgr_clockPrint)   Start Time  = 00010101   00000
+(seq_timemgr_clockPrint)   Curr Time   = 00010101   00000
+(seq_timemgr_clockPrint)   Ref Time    = 00010101   00000
+(seq_timemgr_clockPrint)   Stop Time   = 00010102   00000
+(seq_timemgr_clockPrint)   Step number =        0
+(seq_timemgr_clockPrint)   Dtime       =    21600
+(seq_timemgr_clockPrint)   Alarm =  1  seq_timemgr_alarm_run
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010101   21600
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       21600
+(seq_timemgr_clockPrint)   Alarm =  2  seq_timemgr_alarm_stop
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010102   00000
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       86400
+(seq_timemgr_clockPrint)   Alarm =  3  seq_timemgr_alarm_datestop
+(seq_timemgr_clockPrint)     Prev Time   = 00000101   00000
+(seq_timemgr_clockPrint)     Next Time   = 99990101   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  4  seq_timemgr_alarm_restart
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010102   00000
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       86400
+(seq_timemgr_clockPrint)   Alarm =  5  seq_timemgr_alarm_history
+(seq_timemgr_clockPrint)     Prev Time   = 00001201   00000
+(seq_timemgr_clockPrint)     Next Time   = 99991201   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  6  seq_timemgr_alarm_histavg
+(seq_timemgr_clockPrint)     Prev Time   = 00001201   00000
+(seq_timemgr_clockPrint)     Next Time   = 99991201   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  7  seq_timemgr_alarm_tprof
+(seq_timemgr_clockPrint)     Prev Time   = 00001201   00000
+(seq_timemgr_clockPrint)     Next Time   = 99991201   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+ 
+(seq_timemgr_clockPrint) Clock = ocn            4
+(seq_timemgr_clockPrint)   Start Time  = 00010101   00000
+(seq_timemgr_clockPrint)   Curr Time   = 00010101   00000
+(seq_timemgr_clockPrint)   Ref Time    = 00010101   00000
+(seq_timemgr_clockPrint)   Stop Time   = 00010102   00000
+(seq_timemgr_clockPrint)   Step number =        0
+(seq_timemgr_clockPrint)   Dtime       =    86400
+(seq_timemgr_clockPrint)   Alarm =  1  seq_timemgr_alarm_run
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010102   00000
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       86400
+(seq_timemgr_clockPrint)   Alarm =  2  seq_timemgr_alarm_stop
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010102   00000
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       86400
+(seq_timemgr_clockPrint)   Alarm =  3  seq_timemgr_alarm_datestop
+(seq_timemgr_clockPrint)     Prev Time   = 00000101   00000
+(seq_timemgr_clockPrint)     Next Time   = 99990101   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  4  seq_timemgr_alarm_restart
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010102   00000
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       86400
+(seq_timemgr_clockPrint)   Alarm =  5  seq_timemgr_alarm_history
+(seq_timemgr_clockPrint)     Prev Time   = 00001201   00000
+(seq_timemgr_clockPrint)     Next Time   = 99991201   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  6  seq_timemgr_alarm_histavg
+(seq_timemgr_clockPrint)     Prev Time   = 00001201   00000
+(seq_timemgr_clockPrint)     Next Time   = 99991201   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  7  seq_timemgr_alarm_tprof
+(seq_timemgr_clockPrint)     Prev Time   = 00001201   00000
+(seq_timemgr_clockPrint)     Next Time   = 99991201   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+ 
+(seq_timemgr_clockPrint) Clock = ice            5
+(seq_timemgr_clockPrint)   Start Time  = 00010101   00000
+(seq_timemgr_clockPrint)   Curr Time   = 00010101   00000
+(seq_timemgr_clockPrint)   Ref Time    = 00010101   00000
+(seq_timemgr_clockPrint)   Stop Time   = 00010102   00000
+(seq_timemgr_clockPrint)   Step number =        0
+(seq_timemgr_clockPrint)   Dtime       =    21600
+(seq_timemgr_clockPrint)   Alarm =  1  seq_timemgr_alarm_run
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010101   21600
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       21600
+(seq_timemgr_clockPrint)   Alarm =  2  seq_timemgr_alarm_stop
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010102   00000
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       86400
+(seq_timemgr_clockPrint)   Alarm =  3  seq_timemgr_alarm_datestop
+(seq_timemgr_clockPrint)     Prev Time   = 00000101   00000
+(seq_timemgr_clockPrint)     Next Time   = 99990101   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  4  seq_timemgr_alarm_restart
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010102   00000
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       86400
+(seq_timemgr_clockPrint)   Alarm =  5  seq_timemgr_alarm_history
+(seq_timemgr_clockPrint)     Prev Time   = 00001201   00000
+(seq_timemgr_clockPrint)     Next Time   = 99991201   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  6  seq_timemgr_alarm_histavg
+(seq_timemgr_clockPrint)     Prev Time   = 00001201   00000
+(seq_timemgr_clockPrint)     Next Time   = 99991201   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  7  seq_timemgr_alarm_tprof
+(seq_timemgr_clockPrint)     Prev Time   = 00001201   00000
+(seq_timemgr_clockPrint)     Next Time   = 99991201   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+ 
+(seq_timemgr_clockPrint) Clock = glc            6
+(seq_timemgr_clockPrint)   Start Time  = 00010101   00000
+(seq_timemgr_clockPrint)   Curr Time   = 00010101   00000
+(seq_timemgr_clockPrint)   Ref Time    = 00010101   00000
+(seq_timemgr_clockPrint)   Stop Time   = 00010102   00000
+(seq_timemgr_clockPrint)   Step number =        0
+(seq_timemgr_clockPrint)   Dtime       =    86400
+(seq_timemgr_clockPrint)   Alarm =  1  seq_timemgr_alarm_run
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010102   00000
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       86400
+(seq_timemgr_clockPrint)   Alarm =  2  seq_timemgr_alarm_stop
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010102   00000
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       86400
+(seq_timemgr_clockPrint)   Alarm =  3  seq_timemgr_alarm_datestop
+(seq_timemgr_clockPrint)     Prev Time   = 00000101   00000
+(seq_timemgr_clockPrint)     Next Time   = 99990101   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  4  seq_timemgr_alarm_restart
+(seq_timemgr_clockPrint)     Prev Time   = 00010101   00000
+(seq_timemgr_clockPrint)     Next Time   = 00010102   00000
+(seq_timemgr_clockPrint)     Intervl yms =        0       0       86400
+(seq_timemgr_clockPrint)   Alarm =  5  seq_timemgr_alarm_history
+(seq_timemgr_clockPrint)     Prev Time   = 00001201   00000
+(seq_timemgr_clockPrint)     Next Time   = 99991201   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  6  seq_timemgr_alarm_histavg
+(seq_timemgr_clockPrint)     Prev Time   = 00001201   00000
+(seq_timemgr_clockPrint)     Next Time   = 99991201   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+(seq_timemgr_clockPrint)   Alarm =  7  seq_timemgr_alarm_tprof
+(seq_timemgr_clockPrint)     Prev Time   = 00001201   00000
+(seq_timemgr_clockPrint)     Next Time   = 99991201   00000
+(seq_timemgr_clockPrint)     Intervl yms =     9999       0           0
+ 
+  
+(seq_mct_drv) : Initialize each component: atm, lnd, ocn, and ice
+(seq_mct_drv) : Initialize atm component
+(seq_mct_drv) : Initialize lnd component
+(seq_mct_drv) : Initialize ocn component
+(seq_mct_drv) : Initialize ice component
+(seq_mct_drv) : Initialize glc component
+(seq_mct_drv) : Determine final settings for presence of surface components
+  
+(seq_mct_drv) : After component initialization:
+(seq_mct_drv) : atm model present     =      T
+(seq_mct_drv) : lnd model present     =      F
+(seq_mct_drv) : ocn model present     =      T
+(seq_mct_drv) : ice model present     =      T
+(seq_mct_drv) : glc model present     =      F
+(seq_mct_drv) : sno model present     =      F
+(seq_mct_drv) : atm model prognostic  =      F
+(seq_mct_drv) : lnd model prognostic  =      F
+(seq_mct_drv) : ocn model prognostic  =      T
+(seq_mct_drv) : ice model prognostic  =      T
+(seq_mct_drv) : glc model prognostic  =      F
+(seq_mct_drv) : sno model prognostic  =      F
+(seq_mct_drv) : lnd rof   present     =      T
+(seq_mct_drv) : ocn rof   prognostic  =      T
+(seq_mct_drv) : dead components       =      F
+(seq_mct_drv) : domain_check          =      T
+(seq_mct_drv) : atm_nx,atm_ny         =       72      46
+(seq_mct_drv) : lnd_nx,lnd_ny         =        0       0
+(seq_mct_drv) : rof_nx,rof_ny         =      360     180
+(seq_mct_drv) : ice_nx,ice_ny         =      100     116
+(seq_mct_drv) : ocn_nx,ocn_ny         =      100     116
+(seq_mct_drv) : glc_nx,glc_ny         =        0       0
+(seq_mct_drv) : sno_nx,sno_ny         =        0       0
+(seq_mct_drv) : skip init ocean run   =      T
+(seq_mct_drv) : ocean tight coupling  =      F
+(seq_mct_drv) : cpl_cdf64             =      T
+(seq_mct_drv) : do_histavg            =      F
+(seq_mct_drv) : atm_aero              =      F
+  
+(seq_rearr_gsmapCreate) created new gsmap decomp_type =       2
+(seq_rearr_gsmapCreate)   ngseg/gsize        =        1    3312
+(seq_rearr_gsmapCreate)   mpisize/active_pes =        1       1
+(seq_rearr_gsmapCreate)   avg seg per pe/ape =        1       1
+(seq_rearr_gsmapCreate)   nlseg/maxnlsegs    =        1       1
+(map_atm2atm_init_mct)  gsmaps ARE IDENTICAL, copyoption =  T
+(seq_rearr_gsmapCreate) created new gsmap decomp_type =       2
+(seq_rearr_gsmapCreate)   ngseg/gsize        =        1   64800
+(seq_rearr_gsmapCreate)   mpisize/active_pes =        1       1
+(seq_rearr_gsmapCreate)   avg seg per pe/ape =        1       1
+(seq_rearr_gsmapCreate)   nlseg/maxnlsegs    =        1       1
+(map_rof2rof_init_mct)  gsmaps ARE IDENTICAL, copyoption =  T
+(seq_rearr_gsmapCreate) created new gsmap decomp_type =       2
+(seq_rearr_gsmapCreate)   ngseg/gsize        =        1   11600
+(seq_rearr_gsmapCreate)   mpisize/active_pes =        1       1
+(seq_rearr_gsmapCreate)   avg seg per pe/ape =        1       1
+(seq_rearr_gsmapCreate)   nlseg/maxnlsegs    =        1       1
+(map_ice2ice_init_mct)  gsmaps ARE IDENTICAL, copyoption =  T
+(seq_rearr_gsmapCreate) created new gsmap decomp_type =       2
+(seq_rearr_gsmapCreate)   ngseg/gsize        =      204   11600
+(seq_rearr_gsmapCreate)   mpisize/active_pes =        1       1
+(seq_rearr_gsmapCreate)   avg seg per pe/ape =      204     204
+(seq_rearr_gsmapCreate)   nlseg/maxnlsegs    =      204     204
+(map_ocn2ocn_init_mct)  gsmaps are not identical
+(seq_mct_drv) : Initializing merge components
+(seq_mct_drv) : Initializing atm/ocn mapping
+  
+(shr_mct_sMatPInitnc) Initializing SparseMatrixPlus
+(shr_mct_sMatPInitnc) map weight filename ./map_fv4x5_to_gx3v7_aave_da_091218.nc
+(shr_mct_sMatPInitnc) SmatP maptype X
+(shr_mct_sMatReaddnc) reading mapping matrix data decomposed...
+(shr_mct_sMatReaddnc) * file name                  : ./map_fv4x5_to_gx3v7_aave_da_091218.nc
+(shr_mct_sMatReaddnc) * matrix dims src x dst      :       3312 x     11600
+(shr_mct_sMatReaddnc) * number of non-zero elements:      19431
+(shr_mct_sMatReaddnc) ... done reading file
+(shr_mct_sMatPInitnc) Done initializing SmatP, nElements =      19431
+  
+(shr_mct_sMatPInitnc) Initializing SparseMatrixPlus
+(shr_mct_sMatPInitnc) map weight filename ./map_fv4x5_to_gx3v7_bilin_da_091218.nc
+(shr_mct_sMatPInitnc) SmatP maptype X
+(shr_mct_sMatReaddnc) reading mapping matrix data decomposed...
+(shr_mct_sMatReaddnc) * file name                  : ./map_fv4x5_to_gx3v7_bilin_da_091218.nc
+(shr_mct_sMatReaddnc) * matrix dims src x dst      :       3312 x     11600
+(shr_mct_sMatReaddnc) * number of non-zero elements:      31644
+(shr_mct_sMatReaddnc) ... done reading file
+(shr_mct_sMatPInitnc) Done initializing SmatP, nElements =      31644
+  
+(shr_mct_sMatPInitnc) Initializing SparseMatrixPlus
+(shr_mct_sMatPInitnc) map weight filename ./map_gx3v7_to_fv4x5_aave_da_091218.nc
+(shr_mct_sMatPInitnc) SmatP maptype Y
+(shr_mct_sMatReaddnc) reading mapping matrix data decomposed...
+(shr_mct_sMatReaddnc) * file name                  : ./map_gx3v7_to_fv4x5_aave_da_091218.nc
+(shr_mct_sMatReaddnc) * matrix dims src x dst      :      11600 x      3312
+(shr_mct_sMatReaddnc) * number of non-zero elements:      19431
+(shr_mct_sMatReaddnc) ... done reading file
+(shr_mct_sMatPInitnc) Done initializing SmatP, nElements =      19431
+  
+(shr_mct_sMatPInitnc) Initializing SparseMatrixPlus
+(shr_mct_sMatPInitnc) map weight filename ./map_gx3v7_to_fv4x5_aave_da_091218.nc
+(shr_mct_sMatPInitnc) SmatP maptype Y
+(shr_mct_sMatReaddnc) reading mapping matrix data decomposed...
+(shr_mct_sMatReaddnc) * file name                  : ./map_gx3v7_to_fv4x5_aave_da_091218.nc
+(shr_mct_sMatReaddnc) * matrix dims src x dst      :      11600 x      3312
+(shr_mct_sMatReaddnc) * number of non-zero elements:      19431
+(shr_mct_sMatReaddnc) ... done reading file
+(shr_mct_sMatPInitnc) Done initializing SmatP, nElements =      19431
+(seq_mct_drv) : Initializing ocn/ice mapping
+(seq_mct_drv) : Initializing atm/ice mapping
+  
+(shr_mct_sMatPInitnc) Initializing SparseMatrixPlus
+(shr_mct_sMatPInitnc) map weight filename ./map_gx3v7_to_fv4x5_aave_da_091218.nc
+(shr_mct_sMatPInitnc) SmatP maptype Y
+(shr_mct_sMatReaddnc) reading mapping matrix data decomposed...
+(shr_mct_sMatReaddnc) * file name                  : ./map_gx3v7_to_fv4x5_aave_da_091218.nc
+(shr_mct_sMatReaddnc) * matrix dims src x dst      :      11600 x      3312
+(shr_mct_sMatReaddnc) * number of non-zero elements:      19431
+(shr_mct_sMatReaddnc) ... done reading file
+(shr_mct_sMatPInitnc) Done initializing SmatP, nElements =      19431
+  
+(shr_mct_sMatPInitnc) Initializing SparseMatrixPlus
+(shr_mct_sMatPInitnc) map weight filename ./map_gx3v7_to_fv4x5_aave_da_091218.nc
+(shr_mct_sMatPInitnc) SmatP maptype Y
+(shr_mct_sMatReaddnc) reading mapping matrix data decomposed...
+(shr_mct_sMatReaddnc) * file name                  : ./map_gx3v7_to_fv4x5_aave_da_091218.nc
+(shr_mct_sMatReaddnc) * matrix dims src x dst      :      11600 x      3312
+(shr_mct_sMatReaddnc) * number of non-zero elements:      19431
+(shr_mct_sMatReaddnc) ... done reading file
+(shr_mct_sMatPInitnc) Done initializing SmatP, nElements =      19431
+(seq_mct_drv) : Initializing rof/ocn mapping
+  
+(shr_mct_sMatPInitnc) Initializing SparseMatrixPlus
+(shr_mct_sMatPInitnc) map weight filename ./map_rx1_to_gx3v5_e1000r500_090319.nc
+(shr_mct_sMatPInitnc) SmatP maptype Y
+(shr_mct_sMatReaddnc) reading mapping matrix data decomposed...
+(shr_mct_sMatReaddnc) * file name                  : ./map_rx1_to_gx3v5_e1000r500_090319.nc
+(shr_mct_sMatReaddnc) * matrix dims src x dst      :      64800 x     11600
+(shr_mct_sMatReaddnc) * number of non-zero elements:    1598326
+(shr_mct_sMatReaddnc) ... done reading file
+(shr_mct_sMatPInitnc) Done initializing SmatP, nElements =    1598326
+(seq_mct_drv) : Performing domain checking
+(domain_check_mct)  --- checking ocn/ice domains ---
+(domain_check_grid_mct)  the domain size is =        11600
+(domain_check_grid_mct)  maximum           difference for mask   0.00000000000000    
+(domain_check_grid_mct)  maximum allowable difference for mask  0.100000000000000E-01
+(domain_check_grid_mct)  the domain size is =        11600
+(domain_check_grid_mct)  maximum           difference for lat  0.589750470680883E-11
+(domain_check_grid_mct)  maximum allowable difference for lat  0.100000000000000E-01
+(domain_check_grid_mct)  the domain size is =        11600
+(domain_check_grid_mct)  maximum           difference for lon  0.182467374543194E-10
+(domain_check_grid_mct)  maximum allowable difference for lon  0.100000000000000E-01
+(domain_check_grid_mct)  the domain size is =        11600
+(domain_check_grid_mct)  maximum           difference for area  0.648696327980661E-05
+(domain_check_grid_mct)  maximum allowable difference for area  0.100000000000000    
+(domain_check_mct)  --- checking fractions in domains ---
+(domain_check_mct)  maximum           difference for ofrac sum    0.00000000000000    
+(domain_check_mct)  maximum           difference for ifrac sum    0.00000000000000    
+(domain_check_mct)  maximum allowable difference for  frac sum   0.100000000000000E-01
+(domain_check_mct)  maximum allowable tolerance for valid frac   0.100000000000000E-01
+(domain_areafactinit_mct) : min/max mdl2drv    1.00000000000000       1.00000000000000    areafact_a
+(domain_areafactinit_mct) : min/max drv2mdl    1.00000000000000       1.00000000000000    areafact_a
+(domain_areafactinit_mct) : min/max mdl2drv    1.00000000000000       1.00000000000000    areafact_r
+(domain_areafactinit_mct) : min/max drv2mdl    1.00000000000000       1.00000000000000    areafact_r
+(domain_areafactinit_mct) : min/max mdl2drv   0.975007248334293       1.02229019580080    areafact_o
+(domain_areafactinit_mct) : min/max drv2mdl   0.978195823561289       1.02563340088846    areafact_o
+(domain_areafactinit_mct) : min/max mdl2drv   0.981258486184212       1.02623811984308    areafact_i
+(domain_areafactinit_mct) : min/max drv2mdl   0.974432717577191       1.01909946673549    areafact_i
+(seq_mct_drv) : Initializing fractions
+(seq_frac_check) [ice init] afrac min/max   =    0.00000000000000000       1.00000000007827339    
+(seq_frac_check) [ice init] ofrac min/max   =    0.00000000000000000       1.00000000000000000    
+(seq_frac_check) [ice init] ifrac min/max   =    0.00000000000000000       0.00000000000000000    
+(seq_frac_check) [ocn init] afrac min/max   =    0.00000000000000000       1.00000000007827339    
+(seq_frac_check) [ocn init] ofrac min/max   =    0.00000000000000000       1.00000000000000000    
+(seq_frac_check) [ocn init] ifrac min/max   =    0.00000000000000000       0.00000000000000000    
+(seq_frac_check) [atm init] afrac min/max   =    1.00000000000000000       1.00000000000000000    
+(seq_frac_check) [atm init] lfrac min/max   =    0.00000000000000000       1.00000000000000000    
+(seq_frac_check) [atm init] ofrac min/max   =    0.00000000000000000       1.00000000000027756    
+(seq_frac_check) [atm init] ifrac min/max   =    0.00000000000000000       0.00000000000000000    
+(seq_frac_check) [atm init] lfrin min/max   =    0.00000000000000000       0.00000000000000000    
+(seq_frac_check) [atm init] sum min/max     =   0.999301526844583621       1.00000000000027756    
+(seq_frac_check) [atm init] sum ncnt/maxerr =        0   0.00000000000000000    
+(seq_mct_drv) : Setting fractions 
+(seq_mct_drv) : Initializing atm/ocn flux component
+(seq_flux_atmocn_mct) computing only ocn albedos 
+  
+(seq_mct_drv) : Model initialization complete 
+  
+(map_npFixNew4R)  compute bilinear weights & indicies for NP region.
+(map_npFixNew4R)  total npfix points found =            0
+ tStamp_write: model date =    10102       0 wall clock = 2023-02-22 20:39:50 avg dt =     0.00 dt =     0.00
+ memory_write: model date =    10102       0 memory =       0.00 MB (highwater)          0.00 MB (usage)  (pe=    0 comps= cpl ocn atm lnd ice glc)
+
+
+
+(seq_mct_drv): ===============       SUCCESSFUL TERMINATION OF CPL7-CCSM ===============
+(seq_mct_drv): ===============        at YMD,TOD =    10102       0      ===============
+(seq_mct_drv): ===============  # simulated days (this run) =     1.000  ===============
+(seq_mct_drv): ===============  compute time (hrs)          =     0.000  ===============
+(seq_mct_drv): ===============  pes min memory highwater  (MB)    0.000  ===============
+(seq_mct_drv): ===============  pes max memory highwater  (MB)    0.000  ===============
+(seq_mct_drv): ===============  pes min memory last usage (MB)    0.000  ===============
+(seq_mct_drv): ===============  pes max memory last usage (MB)    0.000  ===============
+
+
+

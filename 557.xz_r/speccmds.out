@@ -1,0 +1,79 @@
+specinvoke r4356
+ Invoked as: /root/speccpu2017/bin/specinvoke -d /root/speccpu2017/benchspec/CPU/557.xz_r/run/run_base_test_mytest-m64.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+timer ticks over every 1000 ns
+ Environment in effect for these runs:
+ # 1: USER=root
+ # 2: PWD=/root/speccpu2017
+ # 3: MOTD_SHOWN=pam
+ # 4: LANG=en_US.UTF-8
+ # 5: VSCODE_GIT_ASKPASS_NODE=/root/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/node
+ # 6: VSCODE_GIT_IPC_HANDLE=/run/user/0/vscode-git-ea5b304dac.sock
+ # 7: LIBC_FATAL_STDERR_=1
+ # 8: LESSCLOSE=/usr/bin/lesspipe %s %s
+ # 9: LIBVIRT_DEFAULT_URI=qemu:///system
+ #10: XDG_SESSION_TYPE=tty
+ #11: SPECPERLLIB=/root/speccpu2017/bin/lib:/root/speccpu2017/bin
+ #12: SPEC=/root/speccpu2017
+ #13: LD_LIBRARY_PATH=/usr/lib64/:/usr/lib/:/lib64
+ #14: TERM_PROGRAM=vscode
+ #15: LESSOPEN=| /usr/bin/lesspipe %s
+ #16: BROWSER=/root/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/bin/helpers/browser.sh
+ #17: COLORTERM=truecolor
+ #18: SSH_CONNECTION=10.26.170.188 53645 172.18.36.170 22
+ #19: DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/0/bus
+ #20: VSCODE_GIT_ASKPASS_MAIN=/root/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/extensions/git/dist/askpass-main.js
+ #21: XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+ #22: PATH=/root/speccpu2017/bin:/root/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/bin/remote-cli:/root/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+ #23: SHLVL=2
+ #24: SHELL=/bin/bash
+ #25: SSH_CLIENT=10.26.170.188 53645 22
+ #26: HOME=/root
+ #27: _=/root/speccpu2017/bin/runcpu
+ #28: LC_ALL=C
+ #29: SPECDB_PWD=/root/speccpu2017
+ #30: LOGNAME=root
+ #31: TERM_PROGRAM_VERSION=1.75.1
+ #32: OLDPWD=/usr/bin
+ #33: VSCODE_IPC_HOOK_CLI=/run/user/0/vscode-ipc-08b18903-e0a7-48a2-9b1b-a63b2f8af88d.sock
+ #34: VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+ #35: TERM=xterm-256color
+ #36: LC_LANG=C
+ #37: XDG_SESSION_CLASS=user
+ #38: GIT_ASKPASS=/root/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/extensions/git/dist/askpass.sh
+ #39: XDG_RUNTIME_DIR=/run/user/0
+ #40: XDG_SESSION_ID=374
+ #41: LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+ #42: OMP_NUM_THREADS=1
+ #43: OMP_THREAD_LIMIT=1
+running commands in speccmds.cmd 1 times
+runs started at		1677071466, 759913000, Wed Feb 22 21:11:06 2023
+run 1 started at	1677071466, 759928000, Wed Feb 22 21:11:06 2023
+child started: 0,	1677071466, 759934000, pid=1456991, '../run_base_test_mytest-m64.0000/xz_r_base.mytest-m64 cpu2006docs.tar.xz 4 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1548636 1555348 0 > cpu2006docs.tar-4-0.out 2>> cpu2006docs.tar-4-0.err'
+child finished: 0,	1677071467, 247476000, sec=0, nsec=487542000, pid=1456991, rc=0
+child started: 0,	1677071467, 247493000, pid=1456993, '../run_base_test_mytest-m64.0000/xz_r_base.mytest-m64 cpu2006docs.tar.xz 4 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1462248 -1 1 > cpu2006docs.tar-4-1.out 2>> cpu2006docs.tar-4-1.err'
+child finished: 0,	1677071467, 744521000, sec=0, nsec=497028000, pid=1456993, rc=0
+child started: 0,	1677071467, 744538000, pid=1456995, '../run_base_test_mytest-m64.0000/xz_r_base.mytest-m64 cpu2006docs.tar.xz 4 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1428548 -1 2 > cpu2006docs.tar-4-2.out 2>> cpu2006docs.tar-4-2.err'
+child finished: 0,	1677071468, 307405000, sec=0, nsec=562867000, pid=1456995, rc=0
+child started: 0,	1677071468, 307421000, pid=1456997, '../run_base_test_mytest-m64.0000/xz_r_base.mytest-m64 cpu2006docs.tar.xz 4 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1034828 -1 3e > cpu2006docs.tar-4-3e.out 2>> cpu2006docs.tar-4-3e.err'
+child finished: 0,	1677071469, 571755000, sec=1, nsec=264334000, pid=1456997, rc=0
+child started: 0,	1677071469, 571772000, pid=1456999, '../run_base_test_mytest-m64.0000/xz_r_base.mytest-m64 cpu2006docs.tar.xz 4 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1061968 -1 4 > cpu2006docs.tar-4-4.out 2>> cpu2006docs.tar-4-4.err'
+child finished: 0,	1677071470, 389260000, sec=0, nsec=817488000, pid=1456999, rc=0
+child started: 0,	1677071470, 389277000, pid=1457001, '../run_base_test_mytest-m64.0000/xz_r_base.mytest-m64 cpu2006docs.tar.xz 4 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1034588 -1 4e > cpu2006docs.tar-4-4e.out 2>> cpu2006docs.tar-4-4e.err'
+child finished: 0,	1677071471, 725528000, sec=1, nsec=336251000, pid=1457001, rc=0
+child started: 0,	1677071471, 725545000, pid=1457003, '../run_base_test_mytest-m64.0000/xz_r_base.mytest-m64 cpu2006docs.tar.xz 1 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 650156 -1 0 > cpu2006docs.tar-1-0.out 2>> cpu2006docs.tar-1-0.err'
+child finished: 0,	1677071472, 030506000, sec=0, nsec=304961000, pid=1457003, rc=0
+child started: 0,	1677071472, 030523000, pid=1457005, '../run_base_test_mytest-m64.0000/xz_r_base.mytest-m64 cpu2006docs.tar.xz 1 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 639996 -1 1 > cpu2006docs.tar-1-1.out 2>> cpu2006docs.tar-1-1.err'
+child finished: 0,	1677071472, 336480000, sec=0, nsec=305957000, pid=1457005, rc=0
+child started: 0,	1677071472, 336498000, pid=1457007, '../run_base_test_mytest-m64.0000/xz_r_base.mytest-m64 cpu2006docs.tar.xz 1 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 637616 -1 2 > cpu2006docs.tar-1-2.out 2>> cpu2006docs.tar-1-2.err'
+child finished: 0,	1677071472, 643908000, sec=0, nsec=307410000, pid=1457007, rc=0
+child started: 0,	1677071472, 643926000, pid=1457009, '../run_base_test_mytest-m64.0000/xz_r_base.mytest-m64 cpu2006docs.tar.xz 1 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 628996 -1 3e > cpu2006docs.tar-1-3e.out 2>> cpu2006docs.tar-1-3e.err'
+child finished: 0,	1677071473, 041183000, sec=0, nsec=397257000, pid=1457009, rc=0
+child started: 0,	1677071473, 041201000, pid=1457011, '../run_base_test_mytest-m64.0000/xz_r_base.mytest-m64 cpu2006docs.tar.xz 1 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 631912 -1 4 > cpu2006docs.tar-1-4.out 2>> cpu2006docs.tar-1-4.err'
+child finished: 0,	1677071473, 387820000, sec=0, nsec=346619000, pid=1457011, rc=0
+child started: 0,	1677071473, 387839000, pid=1457013, '../run_base_test_mytest-m64.0000/xz_r_base.mytest-m64 cpu2006docs.tar.xz 1 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 629064 -1 4e > cpu2006docs.tar-1-4e.out 2>> cpu2006docs.tar-1-4e.err'
+child finished: 0,	1677071473, 800803000, sec=0, nsec=412964000, pid=1457013, rc=0
+run 1 finished at:	1677071473, 800819000, Wed Feb 22 21:11:13 2023
+run 1 elapsed time:	         7, 040891000, 7.040891000
+runs finished at	1677071473, 800847000, Wed Feb 22 21:11:13 2023
+runs elapsed time:	         7, 040934000, 7.040934000
+specinvoke exit: rc=0

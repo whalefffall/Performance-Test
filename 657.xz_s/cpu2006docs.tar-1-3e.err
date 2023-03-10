@@ -1,0 +1,3 @@
+requested threads limited to only those that will do actual work: 1048576 / 13631488 => 1
+context size per thread: 13312 KB
+Compressed data 628996 bytes in length

@@ -1,0 +1,63 @@
+Redirecting Options
+  All Streams to console..........On   and file SPEC-benchmark.log
+  Debug Stream to console.........Off
+  Fatal Stream to console.........On 
+  Render Stream to console........On 
+  Statistics Stream to console....On 
+  Warning Stream to console.......Off
+Parsing Options
+  Input file: SPEC-benchmark-test.pov (compatible to version 3.50)
+  Remove bounds........Off
+  Split unions.........Off
+  Library paths:
+Output Options
+  Image resolution 50 by 50 (rows 1 to 50, columns 1 to 50).
+  Output file: SPEC-benchmark.tga, 24 bpp Targa
+  Graphic display......Off
+  Mosaic preview.......Off
+  CPU usage histogram..Off
+  Continued trace......Off
+Tracing Options
+  Quality:  9
+  Bounding boxes.......On   Bounding threshold: 1
+  Light Buffer.........On 
+  Vista Buffer.........On   Draw Vista Buffer....Off
+  Antialiasing.........On
+  AA Options: (Method 1, Threshold 0.300, Depth 3, Jitter 0.30, Unclipped)
+  Clock value:    0.000  (Animation off)
+
+High Quality focal blur used...
+Cleanup Parse Warning: Focal blur is used. Standard antialiasing is switched
+ off.
+Scene Statistics
+  Finite objects:          190
+  Infinite objects:         10
+  Light sources:             1
+  Total:                   201
+Possible Rendering Error: Maximum trace level reached! If your scene contains
+ black spots read more about the max_trace_level setting in the documentation!
+Render Statistics
+Image Resolution 50 x 50
+----------------------------------------------------------------------------
+Pixels:             2500   Samples:           34050   Smpls/Pxl: 13.62
+Rays:              70927   Saved:               686   Max Level: 5/5
+----------------------------------------------------------------------------
+Ray->Shape Intersection          Tests       Succeeded  Percentage
+----------------------------------------------------------------------------
+Box                              10406           10406    100.00
+Cone/Cylinder                     6948            2018     29.04
+CSG Intersection               1586762           67640      4.26
+CSG Union                        55098           48530     88.08
+Plane                          3691805         2320197     62.85
+Quadric                         661103          175090     26.48
+Sphere                         5618715           47042      0.84
+Bounding Box                   1517506          467442     30.80
+Light Buffer                   1307606          846191     64.71
+----------------------------------------------------------------------------
+Calls to Noise:              237599   Calls to DNoise:          220930
+----------------------------------------------------------------------------
+Shadow Ray Tests:             88598   Succeeded:                  4354
+Reflected Rays:               36877
+----------------------------------------------------------------------------
+Smallest Alloc:                   0 bytes
+Largest  Alloc:                   0 bytes

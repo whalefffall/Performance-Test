@@ -1,0 +1,83 @@
+(dice_comp_init)  ice_in     = dice_ice_in
+(dice_comp_init)  decomp     = 1d
+(dice_comp_init)  flux_swpf  =  0.000000E+00
+(dice_comp_init)  flux_Qmin  = -3.000000E+02
+(dice_comp_init)  flux_Qacc  =   T
+(dice_comp_init)  flux_Qacc0 =  0.000000E+00
+(dice_comp_init)  restfilm   = undefined
+(dice_comp_init)  restfils   = undefined
+(shr_strdata_readnml) reading input namelist file: dice_ice_in
+(shr_stream_init) Reading file ssmi_ifrac.clim.x0.5.txt
+(shr_file_freeUnit) unit   85 was not in use
+(dice_comp_init)  ice mode = SSTDATA
+(shr_strdata_init)  calling shr_dmodel_mapSet for fill
+(shr_strdata_init)  calling shr_dmodel_mapSet for remap
+(shr_strdata_print) ----------------------------------------------------------
+(shr_strdata_print) name        = SDICE data
+(shr_strdata_print) dataMode    = SSTDATA
+(shr_strdata_print) domainFile  = ./domain.ocn.gx3v7.090903.nc
+(shr_strdata_print) nxg         =    100
+(shr_strdata_print) nyg         =    116
+(shr_strdata_print) io_type     =      6
+(shr_strdata_print) num_iotasks =      1
+(shr_strdata_print) io_root     =      0
+(shr_strdata_print) io_stride   =      4
+(shr_strdata_print) num_agg     =      0
+(shr_strdata_print) eccen       =  1.000000E+36
+(shr_strdata_print) mvelpp      =  1.000000E+36
+(shr_strdata_print) lambm0      =  1.000000E+36
+(shr_strdata_print) obliqr      =  1.000000E+36
+(shr_strdata_print) nstreams    =      1
+(shr_strdata_print)   streams ( 1) = ssmi_ifrac.clim.x0.5.txt 1 1 1
+(shr_strdata_print)   taxMode ( 1) = cycle
+(shr_strdata_print)   dtlimit ( 1) =  1.500000E+00
+(shr_strdata_print)   strnxg  ( 1) =    720
+(shr_strdata_print)   strnyg  ( 1) =    360
+(shr_strdata_print)   dofill  ( 1) =  T
+(shr_strdata_print)   fillalgo( 1) = nn
+(shr_strdata_print)   fillmask( 1) = nomask
+(shr_strdata_print)   fillread( 1) = NOT_SET
+(shr_strdata_print)   fillwrit( 1) = NOT_SET
+(shr_strdata_print)   domaps  ( 1) =  T
+(shr_strdata_print)   mapalgo ( 1) = bilinear
+(shr_strdata_print)   mapmask ( 1) = dstmask
+(shr_strdata_print)   mapread ( 1) = NOT_SET
+(shr_strdata_print)   mapwrit ( 1) = NOT_SET
+(shr_strdata_print)   tintalgo( 1) = linear
+(shr_strdata_print)  
+(shr_strdata_print) nvectors    =      0
+(shr_strdata_print) ----------------------------------------------------------
+(dice_comp_init)  initialize gsmaps
+(dice_comp_init) copy domains
+(dice_comp_init) allocate AVs
+(shr_dmodel_readLBUB) reading file: ./ssmi_ifrac.clim.x0.5.090319.nc      62
+(shr_dmodel_readLBUB) reading file: ./ssmi_ifrac.clim.x0.5.090319.nc       1
+(dice_comp_run) ice: model date    10101       0s
+(dice_comp_init) dice_comp_init done
+(dice_comp_run) ice: model date    10101   21600s
+(dice_comp_run) ice: model date    10101   43200s
+(shr_dmodel_readLBUB) reading file: ./ssmi_ifrac.clim.x0.5.090319.nc       2
+(dice_comp_run) ice: model date    10101   64800s
+(dice_comp_run)  writing casespec.dice.r.0001-01-02-00000.nc   10102       0s
+ (shr_pcdf_readwrite)  filename   = casespec.dice.r.0001-01-02-00000.nc
+ (shr_pcdf_readwrite)  type       = write
+ (shr_pcdf_readwrite)  clobber    =  T
+ (shr_pcdf_readwrite)  cdf64      =  F
+ (shr_pcdf_readwrite)  pio_type   =            6
+ (shr_pcdf_readwrite)  pio_root   =            0
+ (shr_pcdf_readwrite)  pio_ntasks =            1
+ (shr_pcdf_readwrite)  pio_stride =            4
+(dice_comp_run)  writing casespec.dice.rs1.0001-01-02-00000.bin   10102       0s
+(shr_stream_restWrite) case name        : casespec
+(shr_stream_restWrite) case description : SDICE strdata
+(shr_stream_restWrite) File created     : 2023-02-22 20:39:50
+(shr_stream_restWrite) Number of streams     1
+(shr_stream_restWrite) * stream     1 first file name = ssmi_ifrac.clim.x0.5.090319.nc
+(shr_stream_restWrite) * stream     1 first have data =   T
+(shr_stream_restWrite) * stream     1 first nt        =       62
+(shr_stream_restWrite) * stream     1 first date secs =    10101   43200
+(shr_stream_restWrite) * stream     1 last  date secs =    11231   43200
+(dice_comp_run) ice: model date    10102       0s
+(dice_comp_final) -------------------------------------------------------------------------
+(dice_comp_final) ice: end of main integration loop
+(dice_comp_final) -------------------------------------------------------------------------

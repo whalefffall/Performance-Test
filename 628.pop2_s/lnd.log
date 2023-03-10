@@ -1,0 +1,121 @@
+(dlnd_comp_init)  lnd_in = dlnd_lnd_in
+(dlnd_comp_init)  rof_in = dlnd_rof_in
+(dlnd_comp_init)  sno_in = dlnd_sno_in
+(dlnd_comp_init)  decomp = 1d
+(dlnd_comp_init)  restfilm  = undefined
+(dlnd_comp_init)  restfilsl = undefined
+(dlnd_comp_init)  restfilsr = undefined
+(dlnd_comp_init)  restfilss = undefined
+(shr_strdata_readnml) reading input namelist file: dlnd_lnd_in
+(shr_strdata_readnml) reading input namelist file: dlnd_rof_in
+(shr_stream_init) Reading file runoff.1x1.stream.txt
+(shr_file_freeUnit) unit   96 was not in use
+(shr_strdata_readnml) reading input namelist file: dlnd_sno_in
+(dlnd_comp_init)  lnd mode = NULL
+(dlnd_comp_init)  rof mode = RX1
+(dlnd_comp_init)  sno mode = NULL
+(shr_strdata_print) ----------------------------------------------------------
+(shr_strdata_print) name        = SDLND data
+(shr_strdata_print) dataMode    = NULL
+(shr_strdata_print) domainFile  = ./domain.lnd.fv4x5_gx3v7.091218.nc
+(shr_strdata_print) nxg         =      0
+(shr_strdata_print) nyg         =      0
+(shr_strdata_print) io_type     =      6
+(shr_strdata_print) num_iotasks =      1
+(shr_strdata_print) io_root     =      0
+(shr_strdata_print) io_stride   =      4
+(shr_strdata_print) num_agg     =      0
+(shr_strdata_print) eccen       =  1.000000E+36
+(shr_strdata_print) mvelpp      =  1.000000E+36
+(shr_strdata_print) lambm0      =  1.000000E+36
+(shr_strdata_print) obliqr      =  1.000000E+36
+(shr_strdata_print) nstreams    =      0
+(shr_strdata_print) nvectors    =      0
+(shr_strdata_print) ----------------------------------------------------------
+(shr_strdata_print) ----------------------------------------------------------
+(shr_strdata_print) name        = SDROF data
+(shr_strdata_print) dataMode    = RX1
+(shr_strdata_print) domainFile  = null
+(shr_strdata_print) nxg         =    360
+(shr_strdata_print) nyg         =    180
+(shr_strdata_print) io_type     =      6
+(shr_strdata_print) num_iotasks =      1
+(shr_strdata_print) io_root     =      0
+(shr_strdata_print) io_stride   =      4
+(shr_strdata_print) num_agg     =      0
+(shr_strdata_print) eccen       =  1.000000E+36
+(shr_strdata_print) mvelpp      =  1.000000E+36
+(shr_strdata_print) lambm0      =  1.000000E+36
+(shr_strdata_print) obliqr      =  1.000000E+36
+(shr_strdata_print) nstreams    =      1
+(shr_strdata_print)   streams ( 1) = runoff.1x1.stream.txt 1 1 1
+(shr_strdata_print)   taxMode ( 1) = cycle
+(shr_strdata_print)   dtlimit ( 1) =  1.500000E+00
+(shr_strdata_print)   strnxg  ( 1) =    360
+(shr_strdata_print)   strnyg  ( 1) =    180
+(shr_strdata_print)   dofill  ( 1) =  F
+(shr_strdata_print)   fillalgo( 1) = nn
+(shr_strdata_print)   fillmask( 1) = nomask
+(shr_strdata_print)   fillread( 1) = NOT_SET
+(shr_strdata_print)   fillwrit( 1) = NOT_SET
+(shr_strdata_print)   domaps  ( 1) =  F
+(shr_strdata_print)   mapalgo ( 1) = bilinear
+(shr_strdata_print)   mapmask ( 1) = dstmask
+(shr_strdata_print)   mapread ( 1) = NOT_SET
+(shr_strdata_print)   mapwrit ( 1) = NOT_SET
+(shr_strdata_print)   tintalgo( 1) = upper
+(shr_strdata_print)  
+(shr_strdata_print) nvectors    =      0
+(shr_strdata_print) ----------------------------------------------------------
+(shr_strdata_print) ----------------------------------------------------------
+(shr_strdata_print) name        = SDSNO data
+(shr_strdata_print) dataMode    = NULL
+(shr_strdata_print) domainFile  = null
+(shr_strdata_print) nxg         =      0
+(shr_strdata_print) nyg         =      0
+(shr_strdata_print) io_type     =      6
+(shr_strdata_print) num_iotasks =      1
+(shr_strdata_print) io_root     =      0
+(shr_strdata_print) io_stride   =      4
+(shr_strdata_print) num_agg     =      0
+(shr_strdata_print) eccen       =  1.000000E+36
+(shr_strdata_print) mvelpp      =  1.000000E+36
+(shr_strdata_print) lambm0      =  1.000000E+36
+(shr_strdata_print) obliqr      =  1.000000E+36
+(shr_strdata_print) nstreams    =      0
+(shr_strdata_print) nvectors    =      0
+(shr_strdata_print) ----------------------------------------------------------
+(dlnd_comp_init)  initialize gsmaps
+(dlnd_comp_init) copy domains
+(dlnd_comp_init) allocate AVs
+(shr_dmodel_readLBUB) reading file: ./runoff.daitren.annual.090225.nc       2
+(shr_dmodel_readLBUB) reading file: ./runoff.daitren.annual.090225.nc       1
+(dlnd_comp_run) lnd: model date    10101       0s
+(dlnd_comp_init) dlnd_comp_init done
+(dlnd_comp_run) lnd: model date    10101   21600s
+(dlnd_comp_run) lnd: model date    10101   43200s
+(dlnd_comp_run) lnd: model date    10101   64800s
+(dlnd_comp_run)  writing casespec.dlnd.rs1.0001-01-02-00000.bin   10102       0s
+(shr_stream_restWrite) case name        : casespec
+(shr_stream_restWrite) case description : SDLND strdata
+(shr_stream_restWrite) File created     : 2023-02-22 20:39:50
+(shr_stream_restWrite) Number of streams     0
+(dlnd_comp_run)  writing casespec.dlnd.rs2.0001-01-02-00000.bin   10102       0s
+(shr_stream_restWrite) case name        : casespec
+(shr_stream_restWrite) case description : SDROF strdata
+(shr_stream_restWrite) File created     : 2023-02-22 20:39:50
+(shr_stream_restWrite) Number of streams     1
+(shr_stream_restWrite) * stream     1 first file name = runoff.daitren.annual.090225.nc
+(shr_stream_restWrite) * stream     1 first have data =   T
+(shr_stream_restWrite) * stream     1 first nt        =        2
+(shr_stream_restWrite) * stream     1 first date secs =    10102       0
+(shr_stream_restWrite) * stream     1 last  date secs =    10630       0
+(dlnd_comp_run)  writing casespec.dlnd.rs3.0001-01-02-00000.bin   10102       0s
+(shr_stream_restWrite) case name        : casespec
+(shr_stream_restWrite) case description : SDSNO strdata
+(shr_stream_restWrite) File created     : 2023-02-22 20:39:50
+(shr_stream_restWrite) Number of streams     0
+(dlnd_comp_run) lnd: model date    10102       0s
+(dlnd_comp_final) -------------------------------------------------------------------------
+(dlnd_comp_final) lnd: end of main integration loop
+(dlnd_comp_final) -------------------------------------------------------------------------

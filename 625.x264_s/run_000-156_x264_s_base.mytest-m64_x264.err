@@ -1,0 +1,23 @@
+yuv [info]: 1280x720p 0:0 @ 25/1 fps (cfr)
+x264 [info]: using cpu capabilities: none!
+x264 [info]: profile High, level 3.1
+                                                                               x264 [info]: frame I:2     Avg QP:16.53  size: 90388
+x264 [info]: frame P:58    Avg QP:23.50  size: 30333
+x264 [info]: frame B:96    Avg QP:28.74  size:  1839
+x264 [info]: consecutive B-frames:  1.3% 23.4% 70.1%  5.2%
+x264 [info]: mb I  I16..4: 50.3% 38.1% 11.6%
+x264 [info]: mb P  I16..4:  0.7%  1.1%  0.2%  P16..4: 37.9% 25.4% 20.5%  0.0%  0.0%    skip:14.2%
+x264 [info]: mb B  I16..4:  0.0%  0.0%  0.0%  B16..8: 40.4%  1.7%  0.2%  direct: 0.2%  skip:57.5%  L0:38.9% L1:55.4% BI: 5.7%
+x264 [info]: 8x8 transform intra:43.7% inter:51.8%
+x264 [info]: coded y,uvDC,uvAC intra: 45.6% 58.1% 30.8% inter: 16.8% 16.1% 2.8%
+x264 [info]: i16 v,h,dc,p: 82%  9%  7%  2%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 16% 14% 22%  7%  8%  8%  8%  8%  9%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 19% 14% 21%  7%  8%  9%  7%  8%  7%
+x264 [info]: i8c dc,h,v,p: 65% 15% 15%  5%
+x264 [info]: Weighted P-Frames: Y:0.0%
+x264 [info]: ref P L0: 67.1% 21.4%  9.5%  1.9%
+x264 [info]: ref B L0: 86.3% 13.0%  0.7%
+x264 [info]: ref B L1: 89.5% 10.5%
+x264 [info]: kb/s:2713.67
+
+encoded 156 frames, inf fps, 2713.67 kb/s

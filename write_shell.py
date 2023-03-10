@@ -49,13 +49,13 @@ def generate(type:str):
                         f_out.write("    do\n")
                         f_out.write("        " + command + "\n")
                         f_out.write("done\n")
-                        f_out.write("echo one warm up!")
+                        f_out.write("echo finish one warm up!\n")
 
                         f_out.write("for((var=0; var<$execute; var++))\n")
                         f_out.write("    do\n")
                         f_out.write("        " + command + "\n")
                         f_out.write("done\n\n")
-                        f_out.write("echo one command!")
+                        f_out.write("echo finish one command!\n")
 
                 if type == "SGX":
                     f_out.write("# Gramine-SGX\n")
@@ -67,11 +67,14 @@ def generate(type:str):
                             f_out.write("    do\n")
                             f_out.write("        " + command + "\n")
                             f_out.write("done\n")
+                            f_out.write("echo finish one warm up!\n")
+
 
                             f_out.write("for((var=0; var<$execute; var++))\n")
                             f_out.write("    do\n")
                             f_out.write("        " + command + "\n")
-                            f_out.write("done\n\n")
+                            f_out.write("echo finish one command!\n")
+
                 
                 if type == "SGX":
                     f_out.write("# Gramine-Direct\n")
@@ -83,15 +86,20 @@ def generate(type:str):
                             f_out.write("    do\n")
                             f_out.write("        " + command + "\n")
                             f_out.write("done\n")
+                            f_out.write("echo finish one warm up!\n")
+
 
                             f_out.write("for((var=0; var<$execute; var++))\n")
                             f_out.write("    do\n")
                             f_out.write("        " + command + "\n")
                             f_out.write("done\n\n")
+                            f_out.write("echo finish one command!\n")
+
                 with open(os.path.join(root, "run_all.sh"), "a") as f_all:
                     f_all.write("cd ./" + dir + "\n")
                     f_all.write("./run.sh  -w $warmUp -e $execute\n")
                     f_all.write("cd ..\n")
+                    f_all.write("echo finish one benchmark!\n")
                     f_all.close()
                 
                 f_out.close()

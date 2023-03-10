@@ -6,6 +6,7 @@ execute = 3
 # print(dir_list)
 # exit()
 cmd_file = "speccmds.cmd"
+log_file = "1.out"
 
 os.system("python3 remove_shell.py")
 
@@ -49,7 +50,7 @@ def generate(type:str):
                         cmd_cnt += 1
                         words = cmd.split(" ")
                         exec_file = words[4].split("/")[2]
-                        command = "{ time -p ./" + exec_file + " " + " ".join(words[5:len(words)-4]) + " > /dev/null 2>&1;} >> 1.out 2>&1"
+                        command = "{ time -p ./" + exec_file + " " + " ".join(words[5:]) + " ;} >> " + log_file + " 2>&1"
                         
                         f_out.write("echo start warm up for command %d\n"%cmd_cnt)
                         f_out.write("for((var=0; var<$warmUp; var++))\n")
@@ -69,7 +70,7 @@ def generate(type:str):
                         cmd_cnt += 1
                         words = cmd.split(" ")
                         exec_file = words[6].split("/")[2]
-                        command = "{ time -p ./" + exec_file + " " + " ".join(words[7:len(words)-4]) + " > /dev/null 2>&1;} >> 1.out 2>&1"
+                        command = "{ time -p ./" + exec_file + " " + " ".join(words[7:]) + " ;} >> " + log_file + " 2>&1"
                         
                         f_out.write("echo start warm up for command %d\n"%cmd_cnt)
                         f_out.write("for((var=0; var<$warmUp; var++))\n")

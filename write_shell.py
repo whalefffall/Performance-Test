@@ -78,6 +78,7 @@ def generate(type:str):
         command = 'chmod +x ' + fout_path
         os.system(command)
 generate(type)
+print(os.system("chmod +x run_all.sh"))
 '''
 #!/bin/bash
 let warmUp=20      

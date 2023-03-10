@@ -48,7 +48,7 @@ def generate(type:str):
                 for cmd in cmds:
                     if cmd.startswith("-o "):
                         cmd_cnt += 1
-                        words = cmd.trim("\n").split(" ")
+                        words = cmd.strip("\n").split(" ")
                         exec_file = words[4].split("/")[2]
                         command = "{ time -p ./" + exec_file + " " + " ".join(words[5:]) + " ;} >> " + log_file + " 2>&1"
                         
@@ -68,7 +68,7 @@ def generate(type:str):
 
                     elif cmd.startswith("-i "):
                         cmd_cnt += 1
-                        words = cmd.trim("\n").split(" ")
+                        words = cmd.strip("\n").split(" ")
                         exec_file = words[6].split("/")[2]
                         command = "{ time -p ./" + exec_file + " " + " ".join(words[7:]) + " ;} >> " + log_file + " 2>&1"
                         

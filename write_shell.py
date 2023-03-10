@@ -44,7 +44,7 @@ def generate(type:str):
                     if cmd.startswith("-o "):
                         words = cmd.split(" ")
                         exec_file = words[4].split("/")[2]
-                        command = "{ time -p ./" + " ".join(exec_file, words[5:len(words)-4]) + " > /dev/null 2>&1;} >> 1.out 2>&1"
+                        command = "{ time -p ./" + exec_file + " " + " ".join(words[5:len(words)-4]) + " > /dev/null 2>&1;} >> 1.out 2>&1"
                         f_out.write("for((var=0; var<$warmUp; var++))\n")
                         f_out.write("    do\n")
                         f_out.write("        " + command + "\n")
@@ -60,7 +60,7 @@ def generate(type:str):
                     for cmd in cmds:
                         if cmd.startswith("-o "):
                             words = cmd.split(" ")
-                            command = "{ time -p gramine-sgx ./" + " ".join(exec_file, words[5:len(words)-4]) + " > /dev/null 2>&1;} >> 1.out 2>&1"
+                            command = "{ time -p gramine-sgx ./" + exec_file + " " + " ".join(words[5:len(words)-4]) + " > /dev/null 2>&1;} >> 1.out 2>&1"
                             f_out.write("for((var=0; var<$warmUp; var++))\n")
                             f_out.write("    do\n")
                             f_out.write("        " + command + "\n")
@@ -76,7 +76,7 @@ def generate(type:str):
                     for cmd in cmds:
                         if cmd.startswith("-o "):
                             words = cmd.split(" ")
-                            command = "gramine-direct ./" + " ".join(exec_file, words[5:len(words)-4]) + " > /dev/null 2>&1;} >> 1.out 2>&1"
+                            command = "gramine-direct ./" + exec_file + " " + " ".join(words[5:len(words)-4]) + " > /dev/null 2>&1;} >> 1.out 2>&1"
                             f_out.write("for((var=0; var<$warmUp; var++))\n")
                             f_out.write("    do\n")
                             f_out.write("        " + command + "\n")

@@ -1,8 +1,8 @@
 import os
 root = os.getcwd()
 # dir_list = os.listdir(root)
-warmUp = 3
-execute = 5
+warmUp = 2
+execute = 3
 # print(dir_list)
 # exit()
 cmd_file = "speccmds.cmd"
@@ -42,60 +42,29 @@ def generate(type:str):
             
                 f_out.write("# Bare Ubuntu\n")
                 cmds = f_in.readlines()
+                cmd_cnt = 0
                 for cmd in cmds:
                     if cmd.startswith("-o "):
+                        cnt += 1
                         words = cmd.split(" ")
                         exec_file = words[4].split("/")[2]
                         command = "{ time -p ./" + exec_file + " " + " ".join(words[5:len(words)-4]) + " > /dev/null 2>&1;} >> 1.out 2>&1"
+                        
+                        f_out.write("echo start warm up for command %d\n"%cnt)
                         f_out.write("for((var=0; var<$warmUp; var++))\n")
                         f_out.write("    do\n")
                         f_out.write("        " + command + "\n")
                         f_out.write("done\n")
                         f_out.write("echo finish one warm up!\n")
-
+                        
+                        f_out.write("echo start execute command %d\n"%cnt)
                         f_out.write("for((var=0; var<$execute; var++))\n")
                         f_out.write("    do\n")
                         f_out.write("        " + command + "\n")
                         f_out.write("done\n\n")
                         f_out.write("echo finish one command!\n")
 
-                if type == "SGX":
-                    f_out.write("# Gramine-SGX\n")
-                    for cmd in cmds:
-                        if cmd.startswith("-o "):
-                            words = cmd.split(" ")
-                            command = "{ time -p gramine-sgx ./" + exec_file + " " + " ".join(words[5:len(words)-4]) + " > /dev/null 2>&1;} >> 1.out 2>&1"
-                            f_out.write("for((var=0; var<$warmUp; var++))\n")
-                            f_out.write("    do\n")
-                            f_out.write("        " + command + "\n")
-                            f_out.write("done\n")
-                            f_out.write("echo finish one warm up!\n")
-
-
-                            f_out.write("for((var=0; var<$execute; var++))\n")
-                            f_out.write("    do\n")
-                            f_out.write("        " + command + "\n")
-                            f_out.write("echo finish one command!\n")
-
                 
-                if type == "SGX":
-                    f_out.write("# Gramine-Direct\n")
-                    for cmd in cmds:
-                        if cmd.startswith("-o "):
-                            words = cmd.split(" ")
-                            command = "gramine-direct ./" + exec_file + " " + " ".join(words[5:len(words)-4]) + " > /dev/null 2>&1;} >> 1.out 2>&1"
-                            f_out.write("for((var=0; var<$warmUp; var++))\n")
-                            f_out.write("    do\n")
-                            f_out.write("        " + command + "\n")
-                            f_out.write("done\n")
-                            f_out.write("echo finish one warm up!\n")
-
-
-                            f_out.write("for((var=0; var<$execute; var++))\n")
-                            f_out.write("    do\n")
-                            f_out.write("        " + command + "\n")
-                            f_out.write("done\n\n")
-                            f_out.write("echo finish one command!\n")
 
                 with open(os.path.join(root, "run_all.sh"), "a") as f_all:
                     f_all.write("cd ./" + dir + "\n")

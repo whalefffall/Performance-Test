@@ -39,12 +39,33 @@ def generate(type:str):
             with open(fout_path, "w") as f_out:
             
                 f_out.write("#!/bin/bash \nlet warmUp=%d\nlet execute=%d\nwhile getopts \":w:e:\" opt\ndo\n    case $opt in\n        w)\n            warmUp=$OPTARG\n        ;;\n        e)\n            execute=$OPTARG\n        ;;\n        ?)\n        echo \"Unknown parameter\"\n        exit 1;;\nesac done\n" % (warmUp, execute)) 
-            
+
+                f_out.write("echo start benchmark %s\n"%dir)
                 f_out.write("# Bare Ubuntu\n")
                 cmds = f_in.readlines()
                 cmd_cnt = 0
                 for cmd in cmds:
                     if cmd.startswith("-o "):
+                        cmd_cnt += 1
+                        words = cmd.split(" ")
+                        exec_file = words[4].split("/")[2]
+                        command = "{ time -p ./" + exec_file + " " + " ".join(words[5:len(words)-4]) + " > /dev/null 2>&1;} >> 1.out 2>&1"
+                        
+                        f_out.write("echo start warm up for command %d\n"%cmd_cnt)
+                        f_out.write("for((var=0; var<$warmUp; var++))\n")
+                        f_out.write("    do\n")
+                        f_out.write("        " + command + "\n")
+                        f_out.write("done\n")
+                        f_out.write("echo finish one warm up!\n")
+                        
+                        f_out.write("echo start execute command %d\n"%cmd_cnt)
+                        f_out.write("for((var=0; var<$execute; var++))\n")
+                        f_out.write("    do\n")
+                        f_out.write("        " + command + "\n")
+                        f_out.write("done\n\n")
+                        f_out.write("echo finish one command!\n")
+
+                    elif cmd.startswith("-i "):
                         cmd_cnt += 1
                         words = cmd.split(" ")
                         exec_file = words[4].split("/")[2]

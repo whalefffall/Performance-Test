@@ -68,8 +68,8 @@ def generate(type:str):
                     elif cmd.startswith("-i "):
                         cmd_cnt += 1
                         words = cmd.split(" ")
-                        exec_file = words[4].split("/")[2]
-                        command = "{ time -p ./" + exec_file + " " + " ".join(words[5:len(words)-4]) + " > /dev/null 2>&1;} >> 1.out 2>&1"
+                        exec_file = words[6].split("/")[2]
+                        command = "{ time -p ./" + exec_file + " " + " ".join(words[7:len(words)-4]) + " > /dev/null 2>&1;} >> 1.out 2>&1"
                         
                         f_out.write("echo start warm up for command %d\n"%cmd_cnt)
                         f_out.write("for((var=0; var<$warmUp; var++))\n")

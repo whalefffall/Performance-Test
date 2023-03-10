@@ -95,7 +95,8 @@ def generate(type:str):
                 
                 f_out.close()
             f_in.close() 
-
+        command = 'chmod +x ' + fout_path
+        os.system(command)
 generate(type)
 '''
 #!/bin/bash

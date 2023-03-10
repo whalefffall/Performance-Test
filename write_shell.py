@@ -45,19 +45,19 @@ def generate(type:str):
                 cmd_cnt = 0
                 for cmd in cmds:
                     if cmd.startswith("-o "):
-                        cnt += 1
+                        cmd_cnt += 1
                         words = cmd.split(" ")
                         exec_file = words[4].split("/")[2]
                         command = "{ time -p ./" + exec_file + " " + " ".join(words[5:len(words)-4]) + " > /dev/null 2>&1;} >> 1.out 2>&1"
                         
-                        f_out.write("echo start warm up for command %d\n"%cnt)
+                        f_out.write("echo start warm up for command %d\n"%cmd_cnt)
                         f_out.write("for((var=0; var<$warmUp; var++))\n")
                         f_out.write("    do\n")
                         f_out.write("        " + command + "\n")
                         f_out.write("done\n")
                         f_out.write("echo finish one warm up!\n")
                         
-                        f_out.write("echo start execute command %d\n"%cnt)
+                        f_out.write("echo start execute command %d\n"%cmd_cnt)
                         f_out.write("for((var=0; var<$execute; var++))\n")
                         f_out.write("    do\n")
                         f_out.write("        " + command + "\n")

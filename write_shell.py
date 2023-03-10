@@ -22,7 +22,7 @@ type = "SEV"
 def generate(type:str):
     with open(os.path.join(root, "run_all.sh"), "a") as f_all:
         f_all.write("#!/bin/bash \nlet warmUp=%d\nlet execute=%d\nwhile getopt \":w:e:\" opt\ndo\n    case $opt in\n        w)\n            warmUp=$OPTARG\n        ;;\n\
-        e)\n            execute=$OPTARG\n        ;;\n        ?)\n        echo \"Unknown parameter\"\n        exit 1;;\nesac done\n" % {warmUp, execute}) 
+        e)\n            execute=$OPTARG\n        ;;\n        ?)\n        echo \"Unknown parameter\"\n        exit 1;;\nesac done\n" % (warmUp, execute)) 
                     
     for dir in dirs:
         cur_path = os.path.join(root, dir)
@@ -37,7 +37,7 @@ def generate(type:str):
             with open(fout_path, "w") as f_out:
             
                 f_out.write("#!/bin/bash \nlet warmUp=%d\nlet execute=%d\nwhile getopt \":w:e:\" opt\ndo\n    case $opt in\n        w)\n            warmUp=$OPTARG\n        ;;\n\
-        e)\n            execute=$OPTARG\n        ;;\n        ?)\n        echo \"Unknown parameter\"\n        exit 1;;\nesac done\n" % {warmUp, execute}) 
+        e)\n            execute=$OPTARG\n        ;;\n        ?)\n        echo \"Unknown parameter\"\n        exit 1;;\nesac done\n" % (warmUp, execute)) 
             
                 f_out.write("# Bare Ubuntu\n")
                 cmds = f_in.readlines()

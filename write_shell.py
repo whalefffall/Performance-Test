@@ -21,7 +21,7 @@ type = "SEV"
 # generate script
 def generate(type:str):
     with open(os.path.join(root, "run_all.sh"), "a") as f_all:
-        f_all.write("#!/bin/bash \nlet warmUp=%d\nlet execute=%d\nwhile getopt \":w:e:\" opt\ndo\n    case $opt in\n        w)\n            warmUp=$OPTARG\n        ;;\n        e)\n            execute=$OPTARG\n        ;;\n        ?)\n        echo \"Unknown parameter\"\n        exit 1;;\nesac done\n" % (warmUp, execute)) 
+        f_all.write("#!/bin/bash \nlet warmUp=%d\nlet execute=%d\nwhile getopts \":w:e:\" opt\ndo\n    case $opt in\n        w)\n            warmUp=$OPTARG\n        ;;\n        e)\n            execute=$OPTARG\n        ;;\n        ?)\n        echo \"Unknown parameter\"\n        exit 1;;\nesac done\n" % (warmUp, execute)) 
         f_all.close()
                     
     for dir in dirs:
@@ -36,7 +36,7 @@ def generate(type:str):
         with open(fin_path, "r") as f_in:
             with open(fout_path, "w") as f_out:
             
-                f_out.write("#!/bin/bash \nlet warmUp=%d\nlet execute=%d\nwhile getopt \":w:e:\" opt\ndo\n    case $opt in\n        w)\n            warmUp=$OPTARG\n        ;;\n        e)\n            execute=$OPTARG\n        ;;\n        ?)\n        echo \"Unknown parameter\"\n        exit 1;;\nesac done\n" % (warmUp, execute)) 
+                f_out.write("#!/bin/bash \nlet warmUp=%d\nlet execute=%d\nwhile getopts \":w:e:\" opt\ndo\n    case $opt in\n        w)\n            warmUp=$OPTARG\n        ;;\n        e)\n            execute=$OPTARG\n        ;;\n        ?)\n        echo \"Unknown parameter\"\n        exit 1;;\nesac done\n" % (warmUp, execute)) 
             
                 f_out.write("# Bare Ubuntu\n")
                 cmds = f_in.readlines()
@@ -49,11 +49,13 @@ def generate(type:str):
                         f_out.write("    do\n")
                         f_out.write("        " + command + "\n")
                         f_out.write("done\n")
+                        f_out.write("echo one warm up!")
 
                         f_out.write("for((var=0; var<$execute; var++))\n")
                         f_out.write("    do\n")
                         f_out.write("        " + command + "\n")
                         f_out.write("done\n\n")
+                        f_out.write("echo one command!")
 
                 if type == "SGX":
                     f_out.write("# Gramine-SGX\n")

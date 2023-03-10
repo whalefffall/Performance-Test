@@ -15,7 +15,7 @@ remote: error: GH001: Large files detected. You may want to try Git Large File S
 '''
 import os
 files = ['525.x264_r/BuckBunny.yuv','628.pop2_s/speed_pop2_base.mytest-m64', '527.cam4_r/aero_1.9x2.5_L26_2000clim_c091112.nc', '510.parest_r/parest_r_base.mytest-m64','628.pop2_s/nyf.ncep.T62.050923.nc','526.blender_r/blender_r_base.mytest-m64','627.cam4_s/aero_1.9x2.5_L26_2000clim_c091112.nc','625.x264_s/BuckBunny.yuv']
-files = ['627.cam4_s/aero_1.9x2.5_L26_2000clim_c091112.nc','625.x264_s/BuckBunny.yuv']
+# files = ['627.cam4_s/aero_1.9x2.5_L26_2000clim_c091112.nc','625.x264_s/BuckBunny.yuv']
 def compress():
     for file in files:
         command = 'tar czf - ./' + file + ' | split -b 80m - ./' + file + '.tar.gz'

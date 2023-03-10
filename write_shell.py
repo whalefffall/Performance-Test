@@ -36,8 +36,7 @@ def generate(type:str):
         with open(fin_path, "r") as f_in:
             with open(fout_path, "w") as f_out:
             
-                f_out.write("#!/bin/bash \nlet warmUp=%d\nlet execute=%d\nwhile getopt \":w:e:\" opt\ndo\n    case $opt in\n        w)\n            warmUp=$OPTARG\n        ;;\n\
-        e)\n            execute=$OPTARG\n        ;;\n        ?)\n        echo \"Unknown parameter\"\n        exit 1;;\nesac done\n" % (warmUp, execute)) 
+                f_out.write("#!/bin/bash \nlet warmUp=%d\nlet execute=%d\nwhile getopt \":w:e:\" opt\ndo\n    case $opt in\n        w)\n            warmUp=$OPTARG\n        ;;\n\            e)\n            execute=$OPTARG\n        ;;\n        ?)\n        echo \"Unknown parameter\"\n        exit 1;;\nesac done\n" % (warmUp, execute)) 
             
                 f_out.write("# Bare Ubuntu\n")
                 cmds = f_in.readlines()

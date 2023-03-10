@@ -19,13 +19,13 @@ echo start benchmark 511.povray_r
 echo start warm up for command 1
 for((var=0; var<$warmUp; var++))
     do
-        { time -p ./povray_r_base.mytest-m64 SPEC-benchmark-test.ini > /dev/null 2>&1;} >> 1.out 2>&1
+        { time -p ./povray_r_base.mytest-m64 SPEC-benchmark-test.ini > SPEC-benchmark-test.stdout 2>> SPEC-benchmark-test.stderr ;} >> 1.out 2>&1
 done
 echo finish one warm up!
 echo start execute command 1
 for((var=0; var<$execute; var++))
     do
-        { time -p ./povray_r_base.mytest-m64 SPEC-benchmark-test.ini > /dev/null 2>&1;} >> 1.out 2>&1
+        { time -p ./povray_r_base.mytest-m64 SPEC-benchmark-test.ini > SPEC-benchmark-test.stdout 2>> SPEC-benchmark-test.stderr ;} >> 1.out 2>&1
 done
 
 echo finish one command!

@@ -19,13 +19,13 @@ echo start benchmark 996.specrand_fs
 echo start warm up for command 1
 for((var=0; var<$warmUp; var++))
     do
-        { time -p ./specrand_fs_base.mytest-m64 324342 24239 > /dev/null 2>&1;} >> 1.out 2>&1
+        { time -p ./specrand_fs_base.mytest-m64 324342 24239 > rand.24239.out 2>> rand.24239.err ;} >> 1.out 2>&1
 done
 echo finish one warm up!
 echo start execute command 1
 for((var=0; var<$execute; var++))
     do
-        { time -p ./specrand_fs_base.mytest-m64 324342 24239 > /dev/null 2>&1;} >> 1.out 2>&1
+        { time -p ./specrand_fs_base.mytest-m64 324342 24239 > rand.24239.out 2>> rand.24239.err ;} >> 1.out 2>&1
 done
 
 echo finish one command!

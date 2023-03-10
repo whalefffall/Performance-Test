@@ -19,26 +19,26 @@ echo start benchmark 603.bwaves_s
 echo start warm up for command 1
 for((var=0; var<$warmUp; var++))
     do
-        { time -p ./speed_bwaves_base.mytest-m64 bwaves_1 < bwaves_1.in > /dev/null 2>&1;} >> 1.out 2>&1
+        { time -p ./speed_bwaves_base.mytest-m64 bwaves_1 < bwaves_1.in > bwaves_1.out 2>> bwaves_1.err ;} >> 1.out 2>&1
 done
 echo finish one warm up!
 echo start execute command 1
 for((var=0; var<$execute; var++))
     do
-        { time -p ./speed_bwaves_base.mytest-m64 bwaves_1 < bwaves_1.in > /dev/null 2>&1;} >> 1.out 2>&1
+        { time -p ./speed_bwaves_base.mytest-m64 bwaves_1 < bwaves_1.in > bwaves_1.out 2>> bwaves_1.err ;} >> 1.out 2>&1
 done
 
 echo finish one command!
 echo start warm up for command 2
 for((var=0; var<$warmUp; var++))
     do
-        { time -p ./speed_bwaves_base.mytest-m64 bwaves_2 < bwaves_2.in > /dev/null 2>&1;} >> 1.out 2>&1
+        { time -p ./speed_bwaves_base.mytest-m64 bwaves_2 < bwaves_2.in > bwaves_2.out 2>> bwaves_2.err ;} >> 1.out 2>&1
 done
 echo finish one warm up!
 echo start execute command 2
 for((var=0; var<$execute; var++))
     do
-        { time -p ./speed_bwaves_base.mytest-m64 bwaves_2 < bwaves_2.in > /dev/null 2>&1;} >> 1.out 2>&1
+        { time -p ./speed_bwaves_base.mytest-m64 bwaves_2 < bwaves_2.in > bwaves_2.out 2>> bwaves_2.err ;} >> 1.out 2>&1
 done
 
 echo finish one command!

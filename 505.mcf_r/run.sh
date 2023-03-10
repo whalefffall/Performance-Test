@@ -19,13 +19,13 @@ echo start benchmark 505.mcf_r
 echo start warm up for command 1
 for((var=0; var<$warmUp; var++))
     do
-        { time -p ./mcf_r_base.mytest-m64 inp.in  > /dev/null 2>&1;} >> 1.out 2>&1
+        { time -p ./mcf_r_base.mytest-m64 inp.in  > inp.out 2>> inp.err ;} >> 1.out 2>&1
 done
 echo finish one warm up!
 echo start execute command 1
 for((var=0; var<$execute; var++))
     do
-        { time -p ./mcf_r_base.mytest-m64 inp.in  > /dev/null 2>&1;} >> 1.out 2>&1
+        { time -p ./mcf_r_base.mytest-m64 inp.in  > inp.out 2>> inp.err ;} >> 1.out 2>&1
 done
 
 echo finish one command!

@@ -19,13 +19,13 @@ echo start benchmark 644.nab_s
 echo start warm up for command 1
 for((var=0; var<$warmUp; var++))
     do
-        { time -p ./nab_s_base.mytest-m64 hkrdenq 1930344093 1000 > /dev/null 2>&1;} >> 1.out 2>&1
+        { time -p ./nab_s_base.mytest-m64 hkrdenq 1930344093 1000 > hkrdenq.out 2>> hkrdenq.err ;} >> 1.out 2>&1
 done
 echo finish one warm up!
 echo start execute command 1
 for((var=0; var<$execute; var++))
     do
-        { time -p ./nab_s_base.mytest-m64 hkrdenq 1930344093 1000 > /dev/null 2>&1;} >> 1.out 2>&1
+        { time -p ./nab_s_base.mytest-m64 hkrdenq 1930344093 1000 > hkrdenq.out 2>> hkrdenq.err ;} >> 1.out 2>&1
 done
 
 echo finish one command!

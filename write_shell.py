@@ -22,7 +22,8 @@ type = "SEV"
 def generate(type:str):
     with open(os.path.join(root, "run_all.sh"), "a") as f_all:
         f_all.write("#!/bin/bash \nlet warmUp=%d\nlet execute=%d\nwhile getopt \":w:e:\" opt\ndo\n    case $opt in\n        w)\n            warmUp=$OPTARG\n        ;;\n\
-        e)\n            execute=$OPTARG\n        ;;\n        ?)\n        echo \"Unknown parameter\"\n        exit 1;;\nesac done\n" % (warmUp, execute)) 
+        e)\n            execute=$OPTARG\n        ;;\n        ?)\n        echo \"Unknown parameter\"\n        exit 1;;\nesac done\n" % (warmUp, execute))
+        f_all.close()
                     
     for dir in dirs:
         cur_path = os.path.join(root, dir)
@@ -86,14 +87,14 @@ def generate(type:str):
                             f_out.write("    do\n")
                             f_out.write("        " + command + "\n")
                             f_out.write("done\n\n")
-
-                f_all.write("cd ./" + dir + "\n")
-                f_all.write("./run.sh  -w $warmUp -e $execute\n")
-                f_all.write("cd ..\n")
+                with open(os.path.join(root, "run_all.sh"), "a") as f_all:
+                    f_all.write("cd ./" + dir + "\n")
+                    f_all.write("./run.sh  -w $warmUp -e $execute\n")
+                    f_all.write("cd ..\n")
+                    f_all.close()
                 
-            f_out.close()
-        f_in.close()
-    f_all.close()   
+                f_out.close()
+            f_in.close() 
 
 generate(type)
 '''

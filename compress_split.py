@@ -33,5 +33,6 @@ def merge():
         command = 'cat ./'+file+'.tar.gz* | tar -xzv'
         os.system(command)
         print("Merge ", file)
-compress()
-clean()
+# compress()
+# clean()
+merge()

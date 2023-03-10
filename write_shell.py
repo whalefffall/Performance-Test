@@ -48,4 +48,98 @@ def generate(type:str):
                         command = "{ time -p ./" + exec_file + " ".join(words[5:len(words)-5]) + " > /dev/null 2>&1;} >> 1.out 2>&1"
                         f_out.write("for((var=0; var<$warmUp; var++))\n")
                         f_out.write("    do\n")
-              
+                        f_out.write("        " + command + "\n")
+                        f_out.write("done\n")
+
+                        f_out.write("for((var=0; var<$execute; var++))\n")
+                        f_out.write("    do\n")
+                        f_out.write("        " + command + "\n")
+                        f_out.write("done\n\n")
+
+                if type == "SGX":
+                    f_out.write("# Gramine-SGX\n")
+                    for cmd in cmds:
+                        if cmd.startswith("-o "):
+                            words = cmd.split(" ")
+                            command = "{ time -p gramine-sgx ./" + exec_file + " ".join(words[5:len(words)-5]) + " > /dev/null 2>&1;} >> 1.out 2>&1"
+                            f_out.write("for((var=0; var<$warmUp; var++))\n")
+                            f_out.write("    do\n")
+                            f_out.write("        " + command + "\n")
+                            f_out.write("done\n")
+
+                            f_out.write("for((var=0; var<$execute; var++))\n")
+                            f_out.write("    do\n")
+                            f_out.write("        " + command + "\n")
+                            f_out.write("done\n\n")
+                
+                if type == "SGX":
+                    f_out.write("# Gramine-Direct\n")
+                    for cmd in cmds:
+                        if cmd.startswith("-o "):
+                            words = cmd.split(" ")
+                            command = "gramine-direct ./" + exec_file + " ".join(words[5:len(words)-5]) + " > /dev/null 2>&1;} >> 1.out 2>&1"
+                            f_out.write("for((var=0; var<$warmUp; var++))\n")
+                            f_out.write("    do\n")
+                            f_out.write("        " + command + "\n")
+                            f_out.write("done\n")
+
+                            f_out.write("for((var=0; var<$execute; var++))\n")
+                            f_out.write("    do\n")
+                            f_out.write("        " + command + "\n")
+                            f_out.write("done\n\n")
+
+                f_all.write("cd ./" + dir + "\n")
+                f_all.write("./run.sh  -w $warmUp -e $execute\n")
+                f_all.write("cd ..\n")
+                
+            f_out.close()
+        f_in.close()
+    f_all.close()   
+
+generate(type)
+'''
+#!/bin/bash
+let warmUp=20      
+let execute=100     
+
+while getopts ":w:e:" opt
+do
+    case $opt in
+        w)
+            warmUp=$OPTARG
+        ;;
+        e)
+            execute=$OPTARG
+        ;;
+        ?)
+        echo "Unknown parameter"
+        exit 1;;
+esac done
+
+# Warm Up
+for((var=0; var<$warmUp; var++))
+    do
+        { time -p ./perlbench_r -I. -I./lib makerand.pl > makerand.out 2>> makerand.err 2>&1;} >> 1.output 2>&1
+done
+# Execute the first Command
+for((var=0; var<$execute; var++))
+    do
+        { time -p ./perlbench_r -I. -I./lib makerand.pl > makerand.out 2>> makerand.err 2>&1;} >> 1.output 2>&1
+done
+
+# Warm Up
+for((var=0; var<$warmUp; var++))
+    do
+        { time -p ./perlbench_r -I. -I./lib test.pl > test.out 2>> test.err 2>&1;} >> 1.output 2>&1
+done
+# Execute the second Command
+for((var=0; var<$execute; var++))
+    do
+        { time -p ./perlbench_r -I. -I./lib test.pl > test.out 2>> test.err 2>&1;} >> 1.output 2>&1
+done
+
+'''
+
+'''
+-o spec_test.out -e spec_test.err ../run_base_test_mytest-m64.0000/cactusBSSN_r_base.mytest-m64 spec_test.par   > spec_test.out 2>> spec_test.err
+'''

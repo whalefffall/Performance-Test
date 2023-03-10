@@ -7,6 +7,8 @@ execute = 5
 # exit()
 cmd_file = "speccmds.cmd"
 
+os.system("python3 remove_shell.py")
+
 # get dir list
 dirs = []
 with open("./spec_dirs", "r") as f:

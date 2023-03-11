@@ -7,7 +7,7 @@
 (seq_mct_drv) :       Models page: http://www.ccsm.ucar.edu/models/         
 (seq_mct_drv) :       License information is available as a link from above 
 (seq_mct_drv) : ------------------------------------------------------------
-(seq_mct_drv) :                 DATE 02/22/23 TIME 20:39:49
+(seq_mct_drv) :                 DATE 03/11/23 TIME 08:18:13
 (seq_mct_drv) : ------------------------------------------------------------
   
   
@@ -606,7 +606,7 @@ Status of infodata after seq_infodata_init
   
 (map_npFixNew4R)  compute bilinear weights & indicies for NP region.
 (map_npFixNew4R)  total npfix points found =            0
- tStamp_write: model date =    10102       0 wall clock = 2023-02-22 20:39:50 avg dt =     0.00 dt =     0.00
+ tStamp_write: model date =    10102       0 wall clock = 2023-03-11 08:18:15 avg dt =     0.00 dt =     0.00
  memory_write: model date =    10102       0 memory =       0.00 MB (highwater)          0.00 MB (usage)  (pe=    0 comps= cpl ocn atm lnd ice glc)
 
 

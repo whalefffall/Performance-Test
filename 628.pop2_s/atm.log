@@ -114,7 +114,7 @@
 (datm_comp_run)  writing casespec.datm.rs1.0001-01-02-00000.bin   10102       0s
 (shr_stream_restWrite) case name        : casespec
 (shr_stream_restWrite) case description : SDATM strdata
-(shr_stream_restWrite) File created     : 2023-02-22 20:39:50
+(shr_stream_restWrite) File created     : 2023-03-11 08:18:15
 (shr_stream_restWrite) Number of streams     3
 (shr_stream_restWrite) * stream     1 first file name = nyf.giss.T62.051007.nc
 (shr_stream_restWrite) * stream     1 first have data =   T

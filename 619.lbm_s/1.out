@@ -1,15 +1,20 @@
-real 0.00
-user 0.00
-sys 0.00
-real 0.00
-user 0.00
-sys 0.00
-real 0.00
-user 0.00
-sys 0.00
-real 0.00
-user 0.00
-sys 0.00
-real 0.00
-user 0.00
-sys 0.00
+./run.sh: line 23: 10994 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.65
+user 0.07
+sys 0.45
+./run.sh: line 23: 11004 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.44
+user 0.08
+sys 0.30
+./run.sh: line 29: 11005 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.46
+user 0.07
+sys 0.33
+./run.sh: line 29: 11006 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.63
+user 0.07
+sys 0.30
+./run.sh: line 29: 11008 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.54
+user 0.11
+sys 0.27

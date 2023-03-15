@@ -1,0 +1,134 @@
+Processing 500.perlbench_r
+Command 1: real 0.180000, user 0.176667, sys 0.000000
+Command 2: real 7.736667, user 4.960000, sys 0.286667
+Processing 502.gcc_r
+Command 1: real 0.000000, user 0.000000, sys 0.000000
+Processing 503.bwaves_r
+Command 1: real 1.793333, user 1.643333, sys 0.146667
+Command 2: real 0.600000, user 1.100000, sys 0.090000
+Processing 505.mcf_r
+Command 1: real 6.843333, user 6.750000, sys 0.090000
+Processing 507.cactuBSSN_r
+Command 1: real 2.606667, user 2.573333, sys 0.023333
+Processing 508.namd_r
+Command 1: real 2.736667, user 2.693333, sys 0.036667
+Processing 510.parest_r
+Command 1: real 3.070000, user 3.046667, sys 0.016667
+Processing 511.povray_r
+Command 1: real 0.200000, user 0.200000, sys 0.000000
+Processing 519.lbm_r
+Command 1: real 1.106667, user 1.013333, sys 0.086667
+Processing 520.omnetpp_r
+Command 1: real 2.543333, user 2.473333, sys 0.063333
+Processing 521.wrf_r
+Command 1: real 3.963333, user 3.826667, sys 0.103333
+Processing 523.xalancbmk_r
+Command 1: real 0.040000, user 0.036667, sys 0.000000
+Processing 525.x264_r
+Command 1: real 24.663333, user 24.556667, sys 0.080000
+Processing 526.blender_r
+Command 1: real 0.123333, user 0.106667, sys 0.003333
+Processing 527.cam4_r
+Command 1: real 10.946667, user 10.670000, sys 0.250000
+Processing 531.deepsjeng_r
+Command 1: real 5.273333, user 5.123333, sys 0.140000
+Processing 538.imagick_r
+Command 1: real 0.010000, user 0.006667, sys 0.000000
+Processing 541.leela_r
+Command 1: real 3.826667, user 3.816667, sys 0.003333
+Processing 544.nab_r
+Command 1: real 0.873333, user 0.873333, sys 0.000000
+Processing 548.exchange2_r
+Command 1: real 5.860000, user 5.856667, sys 0.000000
+Processing 549.fotonik3d_r
+Command 1: real 3.090000, user 2.920000, sys 0.160000
+Processing 554.roms_r
+Command 1: real 2.073333, user 2.010000, sys 0.060000
+Processing 557.xz_r
+Command 1: real 0.506667, user 0.393333, sys 0.110000
+Command 2: real 0.173333, user 0.266667, sys 0.076667
+Command 3: real 0.173333, user 0.270000, sys 0.070000
+Command 4: real 0.196667, user 0.320000, sys 0.070000
+Command 5: real 0.440000, user 0.560000, sys 0.073333
+Command 6: real 0.443333, user 0.803333, sys 0.083333
+Command 7: real 0.290000, user 0.493333, sys 0.083333
+Command 8: real 0.286667, user 0.490000, sys 0.083333
+Command 9: real 0.473333, user 0.840000, sys 0.100000
+Command 10: real 0.110000, user 0.500000, sys 0.070000
+Command 11: real 0.106667, user 0.143333, sys 0.070000
+Command 12: real 0.106667, user 0.146667, sys 0.070000
+Command 13: real 0.106667, user 0.136667, sys 0.076667
+Command 14: real 0.110000, user 0.143333, sys 0.073333
+Command 15: real 0.143333, user 0.170000, sys 0.076667
+Command 16: real 0.146667, user 0.213333, sys 0.073333
+Command 17: real 0.123333, user 0.166667, sys 0.073333
+Command 18: real 0.130000, user 0.170000, sys 0.080000
+Command 19: real 0.150000, user 0.216667, sys 0.073333
+Processing 600.perlbench_s
+Command 1: real 0.180000, user 0.176667, sys 0.000000
+Command 2: real 7.750000, user 4.946667, sys 0.333333
+Processing 602.gcc_s
+Command 1: real 0.000000, user 0.000000, sys 0.000000
+Processing 603.bwaves_s
+Command 1: real 2.723333, user 2.596667, sys 0.123333
+Command 2: real 0.910000, user 1.723333, sys 0.086667
+Processing 605.mcf_s
+Command 1: real 6.946667, user 6.843333, sys 0.086667
+Processing 607.cactuBSSN_s
+Command 1: real 2.633333, user 2.600000, sys 0.026667
+Processing 619.lbm_s
+Command 1: real 0.300000, user 0.050000, sys 0.360000
+Processing 620.omnetpp_s
+Command 1: real 2.646667, user 2.570000, sys 0.070000
+Processing 621.wrf_s
+Command 1: real 3.980000, user 3.850000, sys 0.106667
+Processing 623.xalancbmk_s
+Command 1: real 0.040000, user 0.036667, sys 0.000000
+Processing 625.x264_s
+Command 1: real 0.000000, user 0.000000, sys 0.000000
+Processing 627.cam4_s
+Command 1: real 0.230000, user 0.130000, sys 0.096667
+Processing 628.pop2_s
+Command 1: real 1.383333, user 1.093333, sys 0.286667
+Processing 631.deepsjeng_s
+Command 1: real 0.000000, user 0.000000, sys 0.000000
+Processing 638.imagick_s
+Command 1: real 0.010000, user 0.010000, sys 0.000000
+Processing 641.leela_s
+Command 1: real 3.813333, user 3.803333, sys 0.003333
+Processing 644.nab_s
+Command 1: real 1.350000, user 1.350000, sys 0.000000
+Processing 648.exchange2_s
+Command 1: real 5.806667, user 5.803333, sys 0.000000
+Processing 649.fotonik3d_s
+Command 1: real 3.230000, user 3.103333, sys 0.123333
+Processing 654.roms_s
+Command 1: real 1.976667, user 1.926667, sys 0.043333
+Processing 657.xz_s
+Command 1: real 0.490000, user 0.396667, sys 0.093333
+Command 2: real 0.166667, user 0.266667, sys 0.060000
+Command 3: real 0.166667, user 0.270000, sys 0.056667
+Command 4: real 0.186667, user 0.306667, sys 0.063333
+Command 5: real 0.426667, user 0.550000, sys 0.060000
+Command 6: real 0.423333, user 0.770000, sys 0.070000
+Command 7: real 0.273333, user 0.470000, sys 0.073333
+Command 8: real 0.270000, user 0.470000, sys 0.066667
+Command 9: real 0.450000, user 0.830000, sys 0.060000
+Command 10: real 0.100000, user 0.486667, sys 0.060000
+Command 11: real 0.100000, user 0.140000, sys 0.060000
+Command 12: real 0.100000, user 0.140000, sys 0.060000
+Command 13: real 0.100000, user 0.136667, sys 0.063333
+Command 14: real 0.103333, user 0.143333, sys 0.063333
+Command 15: real 0.133333, user 0.176667, sys 0.060000
+Command 16: real 0.136667, user 0.203333, sys 0.063333
+Command 17: real 0.116667, user 0.160000, sys 0.066667
+Command 18: real 0.113333, user 0.176667, sys 0.050000
+Command 19: real 0.136667, user 0.213333, sys 0.060000
+Processing 996.specrand_fs
+Command 1: real 0.000000, user 0.000000, sys 0.000000
+Processing 997.specrand_fr
+Command 1: real 0.000000, user 0.000000, sys 0.000000
+Processing 998.specrand_is
+Command 1: real 0.000000, user 0.000000, sys 0.000000
+Processing 999.specrand_ir
+Command 1: real 0.000000, user 0.000000, sys 0.000000

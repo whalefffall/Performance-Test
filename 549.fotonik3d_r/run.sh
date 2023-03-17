@@ -1,6 +1,6 @@
 #!/bin/bash 
-let warmUp=2
-let execute=3
+let warmUp=5
+let execute=10
 while getopts ":w:e:" opt
 do
     case $opt in
@@ -19,13 +19,13 @@ echo start benchmark 549.fotonik3d_r
 echo start warm up for command 1
 for((var=0; var<$warmUp; var++))
     do
-        { time -p ./fotonik3d_r_base.mytest-m64 > fotonik3d_r.log 2>> fotonik3d_r.err ;} >> 1.out 2>&1
+        { time -p ./fotonik3d_r_base.mytest-m64 > fotonik3d_r.log 2>> fotonik3d_r.err ;} >> 2.out 2>&1
 done
 echo finish one warm up!
 echo start execute command 1
 for((var=0; var<$execute; var++))
     do
-        { time -p ./fotonik3d_r_base.mytest-m64 > fotonik3d_r.log 2>> fotonik3d_r.err ;} >> 1.out 2>&1
+        { time -p ./fotonik3d_r_base.mytest-m64 > fotonik3d_r.log 2>> fotonik3d_r.err ;} >> 2.out 2>&1
 done
 
 echo finish one command!

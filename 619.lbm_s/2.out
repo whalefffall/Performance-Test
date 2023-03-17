@@ -1,0 +1,60 @@
+./run.sh: line 23: 11392 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.86
+user 0.13
+sys 0.54
+./run.sh: line 23: 11405 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.47
+user 0.09
+sys 0.32
+./run.sh: line 23: 11406 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.45
+user 0.12
+sys 0.28
+./run.sh: line 23: 11407 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.46
+user 0.12
+sys 0.28
+./run.sh: line 23: 11408 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.45
+user 0.08
+sys 0.32
+./run.sh: line 29: 11409 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.46
+user 0.07
+sys 0.33
+./run.sh: line 29: 11410 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.47
+user 0.08
+sys 0.33
+./run.sh: line 29: 11411 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.47
+user 0.07
+sys 0.34
+./run.sh: line 29: 11412 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.46
+user 0.09
+sys 0.31
+./run.sh: line 29: 11413 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.46
+user 0.10
+sys 0.30
+./run.sh: line 29: 11414 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.45
+user 0.12
+sys 0.28
+./run.sh: line 29: 11415 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.46
+user 0.07
+sys 0.32
+./run.sh: line 29: 11416 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.46
+user 0.12
+sys 0.28
+./run.sh: line 29: 11417 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.46
+user 0.08
+sys 0.32
+./run.sh: line 29: 11418 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.46
+user 0.10
+sys 0.30

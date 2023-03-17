@@ -70,7 +70,7 @@
 (dice_comp_run)  writing casespec.dice.rs1.0001-01-02-00000.bin   10102       0s
 (shr_stream_restWrite) case name        : casespec
 (shr_stream_restWrite) case description : SDICE strdata
-(shr_stream_restWrite) File created     : 2023-03-11 08:18:15
+(shr_stream_restWrite) File created     : 2023-03-17 11:07:04
 (shr_stream_restWrite) Number of streams     1
 (shr_stream_restWrite) * stream     1 first file name = ssmi_ifrac.clim.x0.5.090319.nc
 (shr_stream_restWrite) * stream     1 first have data =   T

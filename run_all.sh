@@ -1,6 +1,6 @@
 #!/bin/bash 
-let warmUp=2
-let execute=3
+let warmUp=5
+let execute=10
 while getopts ":w:e:" opt
 do
     case $opt in

@@ -1,6 +1,6 @@
 #!/bin/bash 
-let warmUp=2
-let execute=3
+let warmUp=5
+let execute=10
 while getopts ":w:e:" opt
 do
     case $opt in
@@ -19,13 +19,13 @@ echo start benchmark 521.wrf_r
 echo start warm up for command 1
 for((var=0; var<$warmUp; var++))
     do
-        { time -p ./wrf_r_base.mytest-m64 > rsl.out.0000 2>> wrf.err ;} >> 1.out 2>&1
+        { time -p ./wrf_r_base.mytest-m64 > rsl.out.0000 2>> wrf.err ;} >> 2.out 2>&1
 done
 echo finish one warm up!
 echo start execute command 1
 for((var=0; var<$execute; var++))
     do
-        { time -p ./wrf_r_base.mytest-m64 > rsl.out.0000 2>> wrf.err ;} >> 1.out 2>&1
+        { time -p ./wrf_r_base.mytest-m64 > rsl.out.0000 2>> wrf.err ;} >> 2.out 2>&1
 done
 
 echo finish one command!

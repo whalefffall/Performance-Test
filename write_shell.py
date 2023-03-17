@@ -1,12 +1,18 @@
-import os
+import os, sys
 root = os.getcwd()
 # dir_list = os.listdir(root)
-warmUp = 2
-execute = 3
+warmUp = 5
+execute = 10
 # print(dir_list)
 # exit()
 cmd_file = "speccmds.cmd"
 log_file = "1.out"
+c = sys.argv[1]
+if c == '1':
+    log_file = "1.out"
+elif c == '2':
+    log_file = "2.out"
+
 
 os.system("python3 remove_shell.py")
 

@@ -1,4 +1,4 @@
-import os
+import os, sys
 root = os.getcwd()
 
 
@@ -11,10 +11,16 @@ with open("./spec_dirs", "r") as f:
         dirs.append(words[8])
 
 
-shell_file = "run.sh"
-os.system("rm  %s" % os.path.join(root, "run_all.sh"))
+log_file = "1.out"
+c = sys.argv[1]
+if c == '1':
+    log_file = "1.out"
+elif c == '2':
+    log_file = "2.out"
+
+
 for dir in dirs:
     cur_path = os.path.join(root, dir)
     print("Processing %s" % dir)
-    os.system("rm  %s" % os.path.join(cur_path, shell_file))
+    os.system("rm  %s" % os.path.join(cur_path, log_file))
 print("Done")

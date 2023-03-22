@@ -1,8 +1,8 @@
 import os, sys
 root = os.getcwd()
 # dir_list = os.listdir(root)
-warmUp = 5
-execute = 10
+warmUp = 50
+execute = 100
 # print(dir_list)
 # exit()
 cmd_file = "speccmds.cmd"

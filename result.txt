@@ -1,175 +1,339 @@
 Processing 500.perlbench_r
 SEV ENABLE: WARM UP: Command 1: real 0.180000, user 0.176000, sys 0.000000
 SEV ENABLE: EXECUTE: Command 1: real 0.180000, user 0.178000, sys 0.000000
-SEV ENABLE: WARM UP: Command 2: real 18.698000, user 7.566000, sys 0.406000
-SEV ENABLE: EXECUTE: Command 2: real 20.820000, user 6.612000, sys 0.364000
+SEV ENABLE: WARM UP: Command 2: real 18.518000, user 7.566000, sys 0.406000
+SEV ENABLE: EXECUTE: Command 2: real 23.158000, user 7.355000, sys 0.396000
 SEV DISABLE: WARM UP: Command 1: real 0.180000, user 0.174000, sys 0.000000
 SEV DISABLE: EXECUTE: Command 1: real 0.190000, user 0.179000, sys 0.000000
-SEV DISABLE: WARM UP: Command 2: real 18.654000, user 7.516000, sys 0.412000
-SEV DISABLE: EXECUTE: Command 2: real 20.796000, user 6.597000, sys 0.360000
+SEV DISABLE: WARM UP: Command 2: real 18.474000, user 7.516000, sys 0.412000
+SEV DISABLE: EXECUTE: Command 2: real 23.108000, user 7.325000, sys 0.406000
 Processing 502.gcc_r
+SEV ENABLE: WARM UP: Command 1: real 0.004000, user 0.000000, sys 0.002000
+SEV ENABLE: EXECUTE: Command 1: real 0.000000, user 0.000000, sys 0.000000
+SEV DISABLE: WARM UP: Command 1: real 0.004000, user 0.000000, sys 0.002000
+SEV DISABLE: EXECUTE: Command 1: real 0.000000, user 0.000000, sys 0.000000
 Processing 503.bwaves_r
 SEV ENABLE: WARM UP: Command 1: real 1.760000, user 1.638000, sys 0.106000
 SEV ENABLE: EXECUTE: Command 1: real 1.750000, user 1.639000, sys 0.103000
-SEV ENABLE: WARM UP: Command 2: real 3.160000, user 3.288000, sys 0.200000
-SEV ENABLE: EXECUTE: Command 2: real 1.573000, user 1.474000, sys 0.093000
+SEV ENABLE: WARM UP: Command 2: real 1.400000, user 3.288000, sys 0.094000
+SEV ENABLE: EXECUTE: Command 2: real 1.747000, user 1.635000, sys 0.105000
 SEV DISABLE: WARM UP: Command 1: real 1.756000, user 1.624000, sys 0.124000
 SEV DISABLE: EXECUTE: Command 1: real 1.746000, user 1.638000, sys 0.101000
-SEV DISABLE: WARM UP: Command 2: real 3.166000, user 3.266000, sys 0.230000
-SEV DISABLE: EXECUTE: Command 2: real 1.570000, user 1.480000, sys 0.086000
+SEV DISABLE: WARM UP: Command 2: real 1.410000, user 3.266000, sys 0.106000
+SEV DISABLE: EXECUTE: Command 2: real 1.745000, user 1.644000, sys 0.096000
 Processing 505.mcf_r
+SEV ENABLE: WARM UP: Command 1: real 6.816000, user 6.734000, sys 0.072000
+SEV ENABLE: EXECUTE: Command 1: real 6.765000, user 6.683000, sys 0.073000
+SEV DISABLE: WARM UP: Command 1: real 7.064000, user 6.990000, sys 0.066000
+SEV DISABLE: EXECUTE: Command 1: real 7.031000, user 6.945000, sys 0.078000
 Processing 507.cactuBSSN_r
+SEV ENABLE: WARM UP: Command 1: real 2.590000, user 2.566000, sys 0.018000
+SEV ENABLE: EXECUTE: Command 1: real 2.588000, user 2.563000, sys 0.019000
+SEV DISABLE: WARM UP: Command 1: real 2.600000, user 2.578000, sys 0.018000
+SEV DISABLE: EXECUTE: Command 1: real 2.601000, user 2.578000, sys 0.017000
 Processing 508.namd_r
+SEV ENABLE: WARM UP: Command 1: real 2.730000, user 2.688000, sys 0.030000
+SEV ENABLE: EXECUTE: Command 1: real 2.755000, user 2.722000, sys 0.027000
+SEV DISABLE: WARM UP: Command 1: real 2.722000, user 2.680000, sys 0.034000
+SEV DISABLE: EXECUTE: Command 1: real 2.716000, user 2.678000, sys 0.033000
 Processing 510.parest_r
+SEV ENABLE: WARM UP: Command 1: real 3.118000, user 3.028000, sys 0.016000
+SEV ENABLE: EXECUTE: Command 1: real 3.050000, user 3.028000, sys 0.013000
+SEV DISABLE: WARM UP: Command 1: real 3.060000, user 3.030000, sys 0.018000
+SEV DISABLE: EXECUTE: Command 1: real 3.049000, user 3.030000, sys 0.014000
 Processing 511.povray_r
+SEV ENABLE: WARM UP: Command 1: real 0.202000, user 0.198000, sys 0.000000
+SEV ENABLE: EXECUTE: Command 1: real 0.200000, user 0.196000, sys 0.000000
+SEV DISABLE: WARM UP: Command 1: real 0.202000, user 0.198000, sys 0.000000
+SEV DISABLE: EXECUTE: Command 1: real 0.200000, user 0.197000, sys 0.000000
 Processing 519.lbm_r
+SEV ENABLE: WARM UP: Command 1: real 1.052000, user 0.978000, sys 0.068000
+SEV ENABLE: EXECUTE: Command 1: real 1.053000, user 0.981000, sys 0.065000
+SEV DISABLE: WARM UP: Command 1: real 1.058000, user 0.984000, sys 0.072000
+SEV DISABLE: EXECUTE: Command 1: real 1.060000, user 0.989000, sys 0.062000
 Processing 520.omnetpp_r
+SEV ENABLE: WARM UP: Command 1: real 2.344000, user 2.284000, sys 0.048000
+SEV ENABLE: EXECUTE: Command 1: real 2.340000, user 2.280000, sys 0.054000
+SEV DISABLE: WARM UP: Command 1: real 2.416000, user 2.356000, sys 0.050000
+SEV DISABLE: EXECUTE: Command 1: real 2.393000, user 2.335000, sys 0.055000
 Processing 521.wrf_r
+SEV ENABLE: WARM UP: Command 1: real 3.894000, user 3.772000, sys 0.098000
+SEV ENABLE: EXECUTE: Command 1: real 3.900000, user 3.786000, sys 0.081000
+SEV DISABLE: WARM UP: Command 1: real 3.906000, user 3.790000, sys 0.084000
+SEV DISABLE: EXECUTE: Command 1: real 3.914000, user 3.799000, sys 0.093000
 Processing 523.xalancbmk_r
+SEV ENABLE: WARM UP: Command 1: real 0.042000, user 0.038000, sys 0.000000
+SEV ENABLE: EXECUTE: Command 1: real 0.040000, user 0.037000, sys 0.000000
+SEV DISABLE: WARM UP: Command 1: real 0.042000, user 0.036000, sys 0.002000
+SEV DISABLE: EXECUTE: Command 1: real 0.040000, user 0.038000, sys 0.000000
 Processing 525.x264_r
+SEV ENABLE: WARM UP: Command 1: real 36.028000, user 24.930000, sys 0.252000
+SEV ENABLE: EXECUTE: Command 1: real 24.753000, user 24.646000, sys 0.065000
+SEV DISABLE: WARM UP: Command 1: real 24.714000, user 24.604000, sys 0.058000
+SEV DISABLE: EXECUTE: Command 1: real 24.653000, user 24.581000, sys 0.051000
 Processing 526.blender_r
+SEV ENABLE: WARM UP: Command 1: real 0.124000, user 0.094000, sys 0.022000
+SEV ENABLE: EXECUTE: Command 1: real 0.124000, user 0.099000, sys 0.012000
+SEV DISABLE: WARM UP: Command 1: real 0.120000, user 0.092000, sys 0.024000
+SEV DISABLE: EXECUTE: Command 1: real 0.113000, user 0.100000, sys 0.010000
 Processing 527.cam4_r
+SEV ENABLE: WARM UP: Command 1: real 10.912000, user 10.620000, sys 0.246000
+SEV ENABLE: EXECUTE: Command 1: real 10.885000, user 10.650000, sys 0.220000
+SEV DISABLE: WARM UP: Command 1: real 10.840000, user 10.576000, sys 0.246000
+SEV DISABLE: EXECUTE: Command 1: real 10.798000, user 10.581000, sys 0.204000
 Processing 531.deepsjeng_r
+SEV ENABLE: WARM UP: Command 1: real 5.286000, user 5.142000, sys 0.132000
+SEV ENABLE: EXECUTE: Command 1: real 5.281000, user 5.137000, sys 0.136000
+SEV DISABLE: WARM UP: Command 1: real 5.190000, user 5.066000, sys 0.114000
+SEV DISABLE: EXECUTE: Command 1: real 5.182000, user 5.059000, sys 0.118000
 Processing 538.imagick_r
+SEV ENABLE: WARM UP: Command 1: real 0.010000, user 0.004000, sys 0.000000
+SEV ENABLE: EXECUTE: Command 1: real 0.010000, user 0.006000, sys 0.000000
+SEV DISABLE: WARM UP: Command 1: real 0.010000, user 0.006000, sys 0.002000
+SEV DISABLE: EXECUTE: Command 1: real 0.010000, user 0.009000, sys 0.000000
 Processing 541.leela_r
+SEV ENABLE: WARM UP: Command 1: real 3.822000, user 3.812000, sys 0.000000
+SEV ENABLE: EXECUTE: Command 1: real 3.830000, user 3.821000, sys 0.002000
+SEV DISABLE: WARM UP: Command 1: real 3.826000, user 3.816000, sys 0.004000
+SEV DISABLE: EXECUTE: Command 1: real 3.823000, user 3.808000, sys 0.006000
 Processing 544.nab_r
+SEV ENABLE: WARM UP: Command 1: real 0.874000, user 0.872000, sys 0.000000
+SEV ENABLE: EXECUTE: Command 1: real 0.871000, user 0.870000, sys 0.000000
+SEV DISABLE: WARM UP: Command 1: real 0.872000, user 0.872000, sys 0.000000
+SEV DISABLE: EXECUTE: Command 1: real 0.871000, user 0.871000, sys 0.000000
 Processing 548.exchange2_r
+SEV ENABLE: WARM UP: Command 1: real 5.822000, user 5.814000, sys 0.000000
+SEV ENABLE: EXECUTE: Command 1: real 5.833000, user 5.826000, sys 0.000000
+SEV DISABLE: WARM UP: Command 1: real 5.810000, user 5.810000, sys 0.000000
+SEV DISABLE: EXECUTE: Command 1: real 5.829000, user 5.826000, sys 0.000000
 Processing 549.fotonik3d_r
+SEV ENABLE: WARM UP: Command 1: real 3.082000, user 2.904000, sys 0.172000
+SEV ENABLE: EXECUTE: Command 1: real 3.013000, user 2.856000, sys 0.152000
+SEV DISABLE: WARM UP: Command 1: real 3.072000, user 2.918000, sys 0.146000
+SEV DISABLE: EXECUTE: Command 1: real 3.069000, user 2.939000, sys 0.123000
 Processing 554.roms_r
+SEV ENABLE: WARM UP: Command 1: real 2.058000, user 1.990000, sys 0.058000
+SEV ENABLE: EXECUTE: Command 1: real 2.073000, user 2.011000, sys 0.054000
+SEV DISABLE: WARM UP: Command 1: real 1.986000, user 1.930000, sys 0.054000
+SEV DISABLE: EXECUTE: Command 1: real 1.984000, user 1.935000, sys 0.044000
 Processing 557.xz_r
 SEV ENABLE: WARM UP: Command 1: real 0.502000, user 0.394000, sys 0.106000
 SEV ENABLE: EXECUTE: Command 1: real 0.504000, user 0.391000, sys 0.106000
-SEV ENABLE: WARM UP: Command 2: real 0.916000, user 0.794000, sys 0.210000
-SEV ENABLE: EXECUTE: Command 2: real 0.460000, user 0.368000, sys 0.086000
-SEV ENABLE: WARM UP: Command 3: real 1.378000, user 1.260000, sys 0.300000
-SEV ENABLE: EXECUTE: Command 3: real 0.516000, user 0.424000, sys 0.089000
-SEV ENABLE: WARM UP: Command 4: real 2.268000, user 2.150000, sys 0.410000
-SEV ENABLE: EXECUTE: Command 4: real 1.162000, user 1.061000, sys 0.096000
-SEV ENABLE: WARM UP: Command 5: real 3.120000, user 3.138000, sys 0.526000
-SEV ENABLE: EXECUTE: Command 5: real 0.758000, user 0.652000, sys 0.104000
-SEV ENABLE: WARM UP: Command 6: real 3.894000, user 3.962000, sys 0.640000
-SEV ENABLE: EXECUTE: Command 6: real 1.228000, user 1.119000, sys 0.103000
-SEV ENABLE: WARM UP: Command 7: real 4.982000, user 5.204000, sys 0.756000
-SEV ENABLE: EXECUTE: Command 7: real 0.286000, user 0.193000, sys 0.088000
-SEV ENABLE: WARM UP: Command 8: real 5.234000, user 5.420000, sys 0.852000
-SEV ENABLE: EXECUTE: Command 8: real 0.287000, user 0.195000, sys 0.086000
-SEV ENABLE: WARM UP: Command 9: real 5.488000, user 5.638000, sys 0.944000
-SEV ENABLE: EXECUTE: Command 9: real 0.288000, user 0.193000, sys 0.087000
-SEV ENABLE: WARM UP: Command 10: real 5.746000, user 5.854000, sys 1.044000
-SEV ENABLE: EXECUTE: Command 10: real 0.348000, user 0.254000, sys 0.087000
-SEV ENABLE: WARM UP: Command 11: real 6.082000, user 6.166000, sys 1.142000
-SEV ENABLE: EXECUTE: Command 11: real 0.347000, user 0.256000, sys 0.085000
-SEV ENABLE: WARM UP: Command 12: real 6.370000, user 6.414000, sys 1.248000
-SEV ENABLE: EXECUTE: Command 12: real 0.352000, user 0.253000, sys 0.090000
+SEV ENABLE: WARM UP: Command 2: real 0.414000, user 0.794000, sys 0.104000
+SEV ENABLE: EXECUTE: Command 2: real 0.511000, user 0.409000, sys 0.095000
+SEV ENABLE: WARM UP: Command 3: real 0.460000, user 1.270000, sys 0.094000
+SEV ENABLE: EXECUTE: Command 3: real 0.575000, user 0.470000, sys 0.100000
+SEV ENABLE: WARM UP: Command 4: real 1.034000, user 2.450000, sys 0.108000
+SEV ENABLE: EXECUTE: Command 4: real 1.290000, user 1.174000, sys 0.110000
+SEV ENABLE: WARM UP: Command 5: real 0.674000, user 3.170000, sys 0.118000
+SEV ENABLE: EXECUTE: Command 5: real 0.839000, user 0.722000, sys 0.115000
+SEV ENABLE: WARM UP: Command 6: real 1.090000, user 4.420000, sys 0.106000
+SEV ENABLE: EXECUTE: Command 6: real 1.364000, user 1.241000, sys 0.118000
+SEV ENABLE: WARM UP: Command 7: real 0.252000, user 4.636000, sys 0.096000
+SEV ENABLE: EXECUTE: Command 7: real 0.318000, user 0.213000, sys 0.099000
+SEV ENABLE: WARM UP: Command 8: real 0.254000, user 4.850000, sys 0.098000
+SEV ENABLE: EXECUTE: Command 8: real 0.318000, user 0.221000, sys 0.090000
+SEV ENABLE: WARM UP: Command 9: real 0.256000, user 5.064000, sys 0.098000
+SEV ENABLE: EXECUTE: Command 9: real 0.321000, user 0.215000, sys 0.099000
+SEV ENABLE: WARM UP: Command 10: real 0.336000, user 5.376000, sys 0.100000
+SEV ENABLE: EXECUTE: Command 10: real 0.418000, user 0.314000, sys 0.097000
+SEV ENABLE: WARM UP: Command 11: real 0.288000, user 5.638000, sys 0.090000
+SEV ENABLE: EXECUTE: Command 11: real 0.360000, user 0.251000, sys 0.101000
+SEV ENABLE: WARM UP: Command 12: real 0.344000, user 5.952000, sys 0.106000
+SEV ENABLE: EXECUTE: Command 12: real 0.431000, user 0.317000, sys 0.106000
 SEV DISABLE: WARM UP: Command 1: real 0.492000, user 0.394000, sys 0.092000
 SEV DISABLE: EXECUTE: Command 1: real 0.490000, user 0.395000, sys 0.089000
-SEV DISABLE: WARM UP: Command 2: real 0.892000, user 0.796000, sys 0.186000
-SEV DISABLE: EXECUTE: Command 2: real 0.452000, user 0.366000, sys 0.080000
-SEV DISABLE: WARM UP: Command 3: real 1.340000, user 1.236000, sys 0.290000
-SEV DISABLE: EXECUTE: Command 3: real 0.504000, user 0.414000, sys 0.085000
-SEV DISABLE: WARM UP: Command 4: real 2.216000, user 2.116000, sys 0.390000
-SEV DISABLE: EXECUTE: Command 4: real 1.139000, user 1.049000, sys 0.086000
-SEV DISABLE: WARM UP: Command 5: real 3.052000, user 3.106000, sys 0.484000
-SEV DISABLE: EXECUTE: Command 5: real 0.736000, user 0.647000, sys 0.086000
-SEV DISABLE: WARM UP: Command 6: real 3.808000, user 3.924000, sys 0.580000
-SEV DISABLE: EXECUTE: Command 6: real 1.210000, user 1.112000, sys 0.091000
-SEV DISABLE: WARM UP: Command 7: real 4.880000, user 5.154000, sys 0.686000
-SEV DISABLE: EXECUTE: Command 7: real 0.279000, user 0.188000, sys 0.084000
-SEV DISABLE: WARM UP: Command 8: real 5.128000, user 5.362000, sys 0.778000
-SEV DISABLE: EXECUTE: Command 8: real 0.279000, user 0.184000, sys 0.087000
-SEV DISABLE: WARM UP: Command 9: real 5.376000, user 5.572000, sys 0.874000
-SEV DISABLE: EXECUTE: Command 9: real 0.279000, user 0.190000, sys 0.084000
-SEV DISABLE: WARM UP: Command 10: real 5.624000, user 5.792000, sys 0.960000
-SEV DISABLE: EXECUTE: Command 10: real 0.336000, user 0.242000, sys 0.088000
-SEV DISABLE: WARM UP: Command 11: real 5.944000, user 6.100000, sys 1.054000
-SEV DISABLE: EXECUTE: Command 11: real 0.337000, user 0.247000, sys 0.084000
-SEV DISABLE: WARM UP: Command 12: real 6.224000, user 6.346000, sys 1.154000
-SEV DISABLE: EXECUTE: Command 12: real 0.343000, user 0.256000, sys 0.082000
+SEV DISABLE: WARM UP: Command 2: real 0.400000, user 0.796000, sys 0.094000
+SEV DISABLE: EXECUTE: Command 2: real 0.502000, user 0.406000, sys 0.090000
+SEV DISABLE: WARM UP: Command 3: real 0.448000, user 1.246000, sys 0.104000
+SEV DISABLE: EXECUTE: Command 3: real 0.560000, user 0.461000, sys 0.094000
+SEV DISABLE: WARM UP: Command 4: real 1.014000, user 2.408000, sys 0.100000
+SEV DISABLE: EXECUTE: Command 4: real 1.267000, user 1.167000, sys 0.095000
+SEV DISABLE: WARM UP: Command 5: real 0.656000, user 3.124000, sys 0.098000
+SEV DISABLE: EXECUTE: Command 5: real 0.815000, user 0.719000, sys 0.093000
+SEV DISABLE: WARM UP: Command 6: real 1.072000, user 4.356000, sys 0.100000
+SEV DISABLE: EXECUTE: Command 6: real 1.344000, user 1.234000, sys 0.105000
+SEV DISABLE: WARM UP: Command 7: real 0.248000, user 4.562000, sys 0.098000
+SEV DISABLE: EXECUTE: Command 7: real 0.310000, user 0.210000, sys 0.090000
+SEV DISABLE: WARM UP: Command 8: real 0.248000, user 4.764000, sys 0.100000
+SEV DISABLE: EXECUTE: Command 8: real 0.310000, user 0.210000, sys 0.093000
+SEV DISABLE: WARM UP: Command 9: real 0.248000, user 4.970000, sys 0.098000
+SEV DISABLE: EXECUTE: Command 9: real 0.310000, user 0.216000, sys 0.090000
+SEV DISABLE: WARM UP: Command 10: real 0.326000, user 5.272000, sys 0.098000
+SEV DISABLE: EXECUTE: Command 10: real 0.404000, user 0.305000, sys 0.095000
+SEV DISABLE: WARM UP: Command 11: real 0.278000, user 5.522000, sys 0.092000
+SEV DISABLE: EXECUTE: Command 11: real 0.349000, user 0.250000, sys 0.095000
+SEV DISABLE: WARM UP: Command 12: real 0.334000, user 5.842000, sys 0.094000
+SEV DISABLE: EXECUTE: Command 12: real 0.415000, user 0.322000, sys 0.090000
 Processing 600.perlbench_s
 SEV ENABLE: WARM UP: Command 1: real 0.180000, user 0.176000, sys 0.000000
 SEV ENABLE: EXECUTE: Command 1: real 0.178000, user 0.177000, sys 0.000000
-SEV ENABLE: WARM UP: Command 2: real 18.742000, user 7.580000, sys 0.438000
-SEV ENABLE: EXECUTE: Command 2: real 20.902000, user 6.668000, sys 0.397000
+SEV ENABLE: WARM UP: Command 2: real 18.562000, user 7.580000, sys 0.438000
+SEV ENABLE: EXECUTE: Command 2: real 23.222000, user 7.405000, sys 0.442000
 SEV DISABLE: WARM UP: Command 1: real 0.178000, user 0.176000, sys 0.000000
 SEV DISABLE: EXECUTE: Command 1: real 0.178000, user 0.176000, sys 0.000000
-SEV DISABLE: WARM UP: Command 2: real 18.732000, user 7.562000, sys 0.452000
-SEV DISABLE: EXECUTE: Command 2: real 20.875000, user 6.623000, sys 0.414000
+SEV DISABLE: WARM UP: Command 2: real 18.554000, user 7.562000, sys 0.452000
+SEV DISABLE: EXECUTE: Command 2: real 23.195000, user 7.365000, sys 0.454000
 Processing 602.gcc_s
+SEV ENABLE: WARM UP: Command 1: real 0.004000, user 0.000000, sys 0.000000
+SEV ENABLE: EXECUTE: Command 1: real 0.000000, user 0.000000, sys 0.000000
+SEV DISABLE: WARM UP: Command 1: real 0.004000, user 0.000000, sys 0.000000
+SEV DISABLE: EXECUTE: Command 1: real 0.000000, user 0.000000, sys 0.000000
 Processing 603.bwaves_s
 SEV ENABLE: WARM UP: Command 1: real 2.754000, user 2.594000, sys 0.150000
 SEV ENABLE: EXECUTE: Command 1: real 2.726000, user 2.590000, sys 0.126000
-SEV ENABLE: WARM UP: Command 2: real 4.932000, user 5.198000, sys 0.262000
-SEV ENABLE: EXECUTE: Command 2: real 2.460000, user 2.348000, sys 0.104000
+SEV ENABLE: WARM UP: Command 2: real 2.178000, user 5.198000, sys 0.112000
+SEV ENABLE: EXECUTE: Command 2: real 2.734000, user 2.608000, sys 0.117000
 SEV DISABLE: WARM UP: Command 1: real 2.716000, user 2.594000, sys 0.116000
 SEV DISABLE: EXECUTE: Command 1: real 2.699000, user 2.585000, sys 0.107000
-SEV DISABLE: WARM UP: Command 2: real 4.908000, user 5.180000, sys 0.226000
-SEV DISABLE: EXECUTE: Command 2: real 2.435000, user 2.335000, sys 0.096000
+SEV DISABLE: WARM UP: Command 2: real 2.192000, user 5.180000, sys 0.110000
+SEV DISABLE: EXECUTE: Command 2: real 2.706000, user 2.595000, sys 0.106000
 Processing 605.mcf_s
+SEV ENABLE: WARM UP: Command 1: real 6.858000, user 6.756000, sys 0.090000
+SEV ENABLE: EXECUTE: Command 1: real 6.823000, user 6.726000, sys 0.085000
+SEV DISABLE: WARM UP: Command 1: real 6.790000, user 6.700000, sys 0.080000
+SEV DISABLE: EXECUTE: Command 1: real 6.846000, user 6.753000, sys 0.084000
 Processing 607.cactuBSSN_s
+SEV ENABLE: WARM UP: Command 1: real 2.640000, user 2.606000, sys 0.026000
+SEV ENABLE: EXECUTE: Command 1: real 2.647000, user 2.616000, sys 0.027000
+SEV DISABLE: WARM UP: Command 1: real 2.632000, user 2.606000, sys 0.020000
+SEV DISABLE: EXECUTE: Command 1: real 2.628000, user 2.598000, sys 0.020000
 Processing 619.lbm_s
+SEV ENABLE: WARM UP: Command 1: real 0.580000, user 0.090000, sys 0.406000
+SEV ENABLE: EXECUTE: Command 1: real 0.490000, user 0.088000, sys 0.332000
+SEV DISABLE: WARM UP: Command 1: real 0.538000, user 0.108000, sys 0.348000
+SEV DISABLE: EXECUTE: Command 1: real 0.461000, user 0.090000, sys 0.311000
 Processing 620.omnetpp_s
+SEV ENABLE: WARM UP: Command 1: real 2.606000, user 2.530000, sys 0.068000
+SEV ENABLE: EXECUTE: Command 1: real 2.596000, user 2.528000, sys 0.058000
+SEV DISABLE: WARM UP: Command 1: real 2.618000, user 2.536000, sys 0.076000
+SEV DISABLE: EXECUTE: Command 1: real 2.605000, user 2.531000, sys 0.068000
 Processing 621.wrf_s
+SEV ENABLE: WARM UP: Command 1: real 4.024000, user 3.862000, sys 0.098000
+SEV ENABLE: EXECUTE: Command 1: real 3.985000, user 3.846000, sys 0.112000
+SEV DISABLE: WARM UP: Command 1: real 3.970000, user 3.842000, sys 0.106000
+SEV DISABLE: EXECUTE: Command 1: real 3.996000, user 3.845000, sys 0.115000
 Processing 623.xalancbmk_s
+SEV ENABLE: WARM UP: Command 1: real 0.042000, user 0.036000, sys 0.002000
+SEV ENABLE: EXECUTE: Command 1: real 0.040000, user 0.037000, sys 0.000000
+SEV DISABLE: WARM UP: Command 1: real 0.042000, user 0.036000, sys 0.002000
+SEV DISABLE: EXECUTE: Command 1: real 0.040000, user 0.036000, sys 0.000000
 Processing 625.x264_s
+SEV ENABLE: WARM UP: Command 1: real 0.000000, user 0.000000, sys 0.000000
+SEV ENABLE: EXECUTE: Command 1: real 0.000000, user 0.000000, sys 0.000000
+SEV DISABLE: WARM UP: Command 1: real 0.000000, user 0.000000, sys 0.000000
+SEV DISABLE: EXECUTE: Command 1: real 0.000000, user 0.000000, sys 0.000000
 Processing 627.cam4_s
+SEV ENABLE: WARM UP: Command 1: real 0.288000, user 0.120000, sys 0.160000
+SEV ENABLE: EXECUTE: Command 1: real 0.251000, user 0.120000, sys 0.123000
+SEV DISABLE: WARM UP: Command 1: real 0.274000, user 0.122000, sys 0.136000
+SEV DISABLE: EXECUTE: Command 1: real 0.240000, user 0.120000, sys 0.117000
 Processing 628.pop2_s
+SEV ENABLE: WARM UP: Command 1: real 1.502000, user 1.132000, sys 0.356000
+SEV ENABLE: EXECUTE: Command 1: real 1.429000, user 1.091000, sys 0.326000
+SEV DISABLE: WARM UP: Command 1: real 1.458000, user 1.086000, sys 0.356000
+SEV DISABLE: EXECUTE: Command 1: real 1.403000, user 1.103000, sys 0.294000
 Processing 631.deepsjeng_s
+SEV ENABLE: WARM UP: Command 1: real 0.000000, user 0.000000, sys 0.000000
+SEV ENABLE: EXECUTE: Command 1: real 0.000000, user 0.000000, sys 0.000000
+SEV DISABLE: WARM UP: Command 1: real 0.000000, user 0.000000, sys 0.000000
+SEV DISABLE: EXECUTE: Command 1: real 0.000000, user 0.000000, sys 0.000000
 Processing 638.imagick_s
+SEV ENABLE: WARM UP: Command 1: real 0.010000, user 0.006000, sys 0.000000
+SEV ENABLE: EXECUTE: Command 1: real 0.010000, user 0.006000, sys 0.000000
+SEV DISABLE: WARM UP: Command 1: real 0.010000, user 0.006000, sys 0.000000
+SEV DISABLE: EXECUTE: Command 1: real 0.010000, user 0.008000, sys 0.000000
 Processing 641.leela_s
+SEV ENABLE: WARM UP: Command 1: real 3.830000, user 3.814000, sys 0.006000
+SEV ENABLE: EXECUTE: Command 1: real 3.820000, user 3.809000, sys 0.005000
+SEV DISABLE: WARM UP: Command 1: real 3.804000, user 3.796000, sys 0.000000
+SEV DISABLE: EXECUTE: Command 1: real 3.804000, user 3.793000, sys 0.004000
 Processing 644.nab_s
+SEV ENABLE: WARM UP: Command 1: real 1.352000, user 1.350000, sys 0.000000
+SEV ENABLE: EXECUTE: Command 1: real 1.350000, user 1.348000, sys 0.000000
+SEV DISABLE: WARM UP: Command 1: real 1.352000, user 1.350000, sys 0.000000
+SEV DISABLE: EXECUTE: Command 1: real 1.356000, user 1.353000, sys 0.000000
 Processing 648.exchange2_s
+SEV ENABLE: WARM UP: Command 1: real 5.824000, user 5.818000, sys 0.000000
+SEV ENABLE: EXECUTE: Command 1: real 5.960000, user 5.954000, sys 0.000000
+SEV DISABLE: WARM UP: Command 1: real 5.820000, user 5.816000, sys 0.000000
+SEV DISABLE: EXECUTE: Command 1: real 5.831000, user 5.806000, sys 0.001000
 Processing 649.fotonik3d_s
+SEV ENABLE: WARM UP: Command 1: real 3.278000, user 3.082000, sys 0.190000
+SEV ENABLE: EXECUTE: Command 1: real 3.235000, user 3.080000, sys 0.147000
+SEV DISABLE: WARM UP: Command 1: real 3.242000, user 3.050000, sys 0.182000
+SEV DISABLE: EXECUTE: Command 1: real 3.300000, user 3.159000, sys 0.135000
 Processing 654.roms_s
+SEV ENABLE: WARM UP: Command 1: real 1.994000, user 1.930000, sys 0.060000
+SEV ENABLE: EXECUTE: Command 1: real 1.994000, user 1.932000, sys 0.054000
+SEV DISABLE: WARM UP: Command 1: real 1.954000, user 1.896000, sys 0.054000
+SEV DISABLE: EXECUTE: Command 1: real 1.958000, user 1.903000, sys 0.050000
 Processing 657.xz_s
 SEV ENABLE: WARM UP: Command 1: real 0.504000, user 0.390000, sys 0.110000
 SEV ENABLE: EXECUTE: Command 1: real 0.503000, user 0.395000, sys 0.101000
-SEV ENABLE: WARM UP: Command 2: real 0.912000, user 0.784000, sys 0.220000
-SEV ENABLE: EXECUTE: Command 2: real 0.459000, user 0.360000, sys 0.094000
-SEV ENABLE: WARM UP: Command 3: real 1.376000, user 1.242000, sys 0.322000
-SEV ENABLE: EXECUTE: Command 3: real 0.523000, user 0.425000, sys 0.094000
-SEV ENABLE: WARM UP: Command 4: real 2.278000, user 2.146000, sys 0.426000
-SEV ENABLE: EXECUTE: Command 4: real 1.177000, user 1.072000, sys 0.099000
-SEV ENABLE: WARM UP: Command 5: real 3.130000, user 3.134000, sys 0.548000
-SEV ENABLE: EXECUTE: Command 5: real 0.756000, user 0.648000, sys 0.102000
-SEV ENABLE: WARM UP: Command 6: real 3.912000, user 3.960000, sys 0.668000
-SEV ENABLE: EXECUTE: Command 6: real 1.251000, user 1.137000, sys 0.104000
-SEV ENABLE: WARM UP: Command 7: real 5.018000, user 5.226000, sys 0.778000
-SEV ENABLE: EXECUTE: Command 7: real 0.285000, user 0.191000, sys 0.090000
-SEV ENABLE: WARM UP: Command 8: real 5.272000, user 5.440000, sys 0.874000
-SEV ENABLE: EXECUTE: Command 8: real 0.283000, user 0.190000, sys 0.088000
-SEV ENABLE: WARM UP: Command 9: real 5.528000, user 5.644000, sys 0.984000
-SEV ENABLE: EXECUTE: Command 9: real 0.289000, user 0.191000, sys 0.090000
-SEV ENABLE: WARM UP: Command 10: real 5.784000, user 5.854000, sys 1.088000
-SEV ENABLE: EXECUTE: Command 10: real 0.348000, user 0.248000, sys 0.093000
-SEV ENABLE: WARM UP: Command 11: real 6.120000, user 6.166000, sys 1.188000
-SEV ENABLE: EXECUTE: Command 11: real 0.350000, user 0.253000, sys 0.093000
-SEV ENABLE: WARM UP: Command 12: real 6.408000, user 6.422000, sys 1.286000
-SEV ENABLE: EXECUTE: Command 12: real 0.352000, user 0.259000, sys 0.087000
+SEV ENABLE: WARM UP: Command 2: real 0.408000, user 0.784000, sys 0.110000
+SEV ENABLE: EXECUTE: Command 2: real 0.511000, user 0.402000, sys 0.103000
+SEV ENABLE: WARM UP: Command 3: real 0.464000, user 1.252000, sys 0.106000
+SEV ENABLE: EXECUTE: Command 3: real 0.581000, user 0.473000, sys 0.102000
+SEV ENABLE: WARM UP: Command 4: real 1.042000, user 2.444000, sys 0.104000
+SEV ENABLE: EXECUTE: Command 4: real 1.308000, user 1.183000, sys 0.119000
+SEV ENABLE: WARM UP: Command 5: real 0.670000, user 3.156000, sys 0.120000
+SEV ENABLE: EXECUTE: Command 5: real 0.843000, user 0.724000, sys 0.112000
+SEV ENABLE: WARM UP: Command 6: real 1.118000, user 4.410000, sys 0.124000
+SEV ENABLE: EXECUTE: Command 6: real 1.383000, user 1.268000, sys 0.109000
+SEV ENABLE: WARM UP: Command 7: real 0.252000, user 4.620000, sys 0.102000
+SEV ENABLE: EXECUTE: Command 7: real 0.317000, user 0.213000, sys 0.098000
+SEV ENABLE: WARM UP: Command 8: real 0.252000, user 4.830000, sys 0.098000
+SEV ENABLE: EXECUTE: Command 8: real 0.318000, user 0.210000, sys 0.102000
+SEV ENABLE: WARM UP: Command 9: real 0.256000, user 5.040000, sys 0.104000
+SEV ENABLE: EXECUTE: Command 9: real 0.320000, user 0.212000, sys 0.102000
+SEV ENABLE: WARM UP: Command 10: real 0.336000, user 5.348000, sys 0.102000
+SEV ENABLE: EXECUTE: Command 10: real 0.420000, user 0.314000, sys 0.098000
+SEV ENABLE: WARM UP: Command 11: real 0.292000, user 5.598000, sys 0.112000
+SEV ENABLE: EXECUTE: Command 11: real 0.360000, user 0.259000, sys 0.095000
+SEV ENABLE: WARM UP: Command 12: real 0.344000, user 5.916000, sys 0.104000
+SEV ENABLE: EXECUTE: Command 12: real 0.433000, user 0.322000, sys 0.104000
 SEV DISABLE: WARM UP: Command 1: real 0.504000, user 0.390000, sys 0.108000
 SEV DISABLE: EXECUTE: Command 1: real 0.499000, user 0.395000, sys 0.098000
-SEV DISABLE: WARM UP: Command 2: real 0.912000, user 0.790000, sys 0.210000
-SEV DISABLE: EXECUTE: Command 2: real 0.456000, user 0.363000, sys 0.089000
-SEV DISABLE: WARM UP: Command 3: real 1.370000, user 1.248000, sys 0.306000
-SEV DISABLE: EXECUTE: Command 3: real 0.515000, user 0.421000, sys 0.091000
-SEV DISABLE: WARM UP: Command 4: real 2.262000, user 2.140000, sys 0.416000
-SEV DISABLE: EXECUTE: Command 4: real 1.160000, user 1.056000, sys 0.099000
-SEV DISABLE: WARM UP: Command 5: real 3.118000, user 3.136000, sys 0.530000
-SEV DISABLE: EXECUTE: Command 5: real 0.755000, user 0.644000, sys 0.105000
-SEV DISABLE: WARM UP: Command 6: real 3.890000, user 3.964000, sys 0.638000
-SEV DISABLE: EXECUTE: Command 6: real 1.238000, user 1.129000, sys 0.106000
-SEV DISABLE: WARM UP: Command 7: real 4.986000, user 5.212000, sys 0.756000
-SEV DISABLE: EXECUTE: Command 7: real 0.282000, user 0.192000, sys 0.087000
-SEV DISABLE: WARM UP: Command 8: real 5.236000, user 5.424000, sys 0.854000
-SEV DISABLE: EXECUTE: Command 8: real 0.279000, user 0.190000, sys 0.086000
-SEV DISABLE: WARM UP: Command 9: real 5.488000, user 5.640000, sys 0.948000
-SEV DISABLE: EXECUTE: Command 9: real 0.284000, user 0.197000, sys 0.083000
-SEV DISABLE: WARM UP: Command 10: real 5.742000, user 5.844000, sys 1.054000
-SEV DISABLE: EXECUTE: Command 10: real 0.343000, user 0.253000, sys 0.088000
-SEV DISABLE: WARM UP: Command 11: real 6.072000, user 6.158000, sys 1.152000
-SEV DISABLE: EXECUTE: Command 11: real 0.344000, user 0.250000, sys 0.089000
-SEV DISABLE: WARM UP: Command 12: real 6.360000, user 6.412000, sys 1.252000
-SEV DISABLE: EXECUTE: Command 12: real 0.348000, user 0.258000, sys 0.086000
+SEV DISABLE: WARM UP: Command 2: real 0.408000, user 0.790000, sys 0.102000
+SEV DISABLE: EXECUTE: Command 2: real 0.506000, user 0.404000, sys 0.098000
+SEV DISABLE: WARM UP: Command 3: real 0.456000, user 1.258000, sys 0.100000
+SEV DISABLE: EXECUTE: Command 3: real 0.572000, user 0.468000, sys 0.101000
+SEV DISABLE: WARM UP: Command 4: real 1.032000, user 2.428000, sys 0.118000
+SEV DISABLE: EXECUTE: Command 4: real 1.291000, user 1.175000, sys 0.109000
+SEV DISABLE: WARM UP: Command 5: real 0.674000, user 3.148000, sys 0.116000
+SEV DISABLE: EXECUTE: Command 5: real 0.836000, user 0.721000, sys 0.111000
+SEV DISABLE: WARM UP: Command 6: real 1.096000, user 4.398000, sys 0.116000
+SEV DISABLE: EXECUTE: Command 6: real 1.375000, user 1.252000, sys 0.119000
+SEV DISABLE: WARM UP: Command 7: real 0.254000, user 4.610000, sys 0.100000
+SEV DISABLE: EXECUTE: Command 7: real 0.312000, user 0.213000, sys 0.095000
+SEV DISABLE: WARM UP: Command 8: real 0.248000, user 4.822000, sys 0.096000
+SEV DISABLE: EXECUTE: Command 8: real 0.313000, user 0.213000, sys 0.096000
+SEV DISABLE: WARM UP: Command 9: real 0.254000, user 5.040000, sys 0.094000
+SEV DISABLE: EXECUTE: Command 9: real 0.316000, user 0.212000, sys 0.099000
+SEV DISABLE: WARM UP: Command 10: real 0.330000, user 5.354000, sys 0.096000
+SEV DISABLE: EXECUTE: Command 10: real 0.413000, user 0.313000, sys 0.099000
+SEV DISABLE: WARM UP: Command 11: real 0.286000, user 5.606000, sys 0.098000
+SEV DISABLE: EXECUTE: Command 11: real 0.359000, user 0.254000, sys 0.098000
+SEV DISABLE: WARM UP: Command 12: real 0.338000, user 5.934000, sys 0.094000
+SEV DISABLE: EXECUTE: Command 12: real 0.425000, user 0.322000, sys 0.099000
 Processing 996.specrand_fs
+SEV ENABLE: WARM UP: Command 1: real 0.000000, user 0.000000, sys 0.000000
+SEV ENABLE: EXECUTE: Command 1: real 0.000000, user 0.000000, sys 0.000000
+SEV DISABLE: WARM UP: Command 1: real 0.000000, user 0.000000, sys 0.000000
+SEV DISABLE: EXECUTE: Command 1: real 0.000000, user 0.000000, sys 0.000000
 Processing 997.specrand_fr
+SEV ENABLE: WARM UP: Command 1: real 0.000000, user 0.000000, sys 0.000000
+SEV ENABLE: EXECUTE: Command 1: real 0.000000, user 0.000000, sys 0.000000
+SEV DISABLE: WARM UP: Command 1: real 0.002000, user 0.000000, sys 0.000000
+SEV DISABLE: EXECUTE: Command 1: real 0.000000, user 0.000000, sys 0.000000
 Processing 998.specrand_is
+SEV ENABLE: WARM UP: Command 1: real 0.002000, user 0.000000, sys 0.000000
+SEV ENABLE: EXECUTE: Command 1: real 0.000000, user 0.000000, sys 0.000000
+SEV DISABLE: WARM UP: Command 1: real 0.000000, user 0.000000, sys 0.000000
+SEV DISABLE: EXECUTE: Command 1: real 0.000000, user 0.000000, sys 0.000000
 Processing 999.specrand_ir
+SEV ENABLE: WARM UP: Command 1: real 0.000000, user 0.000000, sys 0.000000
+SEV ENABLE: EXECUTE: Command 1: real 0.000000, user 0.000000, sys 0.000000
+SEV DISABLE: WARM UP: Command 1: real 0.000000, user 0.000000, sys 0.000000
+SEV DISABLE: EXECUTE: Command 1: real 0.000000, user 0.000000, sys 0.000000

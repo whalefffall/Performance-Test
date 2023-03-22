@@ -98,16 +98,16 @@ def generate_scripts(root_shell:str, shell:str, log:str, root=root, warmup=warmU
                 f_all.write("cd ..\n")
                 f_all.write("echo finish benchmark %s"%dir)
             
-            command = "chmod +x ./" + fout_path
+            command = "chmod +x " + fout_path
             os.system(command)
 
 
 
 
 generate_scripts(root_shell=sev_enable_root_shell, shell=sev_enable_shell, log=sev_enable_log)
-print(os.system("chmod +x ", sev_enable_root_shell))
+print(os.system("chmod +x %s"%sev_enable_root_shell))
 generate_scripts(root_shell=sev_disable_root_shell, shell=sev_disable_shell, log=sev_disable_log)
-print(os.system("chmod +x ", sev_disable_root_shell))
+print(os.system("chmod +x %s"%sev_disable_root_shell))
 print("Finish writing shells!")
 
 '''

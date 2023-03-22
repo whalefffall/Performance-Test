@@ -104,9 +104,9 @@ def generate_scripts(root_shell:str, shell:str, log:str, root=root, warmup=warmU
 
 
 
-generate_scripts(root_shell=sev_enable_root_shell, shell=sev_enable_shell, log_file=sev_enable_log)
+generate_scripts(root_shell=sev_enable_root_shell, shell=sev_enable_shell, log=sev_enable_log)
 print(os.system("chmod +x ", sev_enable_root_shell))
-generate_scripts(root_shell=sev_disable_root_shell, shell=sev_disable_shell, log_file=sev_disable_log)
+generate_scripts(root_shell=sev_disable_root_shell, shell=sev_disable_shell, log=sev_disable_log)
 print(os.system("chmod +x ", sev_disable_root_shell))
 print("Finish writing shells!")
 

@@ -96,7 +96,7 @@ def generate_scripts(root_shell:str, shell:str, log:str, root=root, warmup=warmU
                 f_all.write("cd ./" + dir + "\n")
                 f_all.write("./"+shell+" -w $warmUp -e $execute\n")
                 f_all.write("cd ..\n")
-                f_all.write("echo finish benchmark %s"%dir)
+                f_all.write("echo finish benchmark %s\n"%dir)
             
             command = "chmod +x " + fout_path
             os.system(command)

@@ -1,60 +1,60 @@
-./run.sh: line 23: 11392 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
-real 0.86
+./run_sev_disable.sh: line 23: 11319 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 1.00
 user 0.13
-sys 0.54
-./run.sh: line 23: 11405 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
-real 0.47
-user 0.09
-sys 0.32
-./run.sh: line 23: 11406 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
-real 0.45
-user 0.12
-sys 0.28
-./run.sh: line 23: 11407 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
-real 0.46
-user 0.12
-sys 0.28
-./run.sh: line 23: 11408 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
-real 0.45
-user 0.08
-sys 0.32
-./run.sh: line 29: 11409 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
-real 0.46
-user 0.07
-sys 0.33
-./run.sh: line 29: 11410 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
-real 0.47
-user 0.08
-sys 0.33
-./run.sh: line 29: 11411 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
-real 0.47
-user 0.07
-sys 0.34
-./run.sh: line 29: 11412 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
-real 0.46
-user 0.09
+sys 0.61
+./run_sev_disable.sh: line 23: 11331 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.49
+user 0.11
 sys 0.31
-./run.sh: line 29: 11413 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+./run_sev_disable.sh: line 23: 11332 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.47
+user 0.08
+sys 0.33
+./run_sev_disable.sh: line 23: 11333 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.46
+user 0.11
+sys 0.30
+./run_sev_disable.sh: line 23: 11334 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.48
+user 0.06
+sys 0.35
+./run_sev_disable.sh: line 29: 11335 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.48
+user 0.05
+sys 0.35
+./run_sev_disable.sh: line 29: 11336 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.56
+user 0.06
+sys 0.34
+./run_sev_disable.sh: line 29: 11337 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.48
+user 0.09
+sys 0.32
+./run_sev_disable.sh: line 29: 11338 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.47
+user 0.08
+sys 0.33
+./run_sev_disable.sh: line 29: 11339 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.47
+user 0.10
+sys 0.30
+./run_sev_disable.sh: line 29: 11340 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.46
+user 0.08
+sys 0.33
+./run_sev_disable.sh: line 29: 11341 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
 real 0.46
 user 0.10
 sys 0.30
-./run.sh: line 29: 11414 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
-real 0.45
-user 0.12
-sys 0.28
-./run.sh: line 29: 11415 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
-real 0.46
-user 0.07
+./run_sev_disable.sh: line 29: 11342 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.48
+user 0.10
 sys 0.32
-./run.sh: line 29: 11416 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
-real 0.46
-user 0.12
-sys 0.28
-./run.sh: line 29: 11417 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
-real 0.46
-user 0.08
-sys 0.32
-./run.sh: line 29: 11418 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
-real 0.46
+./run_sev_disable.sh: line 29: 11343 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.47
+user 0.09
+sys 0.31
+./run_sev_disable.sh: line 29: 11344 Killed                  ./lbm_s_base.mytest-m64 20 reference.dat 0 1 200_200_260_ldc.of > lbm.out 2>> lbm.err
+real 0.56
 user 0.10
 sys 0.30

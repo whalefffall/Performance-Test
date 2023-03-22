@@ -1,17 +1,29 @@
+'''
+Write shell run_all_sev_enable.sh to run with sev enable and run_all_sev_disable.sh to run with sev disable 
+The two shell scripts are almost the same, except the output filename, and both in the root directory.
+In the directory of each benchmark, there are two shell scripts, run_sev_enable.sh to run with sev enable and run_sev_disable.sh to run with sev disable  .
+
+'''
+# write shell run_all_sev_enable.sh to run with sev enable and run_all_sev_disable.sh to run with sev disable 
+
+# The two shell scripts are almost the same, except the output filename
 import os, sys
 root = os.getcwd()
 # dir_list = os.listdir(root)
-warmUp = 50
-execute = 100
+warmUp = 5
+execute = 10
 # print(dir_list)
 # exit()
 cmd_file = "speccmds.cmd"
+sev_enable_log = "1.out"
+sev_disable_log = "2.out"
+sev_enable_root_shell = "run_all_sev_enable.sh"
+sev_disable_root_shell = "run_all_sev_disable.sh"
+sev_enable_shell = "run_sev_enable.sh"
+sev_disable_shell = "run_sev_disable.sh"
+
 log_file = "1.out"
-c = sys.argv[1]
-if c == '1':
-    log_file = "1.out"
-elif c == '2':
-    log_file = "2.out"
+
 
 
 os.system("python3 remove_shell.py")
@@ -27,12 +39,13 @@ with open("./spec_dirs", "r") as f:
 
 type = "SEV"
 
-# generate script
-def generate(type:str):
-    with open(os.path.join(root, "run_all.sh"), "a") as f_all:
-        f_all.write("#!/bin/bash \nlet warmUp=%d\nlet execute=%d\nwhile getopts \":w:e:\" opt\ndo\n    case $opt in\n        w)\n            warmUp=$OPTARG\n        ;;\n        e)\n            execute=$OPTARG\n        ;;\n        ?)\n        echo \"Unknown parameter\"\n        exit 1;;\nesac done\n" % (warmUp, execute)) 
-        f_all.close()
-                    
+def generate_scripts(root_shell:str, shell:str, log:str, root=root, warmup=warmUp, execute=execute, cmd_file=cmd_file, dirs=dirs):
+    '''
+    generate scripts with given parameters
+    '''
+    with open(os.path.join(root, root_shell), "a") as f_all:
+        f_all.write("#!/bin/bash \nlet warmUp=%d\nlet execute=%d\nwhile getopts \":w:e:\" opt\ndo\n    case $opt in\n        w)\n            warmUp=$OPTARG\n        ;;\n        e)\n            execute=$OPTARG\n        ;;\n        ?)\n        echo \"Unknown parameter\"\n        exit 1;;\nesac done\n" % (warmup, execute)) 
+    
     for dir in dirs:
         cur_path = os.path.join(root, dir)
         print("Processing %s" % dir)
@@ -41,72 +54,62 @@ def generate(type:str):
         
 
         fin_path = os.path.join(cur_path, cmd_file)
-        fout_path = os.path.join(cur_path, "run.sh")
-        with open(fin_path, "r") as f_in:
-            with open(fout_path, "w") as f_out:
+        fout_path = os.path.join(cur_path, shell)
+        with open(fin_path, "r") as f_in, open(fout_path, "w") as f_out:
+            f_out.write("#!/bin/bash \nlet warmUp=%d\nlet execute=%d\nwhile getopts \":w:e:\" opt\ndo\n    case $opt in\n        w)\n            warmUp=$OPTARG\n        ;;\n        e)\n            execute=$OPTARG\n        ;;\n        ?)\n        echo \"Unknown parameter\"\n        exit 1;;\nesac done\n" % (warmup, execute)) 
+            f_out.write("echo start benchmark %s\n"%dir)
+            f_out.write("# Bare Ubuntu\n")
+            cmds = f_in.readlines()
+            cmd_cnt = 0
+            for cmd in cmds:
+                if cmd.startswith("-o "):
+                    cmd_cnt += 1
+                    words = cmd.strip("\n").split(" ")
+                    exec_file = words[4].split("/")[2]
+                    command = "{ time -p ./" + exec_file + " " + " ".join(words[5:]) + " ;} >> " + log + " 2>&1"
+                    
+                    f_out.write("echo start warm up for command %d\n"%cmd_cnt)
+                    f_out.write("for((var=0; var<$warmUp; var++))\n    do\n")
+                    f_out.write("        " + command + "\ndone\n")
+                    f_out.write("echo finish one warm up!\n")
+                    f_out.write("echo start execute for command %d\n"%cmd_cnt)
+                    f_out.write("for((var=0; var<$execute; var++))\n    do\n")
+                    f_out.write("        " + command + "\ndone\n")
+                    f_out.write("echo finish one execute!\n")
+                
+                elif cmd.startswith("-i "):
+                    cmd_cnt += 1
+                    words = cmd.strip("\n").split(" ")
+                    exec_file = words[6].split("/")[2]
+                    command = "{ time -p ./" + exec_file + " " + " ".join(words[7:]) + " ;} >> " + log + " 2>&1"
+                    
+                    f_out.write("echo start warm up for command %d\n"%cmd_cnt)
+                    f_out.write("for((var=0; var<$warmUp; var++))\n    do\n")
+                    f_out.write("        " + command + "\ndone\n")
+                    f_out.write("echo finish one warm up!\n")
+                    f_out.write("echo start execute for command %d\n"%cmd_cnt)
+                    f_out.write("for((var=0; var<$execute; var++))\n    do\n")
+                    f_out.write("        " + command + "\ndone\n")
+                    f_out.write("echo finish one execute!\n")
             
-                f_out.write("#!/bin/bash \nlet warmUp=%d\nlet execute=%d\nwhile getopts \":w:e:\" opt\ndo\n    case $opt in\n        w)\n            warmUp=$OPTARG\n        ;;\n        e)\n            execute=$OPTARG\n        ;;\n        ?)\n        echo \"Unknown parameter\"\n        exit 1;;\nesac done\n" % (warmUp, execute)) 
+            with open(os.path.join(root, root_shell), "a") as f_all:
+                f_all.write("cd ./" + dir + "\n")
+                f_all.write("./"+shell+" -w $warmUp -e $execute\n")
+                f_all.write("cd ..\n")
+                f_all.write("echo finish benchmark %s"%dir)
+            
+            command = "chmod +x ./" + fout_path
+            os.system(command)
 
-                f_out.write("echo start benchmark %s\n"%dir)
-                f_out.write("# Bare Ubuntu\n")
-                cmds = f_in.readlines()
-                cmd_cnt = 0
-                for cmd in cmds:
-                    if cmd.startswith("-o "):
-                        cmd_cnt += 1
-                        words = cmd.strip("\n").split(" ")
-                        exec_file = words[4].split("/")[2]
-                        command = "{ time -p ./" + exec_file + " " + " ".join(words[5:]) + " ;} >> " + log_file + " 2>&1"
-                        
-                        f_out.write("echo start warm up for command %d\n"%cmd_cnt)
-                        f_out.write("for((var=0; var<$warmUp; var++))\n")
-                        f_out.write("    do\n")
-                        f_out.write("        " + command + "\n")
-                        f_out.write("done\n")
-                        f_out.write("echo finish one warm up!\n")
-                        
-                        f_out.write("echo start execute command %d\n"%cmd_cnt)
-                        f_out.write("for((var=0; var<$execute; var++))\n")
-                        f_out.write("    do\n")
-                        f_out.write("        " + command + "\n")
-                        f_out.write("done\n\n")
-                        f_out.write("echo finish one command!\n")
 
-                    elif cmd.startswith("-i "):
-                        cmd_cnt += 1
-                        words = cmd.strip("\n").split(" ")
-                        exec_file = words[6].split("/")[2]
-                        command = "{ time -p ./" + exec_file + " " + " ".join(words[7:]) + " ;} >> " + log_file + " 2>&1"
-                        
-                        f_out.write("echo start warm up for command %d\n"%cmd_cnt)
-                        f_out.write("for((var=0; var<$warmUp; var++))\n")
-                        f_out.write("    do\n")
-                        f_out.write("        " + command + "\n")
-                        f_out.write("done\n")
-                        f_out.write("echo finish one warm up!\n")
-                        
-                        f_out.write("echo start execute command %d\n"%cmd_cnt)
-                        f_out.write("for((var=0; var<$execute; var++))\n")
-                        f_out.write("    do\n")
-                        f_out.write("        " + command + "\n")
-                        f_out.write("done\n\n")
-                        f_out.write("echo finish one command!\n")
 
-                
 
-                with open(os.path.join(root, "run_all.sh"), "a") as f_all:
-                    f_all.write("cd ./" + dir + "\n")
-                    f_all.write("./run.sh  -w $warmUp -e $execute\n")
-                    f_all.write("cd ..\n")
-                    f_all.write("echo finish one benchmark!\n")
-                    f_all.close()
-                
-                f_out.close()
-            f_in.close() 
-        command = 'chmod +x ' + fout_path
-        os.system(command)
-generate(type)
-print(os.system("chmod +x run_all.sh"))
+generate_scripts(root_shell=sev_enable_root_shell, shell=sev_enable_shell, log_file=sev_enable_log)
+print(os.system("chmod +x ", sev_enable_root_shell))
+generate_scripts(root_shell=sev_disable_root_shell, shell=sev_disable_shell, log_file=sev_disable_log)
+print(os.system("chmod +x ", sev_disable_root_shell))
+print("Finish writing shells!")
+
 '''
 #!/bin/bash
 let warmUp=20      

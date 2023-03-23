@@ -64,9 +64,9 @@ def generate_scripts(root_shell:str, shell:str, log:str, root=root, warmup=warmU
             f_out.write("echo finish one execute!\n")
             
             with open(os.path.join(root, root_shell), "a") as f_all:
-                f_all.write("cd ./" + dir_path + "\n")
+                f_all.write("cd " + os.path.join(os.getcwd(), dir_path) + "\n")
                 f_all.write("./"+shell+" -w $warmUp -e $execute\n")
-                f_all.write("cd ..\n")
+                f_all.write("cd " + os.getcwd() + "\n")
                 f_all.write("echo finish benchmark %s %s\n"%(dir_path, elf_file))
             
             command = "chmod +x " + fout_path

@@ -7,7 +7,7 @@
 (seq_mct_drv) :       Models page: http://www.ccsm.ucar.edu/models/         
 (seq_mct_drv) :       License information is available as a link from above 
 (seq_mct_drv) : ------------------------------------------------------------
-(seq_mct_drv) :                 DATE 03/22/23 TIME 11:41:44
+(seq_mct_drv) :                 DATE 03/23/23 TIME 11:41:30
 (seq_mct_drv) : ------------------------------------------------------------
   
   
@@ -17,9 +17,9 @@
 (seq_io_init)    cpl_io_root     =      0
 (seq_io_init)    cpl_io_typename = netcdf                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 (seq_io_init)    cpl_io_numtasks =      1
-8 MB memory   alloc in MB is            -0.00
+8 MB memory   alloc in MB is             8.00
 8 MB memory dealloc in MB is             0.00
-Memory block size conversion in bytes is             0.00
+Memory block size conversion in bytes is             0.03
  seq_drydep_read: drydep_method: xactive_lnd
 (seq_drydep_read) No dry deposition fields will be transfered
 (seq_infodata_Init) 
@@ -606,8 +606,8 @@ Status of infodata after seq_infodata_init
   
 (map_npFixNew4R)  compute bilinear weights & indicies for NP region.
 (map_npFixNew4R)  total npfix points found =            0
- tStamp_write: model date =    10102       0 wall clock = 2023-03-22 11:41:45 avg dt =     0.00 dt =     0.00
- memory_write: model date =    10102       0 memory =      -0.00 MB (highwater)         -0.00 MB (usage)  (pe=    0 comps= cpl ocn atm lnd ice glc)
+ tStamp_write: model date =    10102       0 wall clock = 2023-03-23 11:41:32 avg dt =     0.00 dt =     0.00
+ memory_write: model date =    10102       0 memory =      37.88 MB (highwater)         37.88 MB (usage)  (pe=    0 comps= cpl ocn atm lnd ice glc)
 
 
 

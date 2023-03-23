@@ -98,12 +98,12 @@
 (dlnd_comp_run)  writing casespec.dlnd.rs1.0001-01-02-00000.bin   10102       0s
 (shr_stream_restWrite) case name        : casespec
 (shr_stream_restWrite) case description : SDLND strdata
-(shr_stream_restWrite) File created     : 2023-03-22 11:41:45
+(shr_stream_restWrite) File created     : 2023-03-23 11:41:32
 (shr_stream_restWrite) Number of streams     0
 (dlnd_comp_run)  writing casespec.dlnd.rs2.0001-01-02-00000.bin   10102       0s
 (shr_stream_restWrite) case name        : casespec
 (shr_stream_restWrite) case description : SDROF strdata
-(shr_stream_restWrite) File created     : 2023-03-22 11:41:45
+(shr_stream_restWrite) File created     : 2023-03-23 11:41:32
 (shr_stream_restWrite) Number of streams     1
 (shr_stream_restWrite) * stream     1 first file name = runoff.daitren.annual.090225.nc
 (shr_stream_restWrite) * stream     1 first have data =   T
@@ -113,7 +113,7 @@
 (dlnd_comp_run)  writing casespec.dlnd.rs3.0001-01-02-00000.bin   10102       0s
 (shr_stream_restWrite) case name        : casespec
 (shr_stream_restWrite) case description : SDSNO strdata
-(shr_stream_restWrite) File created     : 2023-03-22 11:41:45
+(shr_stream_restWrite) File created     : 2023-03-23 11:41:32
 (shr_stream_restWrite) Number of streams     0
 (dlnd_comp_run) lnd: model date    10102       0s
 (dlnd_comp_final) -------------------------------------------------------------------------

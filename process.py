@@ -62,7 +62,7 @@ with open(os.path.join(root, result_txt), "w") as r_txt, open(os.path.join(root,
             execute_sys_all = 0 
             idx = 0
             while idx < len(lines) + 1:
-                print(idx)
+                # print(idx)
                 if e_cnt == execute:
                     sev_enable_warmup_list.append([warmup_real_all / warmUp, warmup_usr_all / warmUp, warmup_sys_all / warmUp])
                     sev_enable_execute_list.append([execute_real_all / execute, execute_usr_all / execute, execute_sys_all / execute])

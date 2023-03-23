@@ -37,7 +37,7 @@ sev_disable_execute_list = []
 sev_disable_warmup_list = []
 
 with open(os.path.join(root, result_txt), "w") as r_txt, open(os.path.join(root, result_csv), "w") as  r_csv:
-    r_csv.write("Benchmark, Command cnt, Type, Role, Times, SEV_ENABLE, SEV_DISABLE, Rate\n")
+    r_csv.write("Benchmark,Command cnt,Type,Role,Times,SEV_ENABLE,SEV_DISABLE,Rate\n")
     for dir in dirs:
         cur_path = os.path.join(root, dir)
 
@@ -151,13 +151,13 @@ with open(os.path.join(root, result_txt), "w") as r_txt, open(os.path.join(root,
 
         for cnt in range(len(sev_disable_execute_list)):
             # for warm up
-            r_csv.write("%s,%d,%s,%d,%s,%f,%f,%f,\n"%(dir, cnt+1, "warmup", warmUp, roles[0], sev_enable_warmup_list[cnt][0], sev_disable_warmup_list[cnt][0], sev_enable_warmup_list[cnt][0]/(sev_disable_warmup_list[cnt][0]+0.000001)))
-            r_csv.write(",,,,%s,%f,%f,%f,\n"%(roles[1],sev_enable_warmup_list[cnt][1], sev_disable_warmup_list[cnt][1], sev_enable_warmup_list[cnt][1]/(sev_disable_warmup_list[cnt][1]+0.000001)))
-            r_csv.write(",,,,%s,%f,%f,%f,\n"%(roles[2],sev_enable_warmup_list[cnt][2], sev_disable_warmup_list[cnt][2], sev_enable_warmup_list[cnt][2]/(sev_disable_warmup_list[cnt][2]+0.000001)))
+            r_csv.write("%s,%d,%s,%d,%s,%f,%f,%f\n"%(dir, cnt+1, "warmup", warmUp, roles[0], sev_enable_warmup_list[cnt][0], sev_disable_warmup_list[cnt][0], sev_enable_warmup_list[cnt][0]/(sev_disable_warmup_list[cnt][0]+0.000001)))
+            r_csv.write(",,,,%s,%f,%f,%f\n"%(roles[1],sev_enable_warmup_list[cnt][1], sev_disable_warmup_list[cnt][1], sev_enable_warmup_list[cnt][1]/(sev_disable_warmup_list[cnt][1]+0.000001)))
+            r_csv.write(",,,,%s,%f,%f,%f\n"%(roles[2],sev_enable_warmup_list[cnt][2], sev_disable_warmup_list[cnt][2], sev_enable_warmup_list[cnt][2]/(sev_disable_warmup_list[cnt][2]+0.000001)))
 
             # for execute
-            r_csv.write("%s,%d,%s,%d,%s,%f,%f,%f,\n"%(dir, cnt+1, "execute", execute, roles[0], sev_enable_execute_list[cnt][0], sev_disable_execute_list[cnt][0], sev_enable_execute_list[cnt][0]/(sev_disable_execute_list[cnt][0]+0.000001)))
-            r_csv.write(",,,,%s,%f,%f,%f,\n"%(roles[1],sev_enable_execute_list[cnt][1], sev_disable_execute_list[cnt][1], sev_enable_execute_list[cnt][1]/(sev_disable_execute_list[cnt][1]+0.000001)))
-            r_csv.write(",,,,%s,%f,%f,%f,\n"%(roles[2],sev_enable_execute_list[cnt][2], sev_disable_execute_list[cnt][2], sev_enable_execute_list[cnt][2]/(sev_disable_execute_list[cnt][2]+0.000001)))
+            r_csv.write("%s,%d,%s,%d,%s,%f,%f,%f\n"%(dir, cnt+1, "execute", execute, roles[0], sev_enable_execute_list[cnt][0], sev_disable_execute_list[cnt][0], sev_enable_execute_list[cnt][0]/(sev_disable_execute_list[cnt][0]+0.000001)))
+            r_csv.write(",,,,%s,%f,%f,%f\n"%(roles[1],sev_enable_execute_list[cnt][1], sev_disable_execute_list[cnt][1], sev_enable_execute_list[cnt][1]/(sev_disable_execute_list[cnt][1]+0.000001)))
+            r_csv.write(",,,,%s,%f,%f,%f\n"%(roles[2],sev_enable_execute_list[cnt][2], sev_disable_execute_list[cnt][2], sev_enable_execute_list[cnt][2]/(sev_disable_execute_list[cnt][2]+0.000001)))
 
                     

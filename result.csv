@@ -1,27 +1,27 @@
 Benchmark Direcory,ELF Name,Size,Type,Times,Error,SEV_ENABLE, SEV_DISABLE, Rate
-apps/ferret, ferret, medium, warmup, 50, False,0.017240, 0.017140, 1.005776
- , , , execute,100, False,0.000000, 0.000000, 0.000000
+apps/ferret, ferret, medium, warmup, 50, False,0.673040, 0.684460, 0.983314
+ , , , execute,100, False,0.672880, 0.684950, 0.982377
 apps/swaptions, swaptions, medium, warmup, 50, True,0.000000, 0.000000, 0.000000
  , , , execute,100, True,0.000000, 0.000000, 0.000000
 apps/facesim, facesim, medium, warmup, 50, True,0.000000, 0.000000, 0.000000
  , , , execute,100, True,0.000000, 0.000000, 0.000000
-apps/fluidanimate, fluidanimate, medium, warmup, 50, False,0.011640, 0.011360, 1.024558
- , , , execute,100, False,0.000000, 0.000000, 0.000000
+apps/fluidanimate, fluidanimate, medium, warmup, 50, False,0.264500, 0.268360, 0.985613
+ , , , execute,100, False,0.273200, 0.271660, 1.005665
 apps/freqmine, freqmine, medium, warmup, 50, True,0.000000, 0.000000, 0.000000
  , , , execute,100, True,0.000000, 0.000000, 0.000000
 apps/raytrace, rtview, medium, warmup, 50, True,0.000000, 0.000000, 0.000000
  , , , execute,100, True,0.000000, 0.000000, 0.000000
 apps/vips, vips, medium, warmup, 50, True,0.000000, 0.000000, 0.000000
  , , , execute,100, True,0.000000, 0.000000, 0.000000
-apps/blackscholes, blackscholes, medium, warmup, 50, False,0.004020, 0.004200, 0.956915
- , , , execute,100, False,0.000000, 0.000000, 0.000000
-apps/bodytrack, bodytrack, medium, warmup, 50, False,0.014420, 0.014300, 1.008321
- , , , execute,100, False,0.000000, 0.000000, 0.000000
+apps/blackscholes, blackscholes, medium, warmup, 50, False,0.088560, 0.088460, 1.001119
+ , , , execute,100, False,0.088370, 0.088490, 0.998633
+apps/bodytrack, bodytrack, medium, warmup, 50, False,0.330560, 0.331840, 0.996140
+ , , , execute,100, False,0.330890, 0.331030, 0.999574
 apps/x264, x264, medium, warmup, 50, True,0.000000, 0.000000, 0.000000
  , , , execute,100, True,0.000000, 0.000000, 0.000000
 kernels/canneal, canneal, medium, warmup, 50, True,0.000000, 0.000000, 0.000000
  , , , execute,100, True,0.000000, 0.000000, 0.000000
-kernels/dedup, dedup, medium, warmup, 50, False,0.030120, 0.031580, 0.953738
- , , , execute,100, False,0.000000, 0.000000, 0.000000
+kernels/dedup, dedup, medium, warmup, 50, False,0.915140, 0.934120, 0.979680
+ , , , execute,100, False,0.940890, 0.932500, 1.008996
 kernels/streamcluster, streamcluster, medium, warmup, 50, True,0.000000, 0.000000, 0.000000
  , , , execute,100, True,0.000000, 0.000000, 0.000000

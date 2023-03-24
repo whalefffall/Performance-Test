@@ -52,12 +52,12 @@ with open(os.path.join(root, result_txt), "w") as r_txt, open(os.path.join(root,
                 else:
                     execute_all += float(line.strip("\n"))
             sev_enable_warmup_list.append([dir, elf, warmup_all / warmUp])
-            r_txt.write("SEV ENABLE: WARM UP: Benchmark Directory %s: , ELF Name: %s, Average time: %fs\n"% (dir, elf,  warmup_all / warmUp))
-            print("SEV ENABLE: WARM UP: Benchmark Directory %s: , ELF Name: %s, Average time: %fs"% (dir, elf,  warmup_all / warmUp))
+            r_txt.write("SEV ENABLE: WARM UP: Benchmark Directory: %s, ELF Name: %s, Average time: %fs\n"% (dir, elf,  warmup_all / warmUp))
+            print("SEV ENABLE: WARM UP: Benchmark Directory: %s, ELF Name: %s, Average time: %fs"% (dir, elf,  warmup_all / warmUp))
                     
             sev_enable_execute_list.append([dir, elf, execute_all / execute])
-            r_txt.write("SEV ENABLE: EXECUTE: Benchmark Directory %s: , ELF Name: %s, Average time: %fs\n"% (dir, elf,  execute_all / execute))
-            print("SEV ENABLE: EXECUTE: Benchmark Directory %s: , ELF Name: %s, Average time: %fs"% (dir, elf,  execute_all / execute))
+            r_txt.write("SEV ENABLE: EXECUTE: Benchmark Directory: %s, ELF Name: %s, Average time: %fs\n"% (dir, elf,  execute_all / execute))
+            print("SEV ENABLE: EXECUTE: Benchmark Directory: %s, ELF Name: %s, Average time: %fs"% (dir, elf,  execute_all / execute))
         with open(os.path.join(cur_path, sev_disable_log), "r") as log:
             lines = log.readlines()
             w_cnt = 0 # warm up count
@@ -72,12 +72,12 @@ with open(os.path.join(root, result_txt), "w") as r_txt, open(os.path.join(root,
                 else:
                     execute_all += float(line.strip("\n"))
             sev_disable_warmup_list.append([dir, elf, warmup_all / warmUp])
-            r_txt.write("SEV DISABLE: WARM UP: Benchmark Directory %s: , ELF Name: %s, Average time: %fs\n"% (dir, elf,  warmup_all / warmUp))
-            print("SEV DISABLE: WARM UP: Benchmark Directory %s: , ELF Name: %s, Average time: %fs"% (dir, elf,  warmup_all / warmUp))
+            r_txt.write("SEV DISABLE: WARM UP: Benchmark Directory: %s, ELF Name: %s, Average time: %fs\n"% (dir, elf,  warmup_all / warmUp))
+            print("SEV DISABLE: WARM UP: Benchmark Directory: %s, ELF Name: %s, Average time: %fs"% (dir, elf,  warmup_all / warmUp))
 
             sev_disable_execute_list.append([dir, elf, execute_all / execute])
-            r_txt.write("SEV DISABLE: EXECUTE: Benchmark Directory %s: , ELF Name: %s, Average time: %fs\n"% (dir, elf,  execute_all / execute))
-            print("SEV DISABLE: EXECUTE: Benchmark Directory %s: , ELF Name: %s, Average time: %fs"% (dir, elf,  execute_all / execute))
+            r_txt.write("SEV DISABLE: EXECUTE: Benchmark Directory: %s, ELF Name: %s, Average time: %fs\n"% (dir, elf,  execute_all / execute))
+            print("SEV DISABLE: EXECUTE: Benchmark Directory: %s, ELF Name: %s, Average time: %fs"% (dir, elf,  execute_all / execute))
 
     for cnt in range(len(sev_disable_execute_list)):
         # Benchmark Direcory, ELF Name, Type, Times, SEV_ENABLE, SEV_DISABLE, Rate

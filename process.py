@@ -82,4 +82,4 @@ with open(os.path.join(root, result_txt), "w") as r_txt, open(os.path.join(root,
     for cnt in range(len(sev_disable_execute_list)):
         # Benchmark Direcory, ELF Name, Type, Times, SEV_ENABLE, SEV_DISABLE, Rate
         r_csv.write("%s, %s, %s, %d, %f, %f, %f\n"%(sev_disable_warmup_list[cnt][0], sev_disable_warmup_list[cnt][1], "warmup", warmUp, sev_enable_warmup_list[cnt][2], sev_disable_warmup_list[cnt][2], sev_enable_warmup_list[cnt][2] / sev_disable_warmup_list[cnt][2]))
-        r_csv.write("%s, %s, %s, %d, %f, %f, %f\n"%(sev_disable_execute_list[cnt][0], sev_disable_execute_list[cnt][1], "execute", execute , sev_enable_execute_list[cnt][2], sev_disable_execute_list[cnt][2], sev_enable_execute_list[cnt][2] / sev_disable_execute_list[cnt][2]))
+        r_csv.write(" , , %s, %d, %f, %f, %f\n"%("execute", execute , sev_enable_execute_list[cnt][2], sev_disable_execute_list[cnt][2], sev_enable_execute_list[cnt][2] / sev_disable_execute_list[cnt][2]))

@@ -1,0 +1,13 @@
+apps/ferret
+apps/swaptions
+apps/facesim
+apps/fluidanimate
+apps/freqmine
+apps/raytrace
+apps/vips
+apps/blackscholes
+apps/bodytrack
+apps/x264
+kernels/canneal
+kernels/dedup
+kernels/streamcluster

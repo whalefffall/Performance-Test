@@ -1,0 +1,65 @@
+Processing apps/ferret
+SEV ENABLE: WARM UP: Benchmark Directory: apps/ferret, ELF Name: ferret, Error:False, Average time: 0.017240s
+SEV ENABLE: EXECUTE: Benchmark Directory: apps/ferret, ELF Name: ferret, Error:False, Average time: 0.000000s
+SEV DISABLE: WARM UP: Benchmark Directory: apps/ferret, ELF Name: ferret, Error:False, Average time: 0.017140s
+SEV DISABLE: EXECUTE: Benchmark Directory: apps/ferret, ELF Name: ferret, Error:False, Average time: 0.000000s
+Processing apps/swaptions
+SEV ENABLE: WARM UP: Benchmark Directory: apps/swaptions, ELF Name: swaptions, Error:True, Average time: 0.000000s
+SEV ENABLE: EXECUTE: Benchmark Directory: apps/swaptions, ELF Name: swaptions, Error:True, Average time: 0.000000s
+SEV DISABLE: WARM UP: Benchmark Directory: apps/swaptions, ELF Name: swaptions, Error:True, Average time: 0.000000s
+SEV DISABLE: EXECUTE: Benchmark Directory: apps/swaptions, ELF Name: swaptions, Error:True, Average time: 0.000000s
+Processing apps/facesim
+SEV ENABLE: WARM UP: Benchmark Directory: apps/facesim, ELF Name: facesim, Error:True, Average time: 0.000000s
+SEV ENABLE: EXECUTE: Benchmark Directory: apps/facesim, ELF Name: facesim, Error:True, Average time: 0.000000s
+SEV DISABLE: WARM UP: Benchmark Directory: apps/facesim, ELF Name: facesim, Error:True, Average time: 0.000000s
+SEV DISABLE: EXECUTE: Benchmark Directory: apps/facesim, ELF Name: facesim, Error:True, Average time: 0.000000s
+Processing apps/fluidanimate
+SEV ENABLE: WARM UP: Benchmark Directory: apps/fluidanimate, ELF Name: fluidanimate, Error:False, Average time: 0.011640s
+SEV ENABLE: EXECUTE: Benchmark Directory: apps/fluidanimate, ELF Name: fluidanimate, Error:False, Average time: 0.000000s
+SEV DISABLE: WARM UP: Benchmark Directory: apps/fluidanimate, ELF Name: fluidanimate, Error:False, Average time: 0.011360s
+SEV DISABLE: EXECUTE: Benchmark Directory: apps/fluidanimate, ELF Name: fluidanimate, Error:False, Average time: 0.000000s
+Processing apps/freqmine
+SEV ENABLE: WARM UP: Benchmark Directory: apps/freqmine, ELF Name: freqmine, Error:True, Average time: 0.000000s
+SEV ENABLE: EXECUTE: Benchmark Directory: apps/freqmine, ELF Name: freqmine, Error:True, Average time: 0.000000s
+SEV DISABLE: WARM UP: Benchmark Directory: apps/freqmine, ELF Name: freqmine, Error:True, Average time: 0.000000s
+SEV DISABLE: EXECUTE: Benchmark Directory: apps/freqmine, ELF Name: freqmine, Error:True, Average time: 0.000000s
+Processing apps/raytrace
+SEV ENABLE: WARM UP: Benchmark Directory: apps/raytrace, ELF Name: rtview, Error:True, Average time: 0.000000s
+SEV ENABLE: EXECUTE: Benchmark Directory: apps/raytrace, ELF Name: rtview, Error:True, Average time: 0.000000s
+SEV DISABLE: WARM UP: Benchmark Directory: apps/raytrace, ELF Name: rtview, Error:True, Average time: 0.000000s
+SEV DISABLE: EXECUTE: Benchmark Directory: apps/raytrace, ELF Name: rtview, Error:True, Average time: 0.000000s
+Processing apps/vips
+SEV ENABLE: WARM UP: Benchmark Directory: apps/vips, ELF Name: vips, Error:True, Average time: 0.000000s
+SEV ENABLE: EXECUTE: Benchmark Directory: apps/vips, ELF Name: vips, Error:True, Average time: 0.000000s
+SEV DISABLE: WARM UP: Benchmark Directory: apps/vips, ELF Name: vips, Error:True, Average time: 0.000000s
+SEV DISABLE: EXECUTE: Benchmark Directory: apps/vips, ELF Name: vips, Error:True, Average time: 0.000000s
+Processing apps/blackscholes
+SEV ENABLE: WARM UP: Benchmark Directory: apps/blackscholes, ELF Name: blackscholes, Error:False, Average time: 0.004020s
+SEV ENABLE: EXECUTE: Benchmark Directory: apps/blackscholes, ELF Name: blackscholes, Error:False, Average time: 0.000000s
+SEV DISABLE: WARM UP: Benchmark Directory: apps/blackscholes, ELF Name: blackscholes, Error:False, Average time: 0.004200s
+SEV DISABLE: EXECUTE: Benchmark Directory: apps/blackscholes, ELF Name: blackscholes, Error:False, Average time: 0.000000s
+Processing apps/bodytrack
+SEV ENABLE: WARM UP: Benchmark Directory: apps/bodytrack, ELF Name: bodytrack, Error:False, Average time: 0.014420s
+SEV ENABLE: EXECUTE: Benchmark Directory: apps/bodytrack, ELF Name: bodytrack, Error:False, Average time: 0.000000s
+SEV DISABLE: WARM UP: Benchmark Directory: apps/bodytrack, ELF Name: bodytrack, Error:False, Average time: 0.014300s
+SEV DISABLE: EXECUTE: Benchmark Directory: apps/bodytrack, ELF Name: bodytrack, Error:False, Average time: 0.000000s
+Processing apps/x264
+SEV ENABLE: WARM UP: Benchmark Directory: apps/x264, ELF Name: x264, Error:True, Average time: 0.000000s
+SEV ENABLE: EXECUTE: Benchmark Directory: apps/x264, ELF Name: x264, Error:True, Average time: 0.000000s
+SEV DISABLE: WARM UP: Benchmark Directory: apps/x264, ELF Name: x264, Error:True, Average time: 0.000000s
+SEV DISABLE: EXECUTE: Benchmark Directory: apps/x264, ELF Name: x264, Error:True, Average time: 0.000000s
+Processing kernels/canneal
+SEV ENABLE: WARM UP: Benchmark Directory: kernels/canneal, ELF Name: canneal, Error:True, Average time: 0.000000s
+SEV ENABLE: EXECUTE: Benchmark Directory: kernels/canneal, ELF Name: canneal, Error:True, Average time: 0.000000s
+SEV DISABLE: WARM UP: Benchmark Directory: kernels/canneal, ELF Name: canneal, Error:True, Average time: 0.000000s
+SEV DISABLE: EXECUTE: Benchmark Directory: kernels/canneal, ELF Name: canneal, Error:True, Average time: 0.000000s
+Processing kernels/dedup
+SEV ENABLE: WARM UP: Benchmark Directory: kernels/dedup, ELF Name: dedup, Error:False, Average time: 0.030120s
+SEV ENABLE: EXECUTE: Benchmark Directory: kernels/dedup, ELF Name: dedup, Error:False, Average time: 0.000000s
+SEV DISABLE: WARM UP: Benchmark Directory: kernels/dedup, ELF Name: dedup, Error:False, Average time: 0.031580s
+SEV DISABLE: EXECUTE: Benchmark Directory: kernels/dedup, ELF Name: dedup, Error:False, Average time: 0.000000s
+Processing kernels/streamcluster
+SEV ENABLE: WARM UP: Benchmark Directory: kernels/streamcluster, ELF Name: streamcluster, Error:True, Average time: 0.000000s
+SEV ENABLE: EXECUTE: Benchmark Directory: kernels/streamcluster, ELF Name: streamcluster, Error:True, Average time: 0.000000s
+SEV DISABLE: WARM UP: Benchmark Directory: kernels/streamcluster, ELF Name: streamcluster, Error:True, Average time: 0.000000s
+SEV DISABLE: EXECUTE: Benchmark Directory: kernels/streamcluster, ELF Name: streamcluster, Error:True, Average time: 0.000000s

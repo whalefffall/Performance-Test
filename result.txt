@@ -1,0 +1,150 @@
+Processing Gramine/linear-algebra/blas/syrk
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/blas/syrk: , ELF Name: syrk, Average time: 0.473374s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/blas/syrk: , ELF Name: syrk, Average time: 0.472446s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/blas/syrk: , ELF Name: syrk, Average time: 0.472904s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/blas/syrk: , ELF Name: syrk, Average time: 0.471087s
+Processing Gramine/linear-algebra/blas/gesummv
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/blas/gesummv: , ELF Name: gesummv, Average time: 0.005809s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/blas/gesummv: , ELF Name: gesummv, Average time: 0.005705s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/blas/gesummv: , ELF Name: gesummv, Average time: 0.005682s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/blas/gesummv: , ELF Name: gesummv, Average time: 0.005833s
+Processing Gramine/linear-algebra/blas/trmm
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/blas/trmm: , ELF Name: trmm, Average time: 1.041885s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/blas/trmm: , ELF Name: trmm, Average time: 1.059454s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/blas/trmm: , ELF Name: trmm, Average time: 1.000914s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/blas/trmm: , ELF Name: trmm, Average time: 1.013812s
+Processing Gramine/linear-algebra/blas/symm
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/blas/symm: , ELF Name: symm, Average time: 1.687475s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/blas/symm: , ELF Name: symm, Average time: 1.690266s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/blas/symm: , ELF Name: symm, Average time: 1.584653s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/blas/symm: , ELF Name: symm, Average time: 1.851007s
+Processing Gramine/linear-algebra/blas/gemm
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/blas/gemm: , ELF Name: gemm, Average time: 0.374358s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/blas/gemm: , ELF Name: gemm, Average time: 0.374018s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/blas/gemm: , ELF Name: gemm, Average time: 0.373725s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/blas/gemm: , ELF Name: gemm, Average time: 0.375190s
+Processing Gramine/linear-algebra/blas/syr2k
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/blas/syr2k: , ELF Name: syr2k, Average time: 2.153358s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/blas/syr2k: , ELF Name: syr2k, Average time: 2.166990s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/blas/syr2k: , ELF Name: syr2k, Average time: 2.616715s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/blas/syr2k: , ELF Name: syr2k, Average time: 2.598362s
+Processing Gramine/linear-algebra/blas/gemver
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/blas/gemver: , ELF Name: gemver, Average time: 0.013811s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/blas/gemver: , ELF Name: gemver, Average time: 0.013760s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/blas/gemver: , ELF Name: gemver, Average time: 0.015296s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/blas/gemver: , ELF Name: gemver, Average time: 0.015161s
+Processing Gramine/linear-algebra/kernels/bicg
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/kernels/bicg: , ELF Name: bicg, Average time: 0.013472s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/kernels/bicg: , ELF Name: bicg, Average time: 0.013536s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/kernels/bicg: , ELF Name: bicg, Average time: 0.013506s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/kernels/bicg: , ELF Name: bicg, Average time: 0.013481s
+Processing Gramine/linear-algebra/kernels/3mm
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/kernels/3mm: , ELF Name: 3mm, Average time: 2.342004s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/kernels/3mm: , ELF Name: 3mm, Average time: 2.340893s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/kernels/3mm: , ELF Name: 3mm, Average time: 2.352396s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/kernels/3mm: , ELF Name: 3mm, Average time: 2.355059s
+Processing Gramine/linear-algebra/kernels/mvt
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/kernels/mvt: , ELF Name: mvt, Average time: 0.012299s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/kernels/mvt: , ELF Name: mvt, Average time: 0.012293s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/kernels/mvt: , ELF Name: mvt, Average time: 0.013451s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/kernels/mvt: , ELF Name: mvt, Average time: 0.013312s
+Processing Gramine/linear-algebra/kernels/atax
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/kernels/atax: , ELF Name: atax, Average time: 0.004299s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/kernels/atax: , ELF Name: atax, Average time: 0.004297s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/kernels/atax: , ELF Name: atax, Average time: 0.004299s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/kernels/atax: , ELF Name: atax, Average time: 0.004301s
+Processing Gramine/linear-algebra/kernels/2mm
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/kernels/2mm: , ELF Name: 2mm, Average time: 1.411787s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/kernels/2mm: , ELF Name: 2mm, Average time: 1.412775s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/kernels/2mm: , ELF Name: 2mm, Average time: 1.445149s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/kernels/2mm: , ELF Name: 2mm, Average time: 1.440778s
+Processing Gramine/linear-algebra/kernels/doitgen
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/kernels/doitgen: , ELF Name: doitgen, Average time: 0.425446s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/kernels/doitgen: , ELF Name: doitgen, Average time: 0.428617s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/kernels/doitgen: , ELF Name: doitgen, Average time: 0.429330s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/kernels/doitgen: , ELF Name: doitgen, Average time: 0.430390s
+Processing Gramine/linear-algebra/solvers/durbin
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/solvers/durbin: , ELF Name: durbin, Average time: 0.002377s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/solvers/durbin: , ELF Name: durbin, Average time: 0.002376s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/solvers/durbin: , ELF Name: durbin, Average time: 0.002377s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/solvers/durbin: , ELF Name: durbin, Average time: 0.002382s
+Processing Gramine/linear-algebra/solvers/trisolv
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/solvers/trisolv: , ELF Name: trisolv, Average time: 0.001912s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/solvers/trisolv: , ELF Name: trisolv, Average time: 0.001916s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/solvers/trisolv: , ELF Name: trisolv, Average time: 0.001924s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/solvers/trisolv: , ELF Name: trisolv, Average time: 0.001932s
+Processing Gramine/linear-algebra/solvers/cholesky
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/solvers/cholesky: , ELF Name: cholesky, Average time: 1.129872s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/solvers/cholesky: , ELF Name: cholesky, Average time: 1.129230s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/solvers/cholesky: , ELF Name: cholesky, Average time: 1.134572s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/solvers/cholesky: , ELF Name: cholesky, Average time: 1.135331s
+Processing Gramine/linear-algebra/solvers/gramschmidt
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/solvers/gramschmidt: , ELF Name: gramschmidt, Average time: 6.753855s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/solvers/gramschmidt: , ELF Name: gramschmidt, Average time: 10.019409s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/solvers/gramschmidt: , ELF Name: gramschmidt, Average time: 9.287536s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/solvers/gramschmidt: , ELF Name: gramschmidt, Average time: 9.246000s
+Processing Gramine/linear-algebra/solvers/lu
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/solvers/lu: , ELF Name: lu, Average time: 2.458079s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/solvers/lu: , ELF Name: lu, Average time: 2.463930s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/solvers/lu: , ELF Name: lu, Average time: 2.507889s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/solvers/lu: , ELF Name: lu, Average time: 2.478343s
+Processing Gramine/linear-algebra/solvers/ludcmp
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/solvers/ludcmp: , ELF Name: ludcmp, Average time: 2.323499s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/solvers/ludcmp: , ELF Name: ludcmp, Average time: 2.318106s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/linear-algebra/solvers/ludcmp: , ELF Name: ludcmp, Average time: 2.413755s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/linear-algebra/solvers/ludcmp: , ELF Name: ludcmp, Average time: 2.435756s
+Processing Gramine/stencils/fdtd-2d
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/stencils/fdtd-2d: , ELF Name: fdtd-2d, Average time: 0.762307s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/stencils/fdtd-2d: , ELF Name: fdtd-2d, Average time: 0.764022s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/stencils/fdtd-2d: , ELF Name: fdtd-2d, Average time: 0.779254s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/stencils/fdtd-2d: , ELF Name: fdtd-2d, Average time: 0.776853s
+Processing Gramine/stencils/jacobi-1d
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/stencils/jacobi-1d: , ELF Name: jacobi-1d, Average time: 0.000592s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/stencils/jacobi-1d: , ELF Name: jacobi-1d, Average time: 0.000598s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/stencils/jacobi-1d: , ELF Name: jacobi-1d, Average time: 0.000595s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/stencils/jacobi-1d: , ELF Name: jacobi-1d, Average time: 0.000595s
+Processing Gramine/stencils/jacobi-2d
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/stencils/jacobi-2d: , ELF Name: jacobi-2d, Average time: 0.880041s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/stencils/jacobi-2d: , ELF Name: jacobi-2d, Average time: 0.879866s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/stencils/jacobi-2d: , ELF Name: jacobi-2d, Average time: 0.887270s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/stencils/jacobi-2d: , ELF Name: jacobi-2d, Average time: 0.887040s
+Processing Gramine/stencils/adi
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/stencils/adi: , ELF Name: adi, Average time: 9.702007s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/stencils/adi: , ELF Name: adi, Average time: 9.706052s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/stencils/adi: , ELF Name: adi, Average time: 9.794514s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/stencils/adi: , ELF Name: adi, Average time: 9.822118s
+Processing Gramine/stencils/seidel-2d
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/stencils/seidel-2d: , ELF Name: seidel-2d, Average time: 17.104308s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/stencils/seidel-2d: , ELF Name: seidel-2d, Average time: 17.102199s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/stencils/seidel-2d: , ELF Name: seidel-2d, Average time: 17.097205s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/stencils/seidel-2d: , ELF Name: seidel-2d, Average time: 17.098279s
+Processing Gramine/stencils/heat-3d
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/stencils/heat-3d: , ELF Name: heat-3d, Average time: 1.511750s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/stencils/heat-3d: , ELF Name: heat-3d, Average time: 1.512193s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/stencils/heat-3d: , ELF Name: heat-3d, Average time: 1.526929s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/stencils/heat-3d: , ELF Name: heat-3d, Average time: 1.526248s
+Processing Gramine/medley/deriche
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/medley/deriche: , ELF Name: deriche, Average time: 0.232329s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/medley/deriche: , ELF Name: deriche, Average time: 0.234145s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/medley/deriche: , ELF Name: deriche, Average time: 0.284335s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/medley/deriche: , ELF Name: deriche, Average time: 0.285878s
+Processing Gramine/medley/floyd-warshall
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/medley/floyd-warshall: , ELF Name: floyd-warshall, Average time: 13.443319s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/medley/floyd-warshall: , ELF Name: floyd-warshall, Average time: 13.450003s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/medley/floyd-warshall: , ELF Name: floyd-warshall, Average time: 13.469951s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/medley/floyd-warshall: , ELF Name: floyd-warshall, Average time: 13.469310s
+Processing Gramine/medley/nussinov
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/medley/nussinov: , ELF Name: nussinov, Average time: 3.822031s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/medley/nussinov: , ELF Name: nussinov, Average time: 3.816469s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/medley/nussinov: , ELF Name: nussinov, Average time: 4.024518s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/medley/nussinov: , ELF Name: nussinov, Average time: 4.023708s
+Processing Gramine/datamining/correlation
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/datamining/correlation: , ELF Name: correlation, Average time: 8.343792s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/datamining/correlation: , ELF Name: correlation, Average time: 8.442106s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/datamining/correlation: , ELF Name: correlation, Average time: 8.067439s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/datamining/correlation: , ELF Name: correlation, Average time: 8.808353s
+Processing Gramine/datamining/covariance
+SEV ENABLE: WARM UP: Benchmark Directory Gramine/datamining/covariance: , ELF Name: covariance, Average time: 8.408486s
+SEV ENABLE: EXECUTE: Benchmark Directory Gramine/datamining/covariance: , ELF Name: covariance, Average time: 8.433116s
+SEV DISABLE: WARM UP: Benchmark Directory Gramine/datamining/covariance: , ELF Name: covariance, Average time: 9.150963s
+SEV DISABLE: EXECUTE: Benchmark Directory Gramine/datamining/covariance: , ELF Name: covariance, Average time: 9.220449s

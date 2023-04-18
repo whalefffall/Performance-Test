@@ -1,0 +1,337 @@
+#!/bin/bash
+cp /parsec-3.0/pkgs/libs/hooks/obj/amd64-linux.gcc-hooks/.libs/* /usr/lib/x86_64-linux-gnu/gramine/runtime/glibc
+echo "start transfer files"
+rm -r gramine
+sudo mkdir gramine
+size=$1
+
+benchmark="blackscholes"
+cd /parsec-3.0/gramine
+sudo mkdir $benchmark
+sudo cp /parsec-3.0/pkgs/apps/$benchmark/inst/amd64-linux.gcc-hooks/bin/* /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs/apps/$benchmark/inputs
+tar -xvf input_$size.tar -C /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs
+
+benchmark="bodytrack"
+cd /parsec-3.0/gramine
+sudo mkdir $benchmark
+sudo cp /parsec-3.0/pkgs/apps/$benchmark/inst/amd64-linux.gcc-hooks/bin/* /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs/apps/$benchmark/inputs
+tar -xvf input_$size.tar -C /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs
+
+benchmark="canneal"
+cd /parsec-3.0/gramine
+sudo mkdir $benchmark
+sudo cp /parsec-3.0/pkgs/kernels/$benchmark/inst/amd64-linux.gcc-hooks/bin/* /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs/kernels/$benchmark/inputs
+tar -xvf input_$size.tar -C /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs
+
+benchmark="dedup"
+cd /parsec-3.0/gramine
+sudo mkdir $benchmark
+sudo cp /parsec-3.0/pkgs/kernels/$benchmark/inst/amd64-linux.gcc-hooks/bin/* /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs/kernels/$benchmark/inputs
+tar -xvf input_$size.tar -C /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs
+
+benchmark="streamcluster"
+cd /parsec-3.0/gramine
+sudo mkdir $benchmark
+sudo cp /parsec-3.0/pkgs/kernels/$benchmark/inst/amd64-linux.gcc-hooks/bin/* /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs
+
+benchmark="facesim"
+cd /parsec-3.0/gramine
+sudo mkdir $benchmark
+sudo cp /parsec-3.0/pkgs/apps/$benchmark/inst/amd64-linux.gcc-hooks/bin/* /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs/apps/$benchmark/inputs
+tar -xvf input_$size.tar -C /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs
+
+benchmark="ferret"
+cd /parsec-3.0/gramine
+sudo mkdir $benchmark
+sudo cp /parsec-3.0/pkgs/apps/$benchmark/inst/amd64-linux.gcc-hooks/bin/* /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs/apps/$benchmark/inputs
+tar -xvf input_$size.tar -C /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs
+
+benchmark="fluidanimate"
+cd /parsec-3.0/gramine
+sudo mkdir $benchmark
+sudo cp /parsec-3.0/pkgs/apps/$benchmark/inst/amd64-linux.gcc-hooks/bin/* /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs/apps/$benchmark/inputs
+tar -xvf input_$size.tar -C /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs
+
+benchmark="freqmine"
+cd /parsec-3.0/gramine
+sudo mkdir $benchmark
+sudo cp /parsec-3.0/pkgs/apps/$benchmark/inst/amd64-linux.gcc-hooks/bin/* /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs/apps/$benchmark/inputs
+tar -xvf input_$size.tar -C /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs
+
+benchmark="raytrace"
+cd /parsec-3.0/gramine
+sudo mkdir $benchmark
+sudo cp /parsec-3.0/pkgs/apps/$benchmark/inst/amd64-linux.gcc-hooks/bin/* /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs/apps/$benchmark/inputs
+tar -xvf input_$size.tar -C /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs
+
+benchmark="swaptions"
+cd /parsec-3.0/gramine
+sudo mkdir $benchmark
+sudo cp /parsec-3.0/pkgs/apps/$benchmark/inst/amd64-linux.gcc-hooks/bin/* /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs
+
+benchmark="vips"
+cd /parsec-3.0/gramine
+sudo mkdir $benchmark
+sudo cp /parsec-3.0/pkgs/apps/$benchmark/inst/amd64-linux.gcc-hooks/bin/* /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs/apps/$benchmark/inputs
+tar -xvf input_$size.tar -C /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs
+
+benchmark="x264"
+cd /parsec-3.0/gramine
+sudo mkdir $benchmark
+sudo cp /parsec-3.0/pkgs/apps/$benchmark/inst/amd64-linux.gcc-hooks/bin/* /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs/apps/$benchmark/inputs
+tar -xvf input_$size.tar -C /parsec-3.0/gramine/$benchmark
+cd /parsec-3.0/pkgs
+
+
+cd /parsec-3.0/gramine
+for dir in */; do
+    dir=$(basename "$dir") # extract the directory name
+    cd "$dir"
+
+    case $dir in
+    blackscholes)
+        NAME="blackscholes"
+        ;;
+    bodytrack)
+        NAME="bodytrack"
+        ;;
+    canneal)
+        NAME="canneal"
+        ;;
+    dedup)
+        NAME="dedup"
+        ;;
+    facesim)
+        NAME="facesim"
+        ;;
+    ferret)
+        NAME="ferret"
+        ;;
+    fluidanimate)
+        NAME="fluidanimate"
+        ;;
+    freqmine)
+        NAME="freqmine"
+        ;;
+    raytrace)
+        NAME="rtview"
+        ;;
+    streamcluster)
+        NAME="streamcluster"
+        ;;
+    swaptions)
+        NAME="swaptions"
+        ;;
+    vips)
+        NAME="vips"
+        ;;
+    x264)
+        NAME="x264"
+        ;;
+    *)
+        echo "Unknown directory"
+        exit 1
+        ;;
+    esac
+
+    touch Makefile
+    cat > Makefile << EOF
+GRAMINE_LOG_LEVEL = error
+ARCH_LIBDIR ?= /lib/\$(shell \$(CC) -dumpmachine)
+
+$NAME.manifest: $NAME.manifest.template
+	gramine-manifest \\
+		-Dlog_level=\$(GRAMINE_LOG_LEVEL) \\
+		-Darch_libdir=\$(ARCH_LIBDIR) \\
+		\$< > \$@
+
+sgx_outputs: $NAME.manifest
+	gramine-sgx-sign \\
+		--manifest $NAME.manifest \\
+		--output $NAME.manifest.sgx
+
+$NAME.token: $NAME.sig
+	gramine-sgx-get-token --output \$@ --sig $< \\
+
+all: sgx_outputs $NAME.token
+clean:
+	rm *.token *.sig *.manifest.sgx *.manifest
+EOF
+
+
+    touch $NAME.manifest.template
+    cat > $NAME.manifest.template << EOF
+loader.entrypoint = "file:{{ gramine.libos }}"
+
+libos.entrypoint = "/$NAME"
+
+loader.log_level = "{{ log_level }}"
+
+loader.insecure__use_cmdline_argv = true
+
+loader.env.LD_LIBRARY_PATH = "/lib:{{ arch_libdir }}:/usr/{{ arch_libdir }}"
+
+sys.enable_sigterm_injection = true
+
+fs.mounts = [
+  { path = "/lib", uri = "file:{{ gramine.runtimedir() }}" },
+
+  { path = "{{ arch_libdir }}", uri = "file:{{ arch_libdir }}" },
+
+  { path = "/usr/{{ arch_libdir }}", uri = "file:/usr/{{ arch_libdir }}" },
+
+  { path = "/etc", uri = "file:/etc" },
+
+  { path = "/$NAME", uri = "file:$NAME" },
+]
+
+sgx.debug = true
+
+sgx.enclave_size = "4096M"
+
+sgx.thread_num = 1024
+
+sgx.file_check_policy = "allow_all_but_log"
+
+sgx.nonpie_binary = true
+
+sgx.trusted_files = [
+  "file:{{ gramine.libos }}",
+  "file:$NAME",
+  "file:{{ gramine.runtimedir() }}/",
+  "file:{{ arch_libdir }}/",
+  "file:/usr/{{ arch_libdir }}/",
+]
+
+
+sgx.allowed_files = [
+  "file:/etc/nsswitch.conf",
+  "file:/etc/ethers",
+  "file:/etc/hosts",
+  "file:/etc/group",
+  "file:/etc/passwd",
+
+  "file:/etc/gai.conf",
+]
+
+EOF
+
+
+    cd ..
+done
+
+echo "finish transfer"
+
+let warmUp=10    #   Default warm up 100 times
+let execute=5   #   Default execute 100 times
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/parsec-3.0/pkgs/libs/hooks/inst/amd64-linux.gcc-hooks/lib
+while getopts ":w:e:" opt
+do
+    case $opt in
+        w)
+            warmUp=$OPTARG
+        ;;
+        e)
+            execute=$OPTARG
+        ;;
+        ?)
+        echo "Unknown parameter"
+        exit 1;;
+esac done
+THREADS=$2
+for dir in /parsec-3.0/gramine/*/; do
+  if [ -d "$dir" ]; then
+    target=$(basename "$dir")
+    cd /parsec-3.0/gramine/$target
+    make all > make.log
+    case $target in
+        canneal)
+            cd /parsec-3.0/pkgs/kernels/$target/parsec
+            run_args=$(grep -m 1 "^run_args" $size.runconf | cut -d "=" -f 2)
+            run_args=$(echo "${run_args}" | sed "s/\${NTHREADS}/${THREADS}/g")
+            ;;
+        dedup)
+            cd /parsec-3.0/pkgs/kernels/$target/parsec
+            run_args=$(grep -m 1 "^run_args" $size.runconf | cut -d "=" -f 2)
+            run_args=$(echo "${run_args}" | sed "s/\${NTHREADS}/${THREADS}/g")
+            ;;
+        streamcluster)
+            cd /parsec-3.0/pkgs/kernels/$target/parsec
+            run_args=$(grep -m 1 "^run_args" $size.runconf | cut -d "=" -f 2)
+            run_args=$(echo "${run_args}" | sed "s/\${NTHREADS}/${THREADS}/g")
+            ;;
+        raytrace)
+            cd /parsec-3.0/pkgs/apps/$target/parsec
+            target="rtview"
+            run_args=$(grep -m 1 "^run_args" $size.runconf | cut -d "=" -f 2)
+            run_args=$(echo "${run_args}" | sed "s/\${NTHREADS}/${THREADS}/g")
+            ;;
+        *)
+            cd /parsec-3.0/pkgs/apps/$target/parsec
+            run_args=$(grep -m 1 "^run_args" $size.runconf | cut -d "=" -f 2)
+            run_args=$(echo "${run_args}" | sed "s/\${NTHREADS}/${THREADS}/g")
+            ;;
+    esac
+    run_args=$(echo $run_args | sed 's/"//g')
+    echo "executing $target"
+    cd /parsec-3.0/gramine/$target
+    # Warm Up for Ubuntu
+    for((var=0; var<$warmUp; var++))
+        do
+            { ./${target} ${run_args} 2>&1;} >> WarmUpForUbuntu.output 2>&1
+    done
+    # Execute
+    for((var=0; var<$execute; var++))
+        do
+            { ./${target} ${run_args} 2>&1;} >> ResultForUbuntu.output 2>&1
+    done
+
+    # Warm Up for gramine-direct
+    for((var=0; var<$warmUp; var++))
+        do
+            { gramine-direct ${target} ${run_args} 2>&1;} >> WarmUpForGramine.output 2>&1
+    done
+    # Execute
+    for((var=0; var<$execute; var++))
+        do
+            { gramine-direct ${target} ${run_args} 2>&1;} >> ResultForGramine.output 2>&1
+    done
+
+    # Warm Up for gramine-sgx
+    for((var=0; var<$warmUp; var++))
+        do
+            { gramine-sgx ${target} ${run_args} 2>&1;} >> WarmUpForSGX.output 2>&1
+    done
+    # Execute
+    for((var=0; var<$execute; var++))
+        do
+           { gramine-sgx ${target} ${run_args} 2>&1;} >> ResultForSGX.output 2>&1
+    done
+    echo "finish $target"
+  fi
+done
+
+

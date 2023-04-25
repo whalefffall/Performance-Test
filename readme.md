@@ -50,7 +50,7 @@ update-alternatives --config gcc
 # 绕过代理
 # sudo -E add-apt-repository --update ppa:ubuntu-toolchain-r/test
 ```
-
+```
 7.  进入/parsec-3.0/pkgs/libs/uptcpip/src/include/sys目录下，将bsd_types.h的102至105行注释
 8. sudo apt-get install locales -y（这些命令在脚本里好像有问题）
 9. sudo locale-gen en_US.UTF-8
@@ -59,6 +59,7 @@ update-alternatives --config gcc
 12. sed -i.bak 's/item \([0-9]\+\)/item C<\1>/g' *
 13. cd /parsec-3.0/pkgs/libs/ssl/src/doc/ssl
 14. sed -i.bak 's/item \([0-9]\+\)/item C<\1>/g' *
+```
 15. 运行compile脚本，这个脚本好像在编译的原因，不能后台运行，请耐心等待，大概二三十分钟。
 16. 运行makeAndRun.sh该脚本需要两个参数，第一个是使用的数据集，第二个是线程数量。比如：
 ```
